@@ -1,0 +1,90 @@
+/* General
+   ========================================================================== */
+
+*{
+    box-sizing: border-box;
+}
+  
+
+.flex{
+    display: flex;
+}
+
+.row{
+    flex-direction: row;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.jusifyContent{
+   justify-content: center;
+}
+
+.alignItems{
+    align-items: center;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.hidden{
+    display: none;
+}
+
+.font{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+
+body{
+    background-color: rgb(48, 7, 7);
+}
+
+/* Nav
+   ========================================================================== */
+
+li{
+    list-style-type: none;
+    border-bottom: 1px solid black;
+}
+
+
+
+/* Header
+   ========================================================================== */
+
+header{
+    background: no-repeat url('images/background.jpg') center/cover;
+}
+
+#header h1 a{
+    font-size: 4rem;
+}
+
+/* Websites
+   ========================================================================== */
+
+.image{
+    padding: 1rem;
+}
+
+#two h2{
+    font-size: 3rem;
+    border-bottom: 2px solid black;
+}
+/* About Me
+   ========================================================================== */
+
+/* My Services
+   ========================================================================== */
+
+/* Contact
+   ========================================================================== */
+
+/* Footer
+   ========================================================================== */
