@@ -10,9 +10,13 @@
     <noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
 </head>
 <body>
-    <header id = 'header' class = 'column flex alignItems justifyContent'>
+    <header id = 'header' class = 'flex column alignItems jusifyContent'>
 
-    <nav id = 'nav'>
+
+		<h1 class ='font'><a class = 'font' id = 'home'>Richard Choi - Web Dev</a></h1>
+		<p class = 'font'>Hello, I'm Richard, A Software Engineer! Feel free to look at what I've done so far!</p>
+
+    <nav id = 'nav' class = 'hidden'>
         <a href="#menu" class = 'font'><h3>Menu</h3></a>
 		<ul id = 'ul'>    
 			<li><a class = 'font' href=#home>Home</a></li>
@@ -22,139 +26,106 @@
 			<li><a class = 'font' href=#contact>Contact</a></li>
 		</ul>
     </nav>
+<div class = 'flex column alignItems' id = 'click'>
 
+	<a href="#one" class="font click">Click to Learn More</a>
 
-    <h1 class ='font'><a class = 'font' id = 'home'>Richard Choi - Web Dev</a></h1>
-	<p class = 'font'>Hello, I'm Richard, A Software Engineer! Feel free to look at what I've done so far!</p>
-	<a href="#one" class="font">Click to Learn More</a>
+</div>
     </header>
 
-    <section id="two" class="flex column alignItems">
+    <section id="one" class="flex column alignItems">
+		
         <h2 id = 'websites' class = 'font'>My Websites</h2>
-            <div class="image">
-                <a target="_blank" href = 'https://therealestatebeast.netlify.app/'>
+
+		<section class = 'flex row websites section2-1'>
+            <div class="left flex column alignItems">
+				<h2 class ='font'>Real Estate Website</h2>
+                <a target="_blank" href = 'https://therealestatebeast.netlify.app/' class="column flex alignItems" >
                     <img src="images/realestatebeast.gif" alt="" />
                 </a>
+				<a target="_blank" href="https://therealestatebeast.netlify.app/" class="font button">Click to view!</a>
             </div>
-            <div class="content">
-            <h2 class ='font'>Real Estate Website</h2>
-            <a target="_blank" href="https://therealestatebeast.netlify.app/" class="font button">Click to view!</a>
+            <div class="right flex column alignItems">
+				<h2 class = 'font'>Fate Grand Order Simulation</h2>
+			<a target="_blank" href = 'https://fgo-battle-simulator.netlify.app/' class="column flex alignItems" >
+				<img src="images/preview.PNG" alt="fate grand order preview" / class = 'fgo'>
+			</a>
+				<a target="_blank" href="https://fgo-battle-simulator.netlify.app/" class="button font">Click to view!</a>			
             </div>
-    </section>
-    <section class="spotlight">
-        <a target="_blank" href = 'https://fgo-battle-simulator.netlify.app/'><div class="image"><img src="images/preview.PNG" alt="" /></a></div><div class="content">
-            <h2>Fate Grand Order<br />
-                Simulation</h2>
-            <a target="_blank" href="https://fgo-battle-simulator.netlify.app/" class="button fit primary">Click to view!</a>
-        </div>
-    </section>
-    <section class="spotlight">
-        <a target="_blank" href = 'https://mobile-games.netlify.app/'><div class="image"><img src="images/mobile-web-preview.png" alt="" /></a></div><div class="content">
-            <h2>Anime Mobile Games Collection</h2>
-            <a target="_blank" href="https://mobile-games.netlify.app/" class="button fit primary">Click to view!</a>
-        </div>
-    </section>
-    <section class="spotlight">
-        <a target="_blank" href = 'https://jackblack-simulator.netlify.app/'><div class="image"><img src="images/Indie Games Preview.PNG" alt="" /></a></div><div class="content">
-            <h2>Playing Cards</h2>
-            <a target="_blank" href="https://jackblack-simulator.netlify.app/" class="button fit primary">Click to view!</a>
-        </div>
-    </section>
-    <section class="spotlight">
-        <a target="_blank" href = 'https://indie-games-2.netlify.app/'><div class="image"><img src="images/indiegames.png" alt="" /></a></div><div class="content">
-            <h2>Database of Indie Games</h2>
+		</section>
 
-            <a target="_blank" href = 'https://indie-games-2.netlify.app/' class="button fit primary">Click to view!</a>
+	<section class = 'flex row websites section2-2'>
+		<div class="left flex column alignItems">
+	<h2 class = 'font'>Anime Mobile Games Collection</h2>
+        <a target="_blank" href = 'https://mobile-games.netlify.app/' class = 'column alignItems flex'>
+			<img src="images/mobile-web-preview.png" alt="" />
+		</a>
+            <a target="_blank" href="https://mobile-games.netlify.app/" class="button font">Click to view!</a>
+	</div>
+
+	<div class="right flex column alignItems">
+		<h2 class = 'font'>Playing Cards</h2>
+	     <a target="_blank" href = 'https://jackblack-simulator.netlify.app/' class ='column flex alignItems'>
+			<img src="images/Indie Games Preview.PNG" alt="" />
+		</a>
+
+            <a target="_blank" href="https://jackblack-simulator.netlify.app/" class="button font">Click to view!</a>
+
         </div>
     </section>
-    <section class="spotlight">
-        <a target="_blank" href = 'https://poke-mon-web.netlify.app/'><div class="image"><img src="images/pokemon.png" alt="" /></a></div><div class="content">
-            <h2>A Website All About Pokemon</h2>	
-            <a target="_blank" href = 'https://poke-mon-web.netlify.app/' class="button fit primary">Click to view!</a>
+
+
+	<section class = 'flex row websites section2-3'>
+		<div class="left flex column alignItems">
+		<h2 class = 'font'>Database of Indie Games</h2>
+        <a target="_blank" href = 'https://indie-games-2.netlify.app/' class = 'flex column alignItems'>
+				<img src="images/indiegames.png" alt="" />
+			</a>
+        <a target="_blank" href = 'https://indie-games-2.netlify.app/' class="button font">Click to view!</a>
         </div>
-    </section>
+
+		<div class="right flex column alignItems">
+			<h2 class = 'font'>A Website All About Pokemon</h2>
+        <a target="_blank" href = 'https://poke-mon-web.netlify.app/' class = 'column flex alignItems'>
+			<img src="images/pokemon.png" alt="" />
+		</a>
+            <a target="_blank" href = 'https://poke-mon-web.netlify.app/' class="button font">Click to view!</a>
+        </div>
+
+</section>
 
 </section>
 
 
 
+<section id="two" class="flex column alignItems jusifyContent">
+	<div id = 'services'>
+	<h2 class = 'font'>My Services</h2>
+
+		<ul class = 'icons'>
+			<li class="font fa-solid fa-gem"></li>
+			<li class="font fa-solid fa-heart major"></li>
+			<li class="font fa-solid fa-code"></li>
+		</ul>
+
+	<div class = 'row flex services'>
+			<li class = 'font flex jusifyContent alignItems'>I strive to present clients with projects that meet and exceed their initial vision by doing the following:</li>
+			<li class = 'font flex jusifyContent alignItems'>We start with talking about what the project will be, where I give a detailed proposal of what will occur.</li>
+			<li class = 'font flex jusifyContent alignItems'>Giving regular updates on how the product is progressing, I provide the final product after giving the proper ongoing support.</li>
+	</div>
+</div>
+</section>
+
+<script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
     <script src = 'js/main.js'></script>
 </body>
 </html>
 
 
 		<!--
-	
 
-					<section id="two" class="wrapper alt style2">
-							<header class="major spotlight">
-								<h2 id = 'websites'>My Websites</h2>
-							</header>
 
-						<section class = "spotlight">
-							<a target="_blank" href = 'https://therealestatebeast.netlify.app/'><div class="image"><img src="images/realestatebeast.gif" alt="" /></a></div><div class="content">
-								<h2>Real Estate<br />
-									Website</h2>
-								<a target="_blank" href="https://therealestatebeast.netlify.app/" class="button fit primary">Click to view!</a>
-							</div>
-							
-						</section>
-						<section class="spotlight">
-							<a target="_blank" href = 'https://fgo-battle-simulator.netlify.app/'><div class="image"><img src="images/preview.PNG" alt="" /></a></div><div class="content">
-								<h2>Fate Grand Order<br />
-									Simulation</h2>
-								<a target="_blank" href="https://fgo-battle-simulator.netlify.app/" class="button fit primary">Click to view!</a>
-							</div>
-						</section>
-						<section class="spotlight">
-							<a target="_blank" href = 'https://mobile-games.netlify.app/'><div class="image"><img src="images/mobile-web-preview.png" alt="" /></a></div><div class="content">
-								<h2>Anime Mobile Games Collection</h2>
-								<a target="_blank" href="https://mobile-games.netlify.app/" class="button fit primary">Click to view!</a>
-							</div>
-						</section>
-						<section class="spotlight">
-							<a target="_blank" href = 'https://jackblack-simulator.netlify.app/'><div class="image"><img src="images/Indie Games Preview.PNG" alt="" /></a></div><div class="content">
-								<h2>Playing Cards</h2>
-								<a target="_blank" href="https://jackblack-simulator.netlify.app/" class="button fit primary">Click to view!</a>
-							</div>
-						</section>
-						<section class="spotlight">
-							<a target="_blank" href = 'https://indie-games-2.netlify.app/'><div class="image"><img src="images/indiegames.png" alt="" /></a></div><div class="content">
-								<h2>Database of Indie Games</h2>
-				
-								<a target="_blank" href = 'https://indie-games-2.netlify.app/' class="button fit primary">Click to view!</a>
-							</div>
-						</section>
-						<section class="spotlight">
-							<a target="_blank" href = 'https://poke-mon-web.netlify.app/'><div class="image"><img src="images/pokemon.png" alt="" /></a></div><div class="content">
-								<h2>A Website All About Pokemon</h2>	
-								<a target="_blank" href = 'https://poke-mon-web.netlify.app/' class="button fit primary">Click to view!</a>
-							</div>
-						</section>
 					
-					</section>
-
-
-
-
-					<section id="three" class="wrapper style3 special">
-						<div id = 'services' class="inner">
-							<header class="major">
-								<h2>My Services</h2>
-							</header>
-							<ul class="grid features major">
-									<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-									<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-									<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-								<li><p>I strive to present clients with projects that meet and exceed their initial vision </br>by doing the following:</p></li>
-								<li><p>We start with talking about what the project will be, </br> where I give a detailed proposal of what will occur.</br></p></li>
-								<li><p>Giving regular updates on how the product is progressing, </br> I provide the final product after giving the proper ongoing support.</p></li>
-								 
-								
-								
-							</ul>
-						</div>
-					</section>
 
 	<section id="one" class="wrapper style1 special">
 						<div class="inner">

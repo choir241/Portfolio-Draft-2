@@ -39,17 +39,19 @@ html{
     font-size: 2rem;
     color: white;
     text-decoration: none;
+    line-height: 3rem;
 }
 
-body{
-    background-color: rgb(48, 7, 7);
-}
+
 
 /* Nav
    ========================================================================== */
 
 li{
     list-style-type: none;
+}
+
+.nav li{
     border-bottom: 1px solid black;
 }
 
@@ -60,11 +62,36 @@ li{
 
 header{
     background: no-repeat url('images/background.jpg') center/cover;
+    height: 100vh;
+    padding-top:9rem;
+}
+
+header.flex p{
+    font-size: 2.5rem;
+    width: 17%;
+    font-weight: bold;
+    color: black;
+    margin-bottom: -24rem;
 }
 
 #header h1 a{
-    font-size: 4rem;
+    font-size: 5rem;
+    padding: 1rem 0;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    font-weight: bold;
 }
+
+#click{
+    justify-content: flex-end;
+    height: 62vh;
+}
+#click a{
+    letter-spacing: .1rem;
+    width: 100%;
+}
+
+
 
 /* Websites
    ========================================================================== */
@@ -73,14 +100,102 @@ header{
     padding: 1rem;
 }
 
-#two h2{
+#one h2{
     font-size: 3rem;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 }
-/* About Me
-   ========================================================================== */
+
+.right, .left{
+    width: 40%;
+    padding: 2rem;
+}
+
+#one img{
+    max-width: 80%;
+}
+
+#one img:hover{
+    opacity: 75%;
+}
+
+#one img:active{
+    opacity: 100%;
+}
+
+.websites{
+    justify-content: space-around;
+}
+
+.button{
+    background: rgb(237, 207, 207);
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+
+#websites{
+    padding-bottom: 2rem;
+    width: 20%;
+}
+
+#one{
+    background-color: rgb(44, 37, 37);
+}
+
+.section2-1{
+    background-color: rgb(42, 29, 29);
+}
+
+.section2-2{
+    background-color: rgb(40, 21, 21);
+}
+
+.section2-3{
+    background-color: rgb(38, 13, 13);
+}
+
+.button:hover{
+    cursor: pointer;
+    color: black;
+    background: rgb(226, 153, 153);
+}
+
+.button:active{
+    box-shadow: 2px 0px white;
+}
 
 /* My Services
+   ========================================================================== */
+#two{
+    background: #505393;
+}
+
+.icons li{
+    margin-right: 8rem;
+    font-size: 7rem;
+}
+
+
+.icons:last-child{
+    margin-left: 8rem;
+}
+
+.services{
+    justify-content: space-around;
+}
+
+.services li{
+width: 25%;
+padding: 10rem;
+text-align: left;
+}
+
+body *{
+    border: 3px solid black;
+}
+
+/* About Me
    ========================================================================== */
 
 /* Contact
