@@ -14,3 +14,11 @@ function closeMenu(){
     menu.classList.remove('hidden')
     document.querySelector('.nav').classList.add('hidden')
 }
+
+
+// $(function() {
+//     $('#menu').on('click', function() {
+//       $(this).toggleClass('close');
+//       $('#nav').toggleClass('visible');
+//     });
+//   });

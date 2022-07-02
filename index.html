@@ -13,10 +13,14 @@
     <header id = 'header' class = 'flex column alignItems justifyContent'>
 
 		<!-- class = 'hidden' -->
-		<div class = 'flex row bars'><img src = 'images/bars.svg' alt ='' id = 'menu'></div>
+		<div class = 'flex row bars'>
+			<img src = 'images/bars.svg' id = 'menu'>
+			</div>
 		<div class = 'nav flex row hidden'>
-		<nav id = 'nav' >
-		<div class = 'flex row cross'><img src = 'images/close.svg' alt ='' id = 'close'></div>
+		<nav id = 'nav' class = 'visible' >
+			<label for="nav-control" class="toggle-button">
+		<div class = 'flex row cross'><img src= 'images/close.svg' id = 'close'></div>
+		</input>
 			<h3 class = 'font'>Menu</h3>
 			<ul id = 'ul'>    
 				<li><a class = 'font' href=#home>Home</a></li>
@@ -97,6 +101,26 @@
 		</a>
             <a target="_blank" href = 'https://poke-mon-web.netlify.app/' class="button font">Click to view!</a>
         </div>
+</section>
+
+
+
+<section class = 'flex row websites section2-4'>
+	<div class="left flex column alignItems">
+	<h2 class = 'font'>All About YuGiOh</h2>
+	<a target="_blank" href = 'https://yugioh-card-database.netlify.app/' class = 'flex column alignItems'>
+			<img src="images/yugioh.png" alt="" />
+		</a>
+	<a target="_blank" href = 'https://yugioh-card-database.netlify.app' class="button font">Click to view!</a>
+	</div>
+
+	<div class="right flex column alignItems">
+		<h2 class = 'font'>X and O Simulator</h2>
+	<a target="_blank" href = 'https://gamesinc-tictactoe.netlify.app/' class = 'column flex alignItems'>
+		<img src="images/tictactoe.png" alt="" />
+	</a>
+		<a target="_blank" href = 'https://gamesinc-tictactoe.netlify.app/' class="button font">Click to view!</a>
+	</div>
 
 </section>
 
@@ -108,17 +132,25 @@
 	<h2 class = 'font'>My Services</h2>
 	<div id = 'services' class = 'flex column'>
 
-		<ul class = 'icons flex row'>
-			<div class = 'flex justifyContent alignItems solid i1'><li class="font fa-solid fa-gem"></li></div>
-			<div class = 'flex justifyContent alignItems solid i2'><li class="font fa-solid fa-heart"></li></div>
-			<div class = 'flex justifyContent alignItems solid i3'><li class="font fa-solid fa-code"></li></div>
-		</ul>
+<table>
+	<tr>
+	<thead>
+		<th class = 'solid i1'><li class="font fa-solid fa-gem"></th>
+		<th class = 'solid i2'><li class="font fa-solid fa-heart"></li></th>
+		<th class = 'solid i3'><li class="font fa-solid fa-code"></li></th>
+	</thead>
+</tr>
+<tr>
+	<tbody>
+		<tr>
+			<td><li class = 'service font flex justifyContent alignItems s1'>I strive to present clients with projects that meet and exceed their initial vision by doing the following:</li></td>
+			<td><li class = 'service font flex justifyContent alignItems s2'>We start with talking about what the project will be, where I give a detailed proposal of what will occur.</li></td>
+			<td><li class = 'service font flex justifyContent alignItems s3'>Giving regular updates on how the product is progressing, I provide the final product after giving the proper ongoing support.</li></td>
+		</tr>
+	</tbody>
+</tr>
+</table>
 
-	<div class = 'row flex services'>
-			<li class = 'font flex justifyContent alignItems s1'>I strive to present clients with projects that meet and exceed their initial vision by doing the following:</li>
-			<li class = 'font flex justifyContent alignItems s2'>We start with talking about what the project will be, where I give a detailed proposal of what will occur.</li>
-			<li class = 'font flex justifyContent alignItems s3'>Giving regular updates on how the product is progressing, I provide the final product after giving the proper ongoing support.</li>
-	</div>
 </div>
 </section>
 
