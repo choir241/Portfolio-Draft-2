@@ -12,23 +12,29 @@
 <body>
     <header id = 'header' class = 'flex column alignItems justifyContent'>
 
+		<!-- class = 'hidden' -->
+		<div class = 'flex row bars'><img src = 'images/bars.svg' alt ='' id = 'menu'></div>
+		<div class = 'nav flex row hidden'>
+		<nav id = 'nav' >
+		<div class = 'flex row cross'><img src = 'images/close.svg' alt ='' id = 'close'></div>
+			<h3 class = 'font'>Menu</h3>
+			<ul id = 'ul'>    
+				<li><a class = 'font' href=#home>Home</a></li>
+				<li><a class = 'font' href=#websites>My Websites</a></li>
+				<li><a class = 'font' href=#services>My Services</a></li>
+				<li><a class = 'font' href=#about>About Me</a></li>
+				<li><a class = 'font' href=#contact>Contact</a></li>
+			</ul>
+		</nav>
+	</div>
 
-		<h1 class ='font'><a class = 'font' id = 'home'>Richard Choi - Web Dev</a></h1>
-		<p class = 'font'>Hello, I'm Richard, A Software Engineer! Feel free to look at what I've done so far!</p>
+		<h1 class ='font'><a class = 'container font' id = 'home'>Richard Choi - Web Dev</a></h1>
+		<p class = 'font container'>Hello, I'm Richard, A Software Engineer! Feel free to look at what I've done so far!</p>
 
-    <nav id = 'nav' class = 'hidden'>
-        <a href="#menu" class = 'font'><h3>Menu</h3></a>
-		<ul id = 'ul'>    
-			<li><a class = 'font' href=#home>Home</a></li>
-			<li><a class = 'font' href=#websites>My Websites</a></li>
-			<li><a class = 'font' href=#services>My Services</a></li>
-			<li><a class = 'font' href=#about>About Me</a></li>
-			<li><a class = 'font' href=#contact>Contact</a></li>
-		</ul>
-    </nav>
 <div class = 'flex column alignItems' id = 'click'>
 
-	<a href="#one" class="font click">Click to Learn More</a>
+	<a href="#one" class="container font click">Click to Learn More</a>
+	<a href="#one" class = 'container flex justifyContent row'><img src = 'images/arrow.svg' alt = '' id = 'arrow'></a>
 
 </div>
     </header>
@@ -46,7 +52,7 @@
 				<a target="_blank" href="https://therealestatebeast.netlify.app/" class="font button">Click to view!</a>
             </div>
             <div class="right flex column alignItems">
-				<h2 class = 'font'>Fate Grand Order Simulation</h2>
+				<h2 class = 'font'>FGO Simulation</h2>
 			<a target="_blank" href = 'https://fgo-battle-simulator.netlify.app/' class="column flex alignItems" >
 				<img src="images/capture.png" alt="fate grand order preview" / class = 'fgo'>
 			</a>
@@ -56,7 +62,7 @@
 
 	<section class = 'flex row websites section2-2'>
 		<div class="left flex column alignItems">
-	<h2 class = 'font'>Anime Mobile Games Collection</h2>
+	<h2 class = 'font'>Anime Mobile Collection</h2>
         <a target="_blank" href = 'https://mobile-games.netlify.app/' class = 'column alignItems flex'>
 			<img src="images/mobile-web-preview.png" alt="" />
 		</a>
@@ -64,7 +70,7 @@
 	</div>
 
 	<div class="right flex column alignItems">
-		<h2 class = 'font'>Playing Cards</h2>
+		<h2 class = 'font'>Playing Casino Simulation</h2>
 	     <a target="_blank" href = 'https://jackblack-simulator.netlify.app/' class ='column flex alignItems'>
 			<img src="images/Indie Games Preview.PNG" alt="" />
 		</a>
@@ -85,7 +91,7 @@
         </div>
 
 		<div class="right flex column alignItems">
-			<h2 class = 'font'>A Website All About Pokemon</h2>
+			<h2 class = 'font'>All About Pokemon</h2>
         <a target="_blank" href = 'https://poke-mon-web.netlify.app/' class = 'column flex alignItems'>
 			<img src="images/pokemon.png" alt="" />
 		</a>
