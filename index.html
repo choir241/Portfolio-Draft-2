@@ -10,7 +10,7 @@
     <noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
 </head>
 <body>
-    <header id = 'header' class = 'flex column alignItems jusifyContent'>
+    <header id = 'header' class = 'flex column alignItems justifyContent'>
 
 
 		<h1 class ='font'><a class = 'font' id = 'home'>Richard Choi - Web Dev</a></h1>
@@ -41,14 +41,14 @@
             <div class="left flex column alignItems">
 				<h2 class ='font'>Real Estate Website</h2>
                 <a target="_blank" href = 'https://therealestatebeast.netlify.app/' class="column flex alignItems" >
-                    <img src="images/realestatebeast.gif" alt="" />
+                    <img src="images/therealestatebeast.png" alt="" />
                 </a>
 				<a target="_blank" href="https://therealestatebeast.netlify.app/" class="font button">Click to view!</a>
             </div>
             <div class="right flex column alignItems">
 				<h2 class = 'font'>Fate Grand Order Simulation</h2>
 			<a target="_blank" href = 'https://fgo-battle-simulator.netlify.app/' class="column flex alignItems" >
-				<img src="images/preview.PNG" alt="fate grand order preview" / class = 'fgo'>
+				<img src="images/capture.png" alt="fate grand order preview" / class = 'fgo'>
 			</a>
 				<a target="_blank" href="https://fgo-battle-simulator.netlify.app/" class="button font">Click to view!</a>			
             </div>
@@ -98,23 +98,64 @@
 
 
 
-<section id="two" class="flex column alignItems jusifyContent">
-	<div id = 'services'>
+<section id="two" class="flex column alignItems">
 	<h2 class = 'font'>My Services</h2>
+	<div id = 'services' class = 'flex column'>
 
-		<ul class = 'icons'>
-			<li class="font fa-solid fa-gem"></li>
-			<li class="font fa-solid fa-heart major"></li>
-			<li class="font fa-solid fa-code"></li>
+		<ul class = 'icons flex row'>
+			<div class = 'flex justifyContent alignItems solid i1'><li class="font fa-solid fa-gem"></li></div>
+			<div class = 'flex justifyContent alignItems solid i2'><li class="font fa-solid fa-heart"></li></div>
+			<div class = 'flex justifyContent alignItems solid i3'><li class="font fa-solid fa-code"></li></div>
 		</ul>
 
 	<div class = 'row flex services'>
-			<li class = 'font flex jusifyContent alignItems'>I strive to present clients with projects that meet and exceed their initial vision by doing the following:</li>
-			<li class = 'font flex jusifyContent alignItems'>We start with talking about what the project will be, where I give a detailed proposal of what will occur.</li>
-			<li class = 'font flex jusifyContent alignItems'>Giving regular updates on how the product is progressing, I provide the final product after giving the proper ongoing support.</li>
+			<li class = 'font flex justifyContent alignItems s1'>I strive to present clients with projects that meet and exceed their initial vision by doing the following:</li>
+			<li class = 'font flex justifyContent alignItems s2'>We start with talking about what the project will be, where I give a detailed proposal of what will occur.</li>
+			<li class = 'font flex justifyContent alignItems s3'>Giving regular updates on how the product is progressing, I provide the final product after giving the proper ongoing support.</li>
 	</div>
 </div>
 </section>
+
+
+<section id="three" class ='flex column alignItems justifyContent'>
+<h2 id = 'about' class = 'font'>I'm a Software Engineer based in New Jersey.</h2>
+<img src="images/profile.jpg" alt="" />
+<p class = 'font'>I constantly love to learn and see myself grow into a better person, improving with consistent practice.  I also enjoy finding different ways to develop my skills.  When I'm not coding, drawing is a hobby that allows experimentation with different art styles.</p>
+</section>
+
+
+
+<footer id="contact"class = 'flex column alignItems'>
+	<h2 class = 'font'>I'm currently accepting new freelance clients!</h2>
+	<p class = 'font'>Email me at richardchoi54@gmail.com.  Or you can also shoot me a quick message here!</p>
+<form class = 'flex alignItems column' netlify method="post" action="#" netlify-honeypot="bot-field" data-netlify="true">
+
+<p class="hidden">
+<label>
+Don’t fill this out if you’re human: <input name="bot-field" />
+</label>
+</p>
+
+<label class = 'font' for="name">Name</label>
+<input class = 'font' type="text" name="name" id="name" />
+<label class = 'font' for="email">Email</label>
+<input type="text" name="email" id="email" />
+<label class = 'font' class = 'font' for="message">Message</label>
+<textarea class = 'font' name="message" id="message" rows="3"></textarea>
+<input type="submit" class = 'send font' value="Send Message" />
+</form>
+	
+	<section class = 'social flex alignItems column'>
+			<h3 class = 'font'>Social</h3>
+			<ul class = 'flex'>									
+				<li class = 'first'><a target="_blank" href="https://twitter.com/choir241" class="font fa-brands fa-twitter"></a></li>
+				<li><a target="_blank" href="https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248" class="font fa-brands fa-facebook-f"></a></li>
+				<li><a target="_blank" href="https://www.instagram.com/225kh_drw/?hl=en" class="font fa-brands fa-instagram"></a></li>
+				<li><a target="_blank" href="https://github.com/choir27" class="font fa-brands fa-github"></a></li>
+			</ul>
+	</section>
+</footer>
+
 
 <script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
     <script src = 'js/main.js'></script>
@@ -122,76 +163,10 @@
 </html>
 
 
-		<!--
-
+	
 
 					
 
-	<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2 id = 'about'>I'm a Software Engineer based in New Jersey.<br />
-								 </h2>
-<div class="profilePic image"><img class = 'profilePic' src="images/profile.jpg" alt="" /></div>
-								<p>I constantly love to learn and see myself grow into a better person, improving with consistent practice. </br>
-								  I also enjoy finding different ways to develop my skills.</br>
-									When I'm not coding, drawing is a hobby that allows experimentation with different art styles.</p>
-							</header>
-						
-						</div>
-					</section>
-
 			
 
-					<footer id="footer">
-						<section>
-	<section>
-								<p>I'm currently accepting new freelance clients!</p>
-							</section>
-							<section>
-								<p>Email me at <b>richardchoi54@gmail.com</b></p>
-							</section>
-							<section>
-								<p>Or you can also shoot me a quick message here!</p>
-							</section>
-	<form netlify method="post" action="#" netlify-honeypot="bot-field"
-	data-netlify="true">
-
-	<p class="hidden">
-		<label>
-		Don’t fill this out if you’re human: <input name="bot-field" />
-		</label>
-	</p>
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li class = 'message sendMessage'><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section id ='contact' class="split contact">
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">									
-									<li><a target="_blank" href="https://twitter.com/choir241" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a target="_blank" href="https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a target="_blank" href="https://www.instagram.com/225kh_drw/?hl=en" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a target="_blank" href="https://github.com/choir27" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-			</div>
-\ -->
+					
