@@ -264,19 +264,22 @@ font-weight: bold;
     border-bottom: 2px solid white;
 }
 
+
+.icon{
+    padding: 9rem 6rem;
+    font-size: 5rem;
+}
+
+.service, .icon{
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+}
+
 .service{
-padding: 7rem;
+    padding: 5rem;
+    width: 60%;
+    min-height: 35vh;
 }
-
-.s3{
-padding: 7rem 3rem;
-}
-
-.solid{
-    width: 26%;
-    height: 20vh;
-}
-
 
 .i1{
     background: #4a4d8e;
@@ -377,6 +380,7 @@ form label{
     background: rgb(0, 0, 0)
    }
 
+ 
 
    
   .social a.font:hover{
@@ -413,3 +417,9 @@ form label{
     margin-left: 2rem;
     margin-right: 2rem;
    }
+
+/* Media Queries
+========================================================================== */
+
+
+
