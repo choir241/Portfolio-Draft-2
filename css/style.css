@@ -55,12 +55,14 @@ html{
     justify-content: flex-end;
     position: fixed;
     height: 100%;
+    z-index: 1;
 }
 
 #menu{
     width: 5%;
 position: fixed;
 }
+
 
 #menu:hover, #close:hover{
     opacity: .80;
@@ -151,12 +153,14 @@ header.flex p{
     padding: 1rem 0;
 text-decoration: none;
 font-weight: bold;
+border-top: 2px solid white;
+border-bottom: 2px solid white;
 }
 
 
-#header h1 a{
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
+#header h1{
+  position: relative;
+  z-index: 0;
 }
 
 #click{
@@ -173,10 +177,6 @@ font-weight: bold;
 
 /* Websites
    ========================================================================== */
-
-.image{
-    padding: 1rem;
-}
 
 #one h2{
     font-size: 3rem;
@@ -318,7 +318,7 @@ font-weight: bold;
 }
 
 #three p{
-    width: 60%;
+    width: 80%;
     color: #c8ece9;
 }
 
@@ -335,6 +335,7 @@ font-weight: bold;
     box-shadow: inset 0 0 0 1000px rgba(44, 37, 37,.9);
     background: url('images/background.jpg')  no-repeat center/cover;
     padding-bottom: 2rem;
+    padding-top: 4rem;
    }
 
    .social ul li{
@@ -421,5 +422,79 @@ form label{
 /* Media Queries
 ========================================================================== */
 
+   @media all and (min-width: 300px) and (max-width: 1450px){
+
+    #header p{
+        width: 40%;
+    }
+
+   }
+
+   @media all and (min-width: 100px) and (max-width: 1120px){
+    #header .nav #nav{
+        width: 40%;
+    }
+    #ul{
+        width: 100%;
+    }
+   }
 
 
+   @media all and (min-width: 100px) and (max-width: 550px){
+   #header h1{
+    line-height: 10rem;
+   }
+   #two h2{
+    line-height: 5rem;
+   }
+   }
+
+
+   
+   @media all and (min-width: 100px) and (max-width: 846px){
+
+
+    #one img{
+        max-width: 100%;
+    }
+
+    #one section.websites div h2{
+        width: 100%;
+    }
+  
+
+    #one section{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #one section div, #one section, #two h2, #one h2{
+        width: 100%;
+    }
+
+    #one{
+        padding:1rem;
+    }
+
+    #three img{
+        width: 60%;
+    }
+
+    #menu{
+        width: 8%;
+    }
+
+    #close{
+        width: 30%;
+    }
+
+   }
+
+   /* #menu{
+    width: 5%;
+position: fixed;
+}
+
+#close{
+    width: 20%;
+} */
