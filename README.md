@@ -9,4 +9,5 @@ This project showcases the various websites that I have created and allows clien
 ![preview](https://user-images.githubusercontent.com/66279068/177621240-22362dd2-1628-445b-99c6-74e25c5c8a06.PNG) 
 ## How It's Made: Tech used: HTML, CSS and JavaScript
 
-## Examples: Take a look at these couple examples that I have in my own portfolio: The Real Estate Beast: https://therealestatebeast.netlify.app/ Anime on Mobile: https://anime-on-mobile.netlify.app/ 21 With Cards: https://jackblack-simulator.netlify.app/
+## Examples: 
+Take a look at these couple examples that I have in my own portfolio: The Real Estate Beast: https://therealestatebeast.netlify.app/ Anime on Mobile: https://anime-on-mobile.netlify.app/ 21 With Cards: https://jackblack-simulator.netlify.app/
