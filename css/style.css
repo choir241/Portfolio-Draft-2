@@ -83,18 +83,20 @@ html{
     padding-top: 1rem;  
 }
 
+#close{
+    padding: 2rem;
+}
+
 /* Nav
    ========================================================================== */
 .nav{
-    width: 100%;
     justify-content: flex-end;
     position: fixed;
-    height: 100%;
     z-index: 1;
 }
 
 #menu{
-    width: 5%;
+width: 5%;
 position: fixed;
 }
 
@@ -108,27 +110,21 @@ position: fixed;
 justify-content: flex-end;
 }
 
-#close{
-    width: 20%;
-}
 
 .bars{
     align-items: flex-start;
-    width: 100%;
     height: 34vh;
 }
 
 #ul{
-    width: 100%;
     padding-left: 0rem;
 }
 
-nav{
+nav, #ul, #navm .bars{
     width: 100%;
 }
 #nav{
     background-color:black;
-    width: 100%;
 }
 
 
@@ -139,10 +135,9 @@ text-align: left;
 }
 
 #nav li{
+    padding-right: 2rem;
     padding-left: 2rem;
-    border-bottom: 2px solid white;
     width: 100%;
-    padding-bottom: 2rem;
     margin-bottom: 2rem;
     line-height: 4rem;
 }
@@ -150,6 +145,7 @@ text-align: left;
 #nav a{
     font-size: 4rem;
 }
+
 
 li{
     list-style-type: none;
@@ -165,6 +161,9 @@ li{
     cursor: pointer;
 }
 
+.row.bars.flex{
+    width: 100%;
+}
 
 
 
@@ -467,6 +466,57 @@ form label{
     margin-right: 2rem;
    }
 
+
+   #nav.nav i, #nav.nav a, #nav.nav small{
+    color: white;
+    font-size: 3rem;
+  }
+
+  #nav{
+    position: fixed;
+    display: flex;
+    margin: 0rem;
+    padding-top: 2rem;
+    height: 0;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    background: linear-gradient(rgb(56, 52, 52), rgb(0,0,0));
+  }  
+
+  
+
+  #menu{
+    position: fixed;
+    padding: 2rem;
+    margin-top: 2rem;
+    color: white;
+    font-size: 8rem;
+    z-index: 1;
+  }
+  .menu{
+    display: flex; 
+  }
+
+  .cross{
+    justify-content: flex-start;
+  }
+
+
+  #close{
+    width:10%;
+    z-index: 1;
+    display: flex;
+    color: white;
+    font-size: 8rem;
+    padding: 2rem;
+  }
+
+ 
+
 /* Media Queries
 ========================================================================== */
 
@@ -474,9 +524,7 @@ form label{
     #menu{
         width: 10%;
     }
-    #close{
-        width: 40%;
-    }
+ 
     #header p{
         width: 40%;
     }
@@ -505,9 +553,6 @@ form label{
 
    
    @media all and (min-width: 100px) and (max-width: 846px){
-#close{
-    width: 100%;
-}
 
     #one img{
         max-width: 100%;
@@ -539,72 +584,21 @@ form label{
         width: 20%;
     }
 
-    #close{
-        width: 30%;
-    }
 
    }
 
-   /* #menu{
-    width: 5%;
-position: fixed;
-}
-
-#close{
-    width: 20%;
-} */
-
 @media all and (min-width: 100px) and (max-width: 596px){
     #close{
-        width: 80%;
+        width: 30%;
     }
 }
 
-#nav.nav i, #nav.nav a, #nav.nav small{
-    color: white;
-    font-size: 3rem;
-  }
 
-  body #nav{
-    position: fixed;
-    display: flex;
-    margin: 0rem;
-    padding-top: 2rem;
-    width: 0;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    transition: 0.5s;
-    background: linear-gradient(rgb(56, 52, 52), rgb(0,0,0));
-  }
-
-  
-
-  #menu{
-    position: fixed;
-    padding: 2rem;
-    color: white;
-    font-size: 8rem;
-    z-index: 1;
-  }
-  .menu{
-    width: 100%;
-    justify-content: flex-end;
-    display: flex; 
-  }
-
-  .cross{
-    justify-content: flex-start;
-    width: 100%;
-  }
-
-  #close{
-    z-index: 1;
-    display: flex;
-    color: white;
-    font-size: 8rem;
-    padding: 2rem;
-  }
-
- 
+@media all and (min-width: 100px) and (max-width: 400px){
+    #close{
+        width: 30%;
+    }
+    #menu{
+        width: 30%;
+    }
+}
