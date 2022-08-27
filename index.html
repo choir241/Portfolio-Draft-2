@@ -7,17 +7,16 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel = 'stylesheet' href = 'css/style.css'>
-    <noscript><link rel="stylesheet" href="css/noscript.css" /></noscript>
 </head>
 <body>
     <header id = 'header' class = 'flex column alignItems justifyContent'>
-
+		<div class = 'banner'></div>
 		<!-- class = 'hidden' -->
 		<div class = 'flex row bars'>
 			<img src = 'images/bars.svg' id = 'menu'>
 			</div>
-		<div class = 'nav flex row hidden'>
-		<nav id = 'nav' class = 'visible' >
+		<div class = 'nav flex row' id = 'nav'>
+		<nav class = 'visible' >
 			<label for="nav-control" class="toggle-button">
 		<div class = 'flex row cross'><img src= 'images/close.svg' id = 'close'></div>
 		</input>
@@ -36,9 +35,8 @@
 		<p class = 'font container'>Hello, I'm Richard, A Software Engineer! Feel free to look at what I've done so far!</p>
 
 <div class = 'flex column alignItems' id = 'click'>
-
-	<a href="#one" class="container font click">Click to Learn More</a>
-	<a href="#one" class = 'container flex justifyContent row'><img src = 'images/arrow.svg' alt = '' id = 'arrow'></a>
+	<h2>Click to Learn More!</h2>
+	<i class="fa-solid fa-angle-down arrow-down"><a href = '#one'></a></i>
 
 </div>
     </header>
@@ -84,14 +82,13 @@
 			<a target="_blank" href = 'https://illyasite.herokuapp.com/' class="button font">Click to view!</a>
 		</div>
 
-
-	<div class="right flex column alignItems">
-		<h2 class = 'font'>All About Pokemon</h2>
-	<a target="_blank" href = 'https://pokemon-anime.herokuapp.com/' class = 'column flex alignItems'>
-		<img src="images/pokemon.jpg" alt="" />
-	</a>
-		<a target="_blank" href = 'https://pokemon-anime.herokuapp.com/' class="button font">Click to view!</a>
-	</div>
+		<div class="right flex column alignItems">
+			<h2 class = 'font'>MVC Lecture</h2>
+		<a target="_blank" href = 'https://lecturemvc.netlify.app/' class = 'column flex alignItems'>
+			<img src="images/lecture.PNG" alt="" />
+		</a>
+			<a target="_blank" href = 'https://lecturemvc.netlify.app/' class="button font">Click to view!</a>
+		</div>
 
 
     </section>
@@ -107,15 +104,16 @@
 				</a>
 					<a target="_blank" href="https://anime-on-mobile.netlify.app/" class="button font">Click to view!</a>
 			</div>
-	
 
-		<div class="left flex column alignItems">
-			<h2 class = 'font'>All About YuGiOh</h2>
-			<a target="_blank" href = 'https://yugioh-card-database.netlify.app/' class = 'flex column alignItems'>
-					<img src="images/yugioh.png" alt="" />
-				</a>
-			<a target="_blank" href = 'https://yugioh-card-database.netlify.app' class="button font">Click to view!</a>
-			</div>
+			
+	<div class="right flex column alignItems">
+		<h2 class = 'font'>All About Pokemon</h2>
+	<a target="_blank" href = 'https://pokemon-anime.herokuapp.com/' class = 'column flex alignItems'>
+		<img src="images/pokemon.jpg" alt="" />
+	</a>
+		<a target="_blank" href = 'https://pokemon-anime.herokuapp.com/' class="button font">Click to view!</a>
+	</div>
+
 		
 </section>
 
@@ -132,26 +130,32 @@
 
         </div>
 
+
 		<div class="left flex column alignItems">
-			<h2 class = 'font'>Database of Indie Games</h2>
-			<a target="_blank" href = 'https://indie-games-2.netlify.app/' class = 'flex column alignItems'>
-					<img src="images/indiegames.png" alt="" />
+			<h2 class = 'font'>All About YuGiOh</h2>
+			<a target="_blank" href = 'https://yugioh-card-database.netlify.app/' class = 'flex column alignItems'>
+					<img src="images/yugioh.png" alt="" />
 				</a>
-			<a target="_blank" href = 'https://indie-games-2.netlify.app/' class="button font">Click to view!</a>
+			<a target="_blank" href = 'https://yugioh-card-database.netlify.app' class="button font">Click to view!</a>
 			</div>
-
-
-
 </section>
 
-<section class = 'flex row websites section2-4'>
+<section class = 'flex row websites section2-5'>
+
+<div class="left flex column alignItems">
+		<h2 class = 'font'>Database of Indie Games</h2>
+		<a target="_blank" href = 'https://indie-games-2.netlify.app/' class = 'flex column alignItems'>
+				<img src="images/indiegames.png" alt="" />
+			</a>
+		<a target="_blank" href = 'https://indie-games-2.netlify.app/' class="button font">Click to view!</a>
+		</div>
 
 <div class="right flex column alignItems">
 	<h2 class = 'font'>FGO Simulation</h2>
-<a target="_blank" href = 'https://fgo-battle-simulator.netlify.app/' class="column flex alignItems" >
-	<img src="images/capture.png" alt="fate grand order preview" / class = 'fgo'>
+<a target="_blank" href = 'https://fgo-app.herokuapp.com/' class="column flex alignItems" >
+	<img src="images/fgo-app.PNG" alt="fate grand order preview" / class = 'fgo'>
 </a>
-	<a target="_blank" href="https://fgo-battle-simulator.netlify.app/" class="button font">Click to view!</a>			
+	<a target="_blank" href="https://fgo-app.herokuapp.com/" class="button font">Click to view!</a>			
 </div>
 </section>
 </section>

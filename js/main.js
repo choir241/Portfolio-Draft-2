@@ -1,24 +1,23 @@
-let menu = document.querySelector('#menu')
-let close = document.querySelector('#close')
+document.querySelector('.arrow-down').addEventListener('click',scrollDown)
 
-menu.addEventListener('click',showMenu)
+function scrollDown(){
+   window.scrollTo({ top: 850, behavior: 'smooth' })
+}
+
+
+
+document.querySelector('#menu').addEventListener('click',showMenu)
 
 function showMenu(){
-    document.querySelector('.nav').classList.remove('hidden')
-    menu.classList.add('hidden')
-}
+  document.querySelector('#nav').style.width = '40%'
+  document.querySelector('#menu').style.display = 'none'
 
-close.addEventListener('click',closeMenu)
-
-function closeMenu(){
-    menu.classList.remove('hidden')
-    document.querySelector('.nav').classList.add('hidden')
 }
 
 
-// $(function() {
-//     $('#menu').on('click', function() {
-//       $(this).toggleClass('close');
-//       $('#nav').toggleClass('visible');
-//     });
-//   });
+document.querySelector('#close').addEventListener('click',hideMenu)
+
+function hideMenu(){
+  document.querySelector('#nav').style.width = '0'
+  document.querySelector('#menu').style.display = 'flex'
+}
