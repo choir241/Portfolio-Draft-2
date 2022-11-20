@@ -9,7 +9,7 @@ function scrollDown(){
 document.querySelector('#menu').addEventListener('click',showMenu)
 
 function showMenu(){
-  document.querySelector('#nav').style.height = '100vh'
+  document.querySelector('#nav').style.height = '40vh'
   document.querySelector('#menu').style.display = 'none'
 
 }
