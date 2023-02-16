@@ -6,7 +6,7 @@ This project showcases the various websites that I have created and allows clien
 <a href = 'https://choir.netlify.app/'>View the website here!</a>
 <br>
 
-![preview](https://user-images.githubusercontent.com/66279068/177621240-22362dd2-1628-445b-99c6-74e25c5c8a06.PNG) 
+![Capture](https://user-images.githubusercontent.com/66279068/219473670-5fd5432d-e3f1-478a-ac5e-206db965d6f4.PNG)
 ## How It's Made: Tech used: HTML, CSS and JavaScript
 
 ## Examples: 
