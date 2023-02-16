@@ -182,7 +182,15 @@ li{
 
 /* Header
    ========================================================================== */
+
+.box{
+    height: 42vh;
+    align-items: center;
+}
+
    .container{
+
+    flex-direction: column;
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
