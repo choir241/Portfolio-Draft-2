@@ -1,134 +1,149 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel = 'stylesheet' href = 'css/style.css'>
-</head>
-<body>
-    <header id = 'header' class = 'flex column alignItems justifyContent'>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/normalize.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<header id="intro">
+						<img src = "images/profile.png" class = "fit image profile" alt = "professional profile picture of myself">
+						<h1><img src = "images/cover.png" class = "logo image fit"> Web Dev</h1>
+						<p>Hello, I'm Richard, A Software Engineer! Feel free to look at what I've done so far!</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class = "links">
+							<li><a href = "https://github.com/choir27">View My Github</a></li>
+							<li><a href = "https://www.linkedin.com/in/richard-choir/">View My LinkedIn</a></li>
+						</ul>
+						<!-- spans for accessibility purposes-->
+						<ul class="icons">
+							<li><a href="https://twitter.com/choir241" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/225kh_drw/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<article class = "featured post">
+							<h1 class = "major">My Websites</h1>
+						</article>
+
+						<!-- Posts -->
+							<section class="posts">
+							
+								<article>
+
+									<h2>
+										<a href="https://therealestatebeast.netlify.app/">Real Estate Websites</a>
+									</h2>
+									<a href="https://therealestatebeast.netlify.app/" class="image fit">
+										<img src="images/therealestatebeast.png" alt="Image preview of The Real Estate Website Landing Page" />
+									</a>
+									<p>Demonstrates real estate services provided by the agent and the satisfaction of their previous clients through the various testimonial videos.</p>
+
+									<a href="https://therealestatebeast.netlify.app/" class="button">View Here</a>
+									<a href="https://github.com/choir27/The-Real-Estate-Beast" class="button">View Source Code</a>
+
+								</article>
+								<article>
+
+										<h2>
+											<a href="https://odd-blue-cuttlefish-coat.cyclic.app/">For Everything Priconne</a>
+										</h2>
+									<a href="https://odd-blue-cuttlefish-coat.cyclic.app/" class="image fit">
+										<img src="images/priconne.PNG" alt="Image preview of The Real Estate Website Landing Page" />
+									</a>
+									<p>Using Express to authenticated Google login, allows users to create various posts with multiple images and blocks of texts.</p>
+									
+									<a href="https://odd-blue-cuttlefish-coat.cyclic.app/" class="button">View Here</a>
+									<a href="https://github.com/choir27/For-Everything-Priconne" class="button">View Source Code</a>
+
+								</article>
+								
+							
+							</section>
 
 
-		<div class = 'flex box'>
-		<h1 class ='font'><a class = 'container font' id = 'home'>Choir- Web Dev</a></h1>
-		</div>
-		<p class = 'font container'>Hello, I'm Richard, A Software Engineer! Feel free to look at what I've done so far!</p>
 
-<div class = 'flex column alignItems' id = 'click'>
-	<h2>Click to Learn More!</h2>
-	<i class="fa-solid fa-angle-down arrow-down"><a href = '#one'></a></i>
+							<section class = "social">
+								<section><a href="https://github.com/choir27" class="button">View My GitHub</a></section>
 
-</div>
-    </header>
+								<section><a href = "https://www.linkedin.com/in/richard-choir/" class = "button">View My LinkedIn</a></section>
+							</section>
+					</div>
 
-    <section id="one" class="flex column alignItems">
-		
-        <h2 id = 'websites' class = 'font'>My Websites</h2>
+				
 
-		<section class = 'flex row websites section2-1'>
-            <div class="left flex column alignItems">
-				<h2 class ='font'>Real Estate Website</h2>
-                <a target="_blank" href = 'https://therealestatebeast.netlify.app/' class="column flex alignItems" >
-                    <img src="images/therealestatebeast.png" alt="" />
-                </a>
-				<p class = 'font'>Demonstrates real estate services provided by the agent and the satisfaction of their previous clients through the various testimonial videos.</p>
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="#">
+								<section class="fields">
+									<section class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</section>
+									<section class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</section>
+									<section class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</section>
+								</section>
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+						</section>
+						<section class="split contact">
+							<section>
+							<h3>My Social</h3>
+							<ul class="icons alt">
+								<li><a href="https://twitter.com/choir241" class="alt icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248" class="alt icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/225kh_drw/?hl=en" class="alt icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul>
+							</section>
 
-				<a target="_blank" href="https://therealestatebeast.netlify.app/" class="font button">Click to view!</a>
-            </div>
+							<section>
+								<h3>Email</h3>
+								<p>richardchoi54@gmail.com</p>
+							</section>
+						
+						</section>
+					</footer>
 
-			<div class="right flex column alignItems">
-				<h2 class = 'font'>For Everything Priconne</h2>
-			<a target="_blank" href = 'https://odd-blue-cuttlefish-coat.cyclic.app/' class = 'column flex alignItems'>
-				<img src="images/priconne.PNG" alt="" />
-			</a>
-			<p class = 'font'>Using Google login authentication, allows users to create various posts with multiple images and blocks of texts.</p>
-				<a target="_blank" href = 'https://odd-blue-cuttlefish-coat.cyclic.app/' class="button font">Click to view!</a>
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Choir24</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
 			</div>
 
-		</section>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
 
-	
-</section>
-
-
-
-<section id="two" class="flex column alignItems">
-	<h2 class = 'font'>My Services</h2>
-	<div id = 'services' class = 'flex column'>
-<div class = 'flex justifyContent'>
-<section class = 'flex justifyContent alignItems icon i1 font fa-solid fa-gem'></section>
-<section class = 'flex justifyContent alignItems service font s1'>I strive to present clients with projects that meet and exceed their initial vision by doing the following:</section>
-</div>
-<div class = 'flex justifyContent'>
-<section class = 'flex justifyContent alignItems icon i2 font fa-solid fa-heart'></section>
-<section class = 'flex justifyContent alignItems service font s2'>We start with talking about what the project will be, where I give a detailed proposal of what will occur.</section>
-</div>
-
-<div class = 'flex justifyContent'>
-<section class = 'flex justifyContent alignItems icon i3 font fa-solid fa-diamond'></section>
-<section class = 'flex justifyContent alignItems service font s3'>Giving regular updates progressing, I provide the final product after giving the proper ongoing support.</section>
-</div>
-
-
-</div>
-</section>
-<!-- on how the product is -->
-
-
-<section id="three" class ='flex column alignItems justifyContent'>
-<h2 id = 'about' class = 'font'>I'm a Software Engineer based in New Jersey.</h2>
-<img src="images/profile.jpg" alt="" />
-<p class = 'font'>Since the beginning, I have been interested in technology, especially being fascinated by making my own video game.  While exploring my love for drawing, I grew to love creating and growing my skills: which developed my passion for experimenting with code, creating new projects with code, and learning new concepts about coding and technology. </p>
-<p class = 'font'> Coming from a banking background, I also developed a love for assisting people, which I hope I can achieve through making various applications.  I wish to continue working in an environment that will promote growth and experimentation while also being a place where I can help others by constantly building applications.</p>
-</section>
-
-
-
-<footer id="contact"class = 'flex column alignItems'>
-	<h2 class = 'font'>I'm currently accepting new freelance clients and looking for new work as a software engineer!</h2>
-	<p class = 'font'>Email me at richardchoi54@gmail.com.  Or you can also shoot me a quick message here!</p>
-<form class = 'flex alignItems column' netlify method="post" action="#" netlify-honeypot="bot-field" data-netlify="true">
-
-<p class="hidden">
-<label>
-Don’t fill this out if you’re human: <input name="bot-field" />
-</label>
-</p>
-
-<label class = 'font' for="name">Name</label>
-<input class = 'font' type="text" name="name" id="name" />
-<label class = 'font' for="email">Email</label>
-<input type="text" name="email" id="email" />
-<label class = 'font' class = 'font' for="message">Message</label>
-<textarea class = 'font' name="message" id="message" rows="3"></textarea>
-<input type="submit" class = 'send font' value="Send Message" />
-</form>
-	
-	<section class = 'social flex alignItems column'>
-			<h3 class = 'font'>Social</h3>
-			<ul class = 'flex'>									
-				<li class = 'first'><a target="_blank" href="https://twitter.com/choir241" class="font fa-brands fa-twitter"></a></li>
-				<li><a target="_blank" href="https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248" class="font fa-brands fa-facebook-f"></a></li>
-				<li><a target="_blank" href="https://www.instagram.com/225kh_drw/?hl=en" class="font fa-brands fa-instagram"></a></li>
-				<li><a target="_blank" href="https://github.com/choir27" class="font fa-brands fa-github"></a></li>
-			</ul>
-	</section>
-</footer>
-
-
-<script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
-    <script src = 'js/main.js'></script>
-</body>
+	</body>
 </html>
-
-
-	
-
-					
-
-			
-
-					
