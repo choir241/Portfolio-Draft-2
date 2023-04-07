@@ -13,4 +13,4 @@ This project showcases the various websites that I have created and allows clien
 </div>
 
 ## Examples: 
-Look at these couple examples that I have in my portfolio: The Real Estate Beast: https://therealestatebeast.netlify.app/ For Everything Priconne: https://odd-blue-cuttlefish-coat.cyclic.app/
+Take a look at these couple examples that I have in my own portfolio: The Real Estate Beast: https://therealestatebeast.netlify.app/ Anime on Mobile: https://anime-on-mobile.netlify.app/ 21 With Cards: https://jackblack-simulator.netlify.app/
