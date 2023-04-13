@@ -4433,9 +4433,10 @@ input, select, textarea {
 }
 
 #wrapper #intro img.image.fit.profile{
-	height: 15rem;
-	width: 17rem;
-	border-radius: 50%;
+	border-radius: 2rem;
+	height: 30rem;
+	width: 30rem;
+	border: none;
 	background: linear-gradient(rgb(255, 255, 255),rgb(212, 188, 188),rgb(161, 135, 135), rgb(123, 104, 104));
 }
 
