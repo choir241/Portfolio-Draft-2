@@ -4,8 +4,11 @@ This project showcases the various websites that I have created and allows clien
 
 <div align = "center"><a href = 'https://choir.netlify.app/'>View the website here!</a></div>
 <br>
+<a href = 'https://choir.netlify.app/'>
 
 ![screencapture-choir-netlify-app-2023-04-14-09_35_45](https://user-images.githubusercontent.com/66279068/232059329-1047179e-49eb-4dbb-aaec-10ec37e280cd.png)
+
+</a>
 
 <div align = "center">
 ## How It's Made: Tech used: HTML, CSS and JavaScript
