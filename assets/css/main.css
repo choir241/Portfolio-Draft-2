@@ -4453,3 +4453,8 @@ input, select, textarea {
 	justify-content: center;
 	align-items: center;
 }
+
+#main section article div{
+	display: flex;
+	justify-content: space-evenly;
+}
