@@ -4426,10 +4426,9 @@ input, select, textarea {
 
 	}
 
-#wrapper div#main section.social{
+
+#wrapper div#main section.social, #intro h1, #wrapper #intro .profileContainer{
 	align-items: center;
-	justify-content: space-evenly;
-	display: flex;
 }
 
 #wrapper #intro img.image.fit.profile{
@@ -4447,35 +4446,35 @@ input, select, textarea {
 	padding-bottom: 0rem;
 }
 
-#intro h1{
+#wrapper div#main section.social, #intro h1, #main section article div, #wrapper #intro, #wrapper #intro section{
 	display: flex;
-	flex-direction: column;
+} 
+
+#wrapper #intro section, #intro h1 {
+	flex-direction :column;
+} 
+
+#intro h1, #wrapper #intro{
 	justify-content: center;
-	align-items: center;
 }
 
-#main section article div{
-	display: flex;
+#main section article div, #wrapper div#main section.social{
 	justify-content: space-evenly;
 }
 
 #wrapper #intro{
-	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 
-#wrapper #intro div{
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	width: 100%;
+#wrapper #main .post.featured h1.major{
+	margin: 0;
+	padding: 0;
 }
 
 #wrapper #intro section{
+	align-items: flex-start;
 	width: 100%;
-	display: flex;
-	justify-content: center;
 }
 
 
