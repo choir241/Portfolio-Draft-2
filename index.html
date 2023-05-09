@@ -1,175 +1,127 @@
 <!DOCTYPE HTML>
+
 <html>
 	<head>
-		<title>Portfolio</title>
+		<title>Richard's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/reset.css" />
 		<link rel="stylesheet" href="assets/css/normalize.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+		<!-- Header -->
+		<div>
+				
+		</div>
 
-				<!-- Intro -->
-					<header id="intro">
-						<section class = "profileContainer">
-							<img src = "images/profile.png" class = "fit image profile" alt = "professional profile picture of myself">
-						</section>
-						<section class = "logoContainer">
-							<img src = "images/cover.png" class = "logo image fit"><h1>Web Dev </h1>
-							<p>Feel free to look at what I've done so far!</p>
-						</section>
+			<header id="header">
+				<section class = "flex column">
+					<h1>Richard Choi</h1>
+					<div class = "imageContainer">
+						<img src = "images/profile.jpg" alt = "professional profile picture of myself">
+					</div>
 
-					</header>
+					<ul class="icons">
+						<li><a target = "_blank" href="https://twitter.com/choir241">Twitter<small class="fa-brands fa-twitter"></small></a></li>
+						<li><a target = "_blank" href="https://github.com/choir27">GitHub<small class = "fa-brands fa-github"></small></a></li>
+						<li><a target = "_blank" href="https://www.linkedin.com/in/richard-choir/">LinkedIn<small class = "fa-brands fa-linkedin"></small></a></li>
+					</ul>
+					<div id="copyright">
+						<small>Copyright &copy; 2023. All rights are reserved</small>
+					</div>
+				
+				</section>		
+				
+					
+			</header>
+			
 
+		<!-- Main -->
+			<main class = "flex column alignItems">
 
+				<article class = "flex column alignItems">
+					<h2>Greetings, I am Richard!  I'm a Frontend Engineer from Ewing, NJ</h2>
+					<div class = "flex callToAction">
+						<a target = "_blank" href="https://github.com/choir27" class="button">View My GitHub<small class = "fa-brands fa-github"></small></a>
+						<a target = "_blank" href="https://www.linkedin.com/in/richard-choir/" class="button">View My LinkedIn<small class = "fa-brands fa-linkedin"></small></a>
+					</div>
+				</article>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class = "links">
-							<li><a href = "https://github.com/choir27">View My Github</a></li>
-							<li><a href = "https://www.linkedin.com/in/richard-choir/">View My LinkedIn</a></li>
-						</ul>
-						<!-- spans for accessibility purposes-->
-						<ul class="icons">
-							<li><a href="https://twitter.com/choir241" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/225kh_drw/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						</ul>
-					</nav>
+				<!-- Two -->
+					<section>
+						<h3>My Projects</h3>
 
-				<!-- Main -->
-					<div id="main">
-						<article class = "featured post">
-							<h1 class = "major">My Websites</h1>
-						</article>
-						
-							<section>
-								<article>
-
-									<h2>
-										<a href="https://therealestatebeast.netlify.app/">Real Estate Website</a>
-									</h2>
-									<a href="https://therealestatebeast.netlify.app/" class="image fit">
-										<img src="images/therealestatebeast.png" alt="Image preview of The Real Estate Website Landing Page" />
-									</a>
-									<p>It demonstrates the real estate services provided by the agent and the satisfaction of their previous clients through the various testimonial videos.</p>
-
+							<article>
+								<div class = "flex">
+									<h2>Priconnect </h2>
 									<div>
-										<a href="https://therealestatebeast.netlify.app/" class="button">View Here</a>
-										<a href="https://github.com/choir27/The-Real-Estate-Beast" class="button">View Source Code</a>
+										<a target = "_blank" href = "https://github.com/choir27/For-Everything-Priconne/tree/build" class = "button">Code <small class = "fa-solid fa-computer"></small></a>
+										<a target = "_blank" href = "https://priconnect.netlify.app" class = "button">Demo<small class = "fa-solid fa-arrow-right-from-bracket"></small></a>
 									</div>
 									
-
-								</article>
-							</section>
-
-						<!-- Posts -->
-							<section class="posts">
-							
-						
-								<article>
-									<h2>
-										<a href = "https://kpopwired.netlify.app/">Kpop Wired</a>
-									</h2>
-									<a href = "https://kpopwired.netlify.app/" class = "image fit">
-										<img src = "images/kpopwired.png" alt = "image preview of the Kpop wired landing page"/>
-									</a>
-									<p>It introduces the world of K-pop using React and allows logged-in users created with Node/Express and MongoDB to share their favorite music tracks, listen to, and add songs to created playlists.</p>
-									<a href = "https://kpopwired.netlify.app/" class = "button">View Here</a>
-									<a href = "https://github.com/choir27/Kpop-Wired" class = "button">View Source Code</a>
-								</article>
-								<article>
-
-										<h2>
-											<a href="https://for-everything-priconne.netlify.app/">For Everything Priconne</a>
-										</h2>
-									<a href="https://for-everything-priconne.netlify.app/" class="image fit">
-										<img src="images/priconne.png" alt="Image preview of The For Everything Website Landing Page" />
-									</a>
-									<p>Using React and Node/Express to authenticate Google login, and MongoDB for storing various data, this website allows users to create various posts while also being able to like, comment, and reply to user comments.</p>
-									
-									<a href="https://for-everything-priconne.netlify.app/" class="button">View Here</a>
-									<a href="https://github.com/choir27/For-Everything-Priconne/tree/build" class="button">View Source Code</a>
-
-								</article>
+								</div>
 								
-							
-							</section>
-
-
-
-							<section class = "social">
-								<section><a href="https://github.com/choir27" class="button">View My GitHub</a></section>
-
-								<section><a href = "https://www.linkedin.com/in/richard-choir/" class = "button">View My LinkedIn</a></section>
-							</section>
-					</div>
-
-				
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<section class="fields">
-									<section class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</section>
-									
-									<section class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</section>
-									<section class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</section>
-								</section>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+								<a target = "_blank" class = "link" href = "https://priconnect.netlify.app/">
+									<img src = "images/priconne.png" alt = "website landing page preview of For Everything Priconne"/>
+								</a>
+								<ul class = "flex languages">
+									<li class = "flex alignItems">React</li>
+									<li class = "flex alignItems">MongoDB</li>
+									<li class = "flex alignItems">Node</li>
 								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section>
-							<h3>My Social</h3>
-							<ul class="icons alt">
-								<li><a href="https://twitter.com/choir241" class="alt icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="https://www.facebook.com/richard.choi.54772/about?section=bio&lst=100052959996942%3A100052959996942%3A1593271248" class="alt icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/225kh_drw/?hl=en" class="alt icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							</ul>
-							</section>
+								<p>Priconnect is a social media web application that allows users to create, like and comment posts.  Users can also interact with each other by replying on comments.</p>
+							</article>
 
-							<section>
-								<h3>Email</h3>
-								<p>richardchoi54@gmail.com</p>
-							</section>
-						
-						</section>
-					</footer>
+							<article>
+							<div class = "flex">
+								<h2>K-pop Wired</h2>
+								<div>
+									<a target = "_blank" href = "https://github.com/choir27/Kpop-Wired" class = "button">Code <small class = "fa-solid fa-computer"></small></a>
+									<a target = "_blank" href = "https://kpopwired.netlify.app/" class = "button">Demo<small class = "fa-solid fa-arrow-right-from-bracket"></small></a>
+								</div>
+								
+							</div>
+								<a target = "_blank" class = "link" href = "https://kpopwired.netlify.app/">
+								<img src = "images/kpopwired.png" alt = "website landing page preview of KpopWired"/>
+								</a>
+								<ul class = "flex languages">
+									<li class = "flex alignItems">React</li>
+									<li class = "flex alignItems">MongoDB</li>
+									<li class = "flex alignItems">Node</li>
+								</ul>
+								<p>K-pop Wired is an audio service web application where users are able to add their own music tracks. Users can also create playlists where they add music tracks from various users, includings themselves.</p>
+							</article>
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Choir24</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
 
-			</div>
+							<article>
+							<div class = "flex">
+								<h2>The Real Estate Beast</h2>
+								<div>
+									<a target = "_blank" href = "https://github.com/choir27/The-Real-Estate-Beast" class = "button">Code <small class = "fa-solid fa-computer"></small></a>
+									<a target = "_blank" href = "https://therealestatebeast.netlify.app" class = "button">Demo<small class = "fa-solid fa-arrow-right-from-bracket"></small></a>
+								</div>
+								
+							</div>
+								<a target = "_blank" class = "link" href = "https://therealestatebeast.netlify.app/">
+									<img src = "images/therealestatebeast.png" alt = "website landing page preview of The Real Estate Beast"/>
+								</a>
+								<ul class = "flex languages">
+									<li class = "flex alignItems">HTML/CSS</li>
+									<li class = "flex alignItems">JS</li>
+								</ul>
+								<p>The Real Estate Beast is a real estate website that demonstrates Carleton Badgers' history of satisfied clients, while also providing home value estimations and available homes for purchase.</p>
+							</article>
+										
+					</section>
+
+				</main>
+
+
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
 
 	</body>
 </html>
