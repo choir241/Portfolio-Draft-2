@@ -1,0 +1,340 @@
+@media (max-width: 1100px) and (orientation: landscape){
+  
+    body main{
+        left: 34rem;
+    }
+
+    main section article{
+        width: auto;
+    }   
+
+    #header{
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape){
+  
+    body main{
+        left: 30rem;
+    }
+
+    main section article{
+        width: auto;
+    }  
+
+    main section article div.flex{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    main section article div.flex h2{
+        padding-bottom: 2rem;
+    }
+
+    main section article div.flex h2 + div{
+        display: flex;
+    }
+}
+
+@media (max-width: 900px) and (orientation: landscape){
+    
+
+    body main{
+        left: 25rem;
+        padding: 1rem 3rem 1rem 1rem;
+    }
+    
+    #header{
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 800px) and (orientation: landscape){
+    body main{
+        position: static;
+    }
+    
+    .nav{
+        display: flex;
+    }
+
+    
+.hidden{
+	display: none;
+}
+
+
+    #header{
+        padding-bottom: 2rem;
+    }
+
+    #menu i{
+        background: white;
+        height: auto;
+        padding: 1rem;
+        font-size: 4rem;
+        opacity: 1;
+        color: black;
+        z-index: 1;
+    }
+
+    #menu i:hover{
+        color: #49bf9d;
+    }
+
+    #header main *{
+        z-index: 0;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;    
+        position: relative;
+    }
+
+    body main section{
+        padding: 0rem;
+        margin: 0rem;
+        width: 100%;
+    }
+
+    #header #menu{
+        z-index: 1;
+        position: fixed;
+        padding: 1rem 0rem 0rem 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+        align-self: flex-start;
+    }
+
+    body main{
+        padding: 2rem 2rem;
+        left: 0rem;
+        width: 100%;
+    }
+
+    body main article{
+        width: 100%;
+    }
+
+    .icons{
+        display: flex;
+    }
+
+    main section article div.flex h2 + div{
+        flex-direction: row;
+    }
+
+
+    body main article div.flex h2{
+        padding-bottom: 2rem;
+    }
+
+    .icons li{
+        margin-right: 4rem;
+    }
+
+
+    #header section, #header{
+        margin: 0rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imageContainer{
+        width: 30%;
+    }
+
+    body main article div.flex{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #nav{
+        background: url("images/background.png");
+        z-index: 1;
+        position: fixed;
+        padding-bottom: 2rem;
+    }
+    
+    #nav #close{
+        position: absolute;
+        padding: 1rem 0rem 0rem 1rem;
+    }
+    
+    #close i{
+        background: white;
+        height: auto;
+        padding: 1rem;
+        font-size: 4rem;
+        color: black;
+    }
+
+    #close i:hover{
+        color: #49bf9d;
+    }
+
+    #nav h1, #nav #copyright{
+        color: white;
+    }
+
+}
+
+@media (orientation: portrait){
+    .nav{
+        display: flex;  
+    }
+
+    
+.hidden{
+	display: none;
+}
+
+
+    #nav h1, #nav #copyright{
+        color: white;
+    }
+
+    #nav #close{
+        padding: 1rem 0rem 0rem 1rem;
+        position: absolute;
+    }
+
+    #close i{
+        background: white;
+        height: auto;
+        padding: 1rem;
+        font-size: 4rem;
+        color: black;
+    }
+
+    #close i:hover{
+        color: #49bf9d;
+    }
+
+
+    #nav{
+        background: url("images/background.png");
+        z-index: 1;
+        position: fixed;
+        padding-bottom: 2rem;
+    }
+
+    body main{
+        position: static;
+    }
+
+    #header{
+        padding-bottom: 2rem;
+    }
+
+    #menu i{
+        background: white;
+        height: auto;
+        padding: 1rem;
+        font-size: 4rem;
+        opacity: 1;
+        color: black;
+        z-index: 1;
+    }
+
+    #menu i:hover{
+        color: #49bf9d;
+    }
+
+    #header main *{
+        z-index: 0;
+    }
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;    
+        position: relative;
+    }
+
+    body main section{
+        padding: 0rem;
+        margin: 0rem;
+        width: 100%;
+    }
+
+    #header #menu{
+        z-index: 1;
+        position: fixed;
+        padding: 1rem 0rem 0rem 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+        align-self: flex-start;
+    }
+
+    body main{
+        padding: 2rem 2rem;
+        left: 0rem;
+        width: 100%;
+    }
+
+    body main article{
+        width: 100%;
+    }
+
+    .icons{
+        display: flex;
+    }
+
+    body main article div.flex{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    body main article div.flex h2{
+        padding-bottom: 2rem;
+    }
+
+    .icons li{
+        margin-right: 4rem;
+    }
+
+
+    #header section, #header{
+        margin: 0rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imageContainer{
+        width: 30%;
+    }
+
+    body main article div.flex.callToAction{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+}

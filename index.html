@@ -8,16 +8,45 @@
 		<link rel="stylesheet" href="assets/css/reset.css" />
 		<link rel="stylesheet" href="assets/css/normalize.css" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/mediaQuery.css" />
 	</head>
 	<body>
 
 		<!-- Header -->
-		<div>
-				
-		</div>
 
-			<header id="header">
+		<aside id="nav" class = "hidden nav">	
+					
+			<div id = "close">
+				<i class = "button fa-solid fa-xmark"></i>
+			</div>
+				<section class = "flex column alignItems justifyContent">
+
+					<h1>Richard Choi</h1>
+					<div class = "imageContainer">
+						<img src = "images/profile.jpg" alt = "professional profile picture of myself">
+					</div>
+
+					<ul class="icons">
+						<li><a target = "_blank" href="https://twitter.com/choir241">Twitter<small class="fa-brands fa-twitter"></small></a></li>
+						<li><a target = "_blank" href="https://github.com/choir27">GitHub<small class = "fa-brands fa-github"></small></a></li>
+						<li><a target = "_blank" href="https://www.linkedin.com/in/richard-choir/">LinkedIn<small class = "fa-brands fa-linkedin"></small></a></li>
+					</ul>
+					<div id="copyright">
+						<small>Copyright &copy; 2023. All rights are reserved</small>
+					</div>
+				
+				</section>		
+				
+					
+			</aside>
+		
+			<header id="header">	
+					
+			<div id = "menu" class = "hidden">
+				<i class = "button fa-solid fa-bars"></i>
+			</div>
 				<section class = "flex column">
+
 					<h1>Richard Choi</h1>
 					<div class = "imageContainer">
 						<img src = "images/profile.jpg" alt = "professional profile picture of myself">
@@ -116,12 +145,13 @@
 										
 					</section>
 
-				</main>
+			</main>
 
 
 
 		<!-- Scripts -->
 		<script src="https://kit.fontawesome.com/d0e0071c1c.js" crossorigin="anonymous"></script>
+		<script src="assets/js/main.js"></script>
 
 	</body>
 </html>

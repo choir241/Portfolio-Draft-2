@@ -59,8 +59,8 @@ a{
 /*******************************************/
 
 main .callToAction{
-	width: 70%;
-	justify-content: space-between;
+	width: 100%;
+	justify-content: space-evenly;
 }
 
 .imageContainer{
@@ -80,11 +80,15 @@ main article img{
 }
 
 body main{
-	padding: 2rem 6rem 2rem 6rem;
 	width: 70%;
-	left: 37rem;
-	z-index: 1;
-	position: relative;
+	padding: 2rem 6rem 2rem 6rem;
+	left: 35rem;
+	position:absolute;
+}
+
+body{
+	display: flex;
+	justify-content: space-between;
 }
 
 main section, main article{
@@ -135,6 +139,11 @@ main section{
 	margin-top: 4rem;
 }
 
+
+.fa-solid.fa-bars{
+	font-size: 3rem;
+}
+
 main section article div.flex{
 	align-items: flex-end;
 	padding: 2rem 0rem 3rem 0rem;
@@ -145,9 +154,6 @@ main section article div div .button{
 	margin-right: 1rem;
 }
 
-body{
-	justify-content: space-around;
-}
 
 /******************************************
 /* HEADER
@@ -163,7 +169,7 @@ body{
 	color: white;
 	height: 100%;
 	width: 30%;
-	padding: 2em 3em 3em 3em;
+	padding-left: 2rem;
 }
 
 #header section{
@@ -200,6 +206,7 @@ body{
 #header section{
 	align-items: flex-start;
 }
+
 
 /******************************************
 /* BUTTONS
@@ -312,8 +319,10 @@ input[type="button"].large,
 	display: flex;
 }
 
+.nav{
+	display: none;
+}
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
-
+.hidden{
+	display: none;
+}

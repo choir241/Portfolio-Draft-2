@@ -1,6 +1,10 @@
-var rightSection = document.querySelector('#header');
+document.querySelector("#menu").addEventListener("click", ()=>{
+    document.querySelector("#nav").classList.add("flex")
+    document.querySelector("#nav").classList.remove("hidden")
+})
 
-window.addEventListener('scroll', function() {
-  var scrollPosition = window.pageYOffset;
-  rightSection.style.backgroundPositionY = -scrollPosition + 'px';
-});
+
+document.querySelector("#close").addEventListener("click", ()=>{
+    document.querySelector("#nav").classList.add("hidden")
+    document.querySelector("#nav").classList.remove("flex")
+})
