@@ -5,8 +5,7 @@ This project showcases the various websites that I have created and allows clien
 <div align = "center"><a href = 'https://choir.netlify.app/'>View the website here!</a></div>
 <br>
 <a href = 'https://choir.netlify.app/'>
-
-![screencapture-choir-netlify-app-2023-04-14-09_35_45](https://user-images.githubusercontent.com/66279068/232059329-1047179e-49eb-4dbb-aaec-10ec37e280cd.png)
+<img width="949" alt="Screenshot 2023-05-11 170544" src="https://github.com/choir27/Portfolio-Draft-2/assets/66279068/7194325e-9386-49b9-8533-dfe40a5fa7a8">
 
 </a>
 
@@ -15,4 +14,4 @@ This project showcases the various websites that I have created and allows clien
 </div>
 
 ## Examples: 
-Take a look at these couple examples that I have in my own portfolio: The Real Estate Beast: https://therealestatebeast.netlify.app/ K-pop Wired: https://kpopwired.netlify.app/ For Everything Priconne: https://odd-blue-cuttlefish-coat.cyclic.app/
+Take a look at these couple examples that I have in my own portfolio: The Real Estate Beast: https://therealestatebeast.netlify.app/ K-pop Wired: https://kpopwired.netlify.app/ For Everything Priconne: https://priconnect.netlify.app/
