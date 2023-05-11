@@ -190,6 +190,14 @@
         color: white;
     }
 
+    body main article div.flex.callToAction{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 @media (orientation: portrait){
