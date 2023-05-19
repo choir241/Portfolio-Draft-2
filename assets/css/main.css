@@ -80,14 +80,13 @@ main article img{
 }
 
 body main{
-	width: 70%;
+	align-self: flex-end;
 	padding: 2rem 6rem 2rem 6rem;
-	left: 35rem;
-	position:absolute;
 }
 
 body{
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 }
 
@@ -325,4 +324,10 @@ input[type="button"].large,
 
 .hidden{
 	display: none;
+}
+
+
+
+body header + main{
+	width: 70%;
 }
