@@ -38,9 +38,6 @@
     }
 }
 
-@media (max-width: 900px) and (orientation: landscape){
-    
-
     body main{
         left: 25rem;
         padding: 1rem 3rem 1rem 1rem;
@@ -59,7 +56,7 @@
     .nav{
         display: flex;
     }
-
+    
     
 .hidden{
 	display: none;
@@ -206,6 +203,9 @@
     }
 
     
+    body header + main {
+        width: 100%;
+    }
 .hidden{
 	display: none;
 }
