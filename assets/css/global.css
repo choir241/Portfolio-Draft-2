@@ -1,0 +1,233 @@
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******************************************
+/* FONT STYLES
+/*******************************************/
+
+a{
+    text-decoration: none;
+}
+
+
+html{
+	font-size: 62.5%;
+}
+
+p{
+	font-size: 2rem;
+}
+
+h1{
+	font-size: 5rem;
+}
+
+h2{
+	font-size: 4rem;
+}
+
+h3{
+	font-size: 3rem;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/******************************************
+/* HEADER STYLES
+/*******************************************/
+
+header{
+	padding: 2rem;
+	height: auto;
+	margin-bottom: 4rem;
+	background: url("./images/background.png") no-repeat center/cover;
+}
+
+#header a, header small, header h1, header p, header i{
+	color: white;
+}
+
+main section a{
+	color: black;
+}
+
+#copyright small{
+	font-size: 1.5rem;
+}
+
+#copyright{
+	margin-top: 4rem;
+}
+
+#menu{
+	background: rgb(27, 25, 25);
+	padding: 1rem;
+	border-radius: 5px;
+	font-size: 4rem;
+	align-self: flex-start;
+	position: fixed;
+}
+
+#menu:hover{
+	color: #49bf9d;
+	cursor: pointer;
+}
+
+/******************************************
+/* PROJECT
+/*******************************************/
+
+.projectImgContainer{
+	padding: 1rem;
+}
+
+.projectImgContainer:hover{
+	opacity: 80%;
+}
+
+.projectImgContainer{
+	width: 80%;
+}
+
+#project article{
+	margin-bottom: 4rem;
+}
+
+section article{
+	width: 45%;
+	min-width: 45%;
+}
+
+#project section{
+	padding: 2rem;
+}
+
+#project h3{
+	margin-bottom: 2rem;
+}
+
+#project .width-100{
+	width: 100%;
+	margin: 0rem;
+}
+
+#project{
+	padding: 1rem;
+}
+
+#project .fullWidthProject{
+	width: 25%;
+}
+
+#project .fullWidthParagraph{
+	width: 60%;
+}
+
+#project p{
+	padding: 2rem;
+	line-height: 2.5rem;
+}
+
+#project .buttons{
+	width: 55%;
+}
+
+.projectImgContainer img{
+	width: 100%;
+}
+
+.languages li{
+	margin-right: 2rem;
+	font-size: 2rem;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	padding: 1rem 2rem;
+}
+
+.languages{
+	padding: 1.5rem 0rem;
+}
+
+
+/******************************************
+/* MENU
+/*******************************************/
+
+.hidden{
+	display: none;
+}
+
+.menu{
+	position: fixed;
+	background: black;
+	padding: 2rem;
+	width: 30%;
+	height: 40%;
+	margin-top: 12rem;
+	border-radius: 10px;
+	z-index: 1;
+}
+
+.menu a{
+	font-size: 3rem;
+}
+
+.menu h2{
+	font-size: 4rem;
+	color: white;
+}
+
+.menu ul li:first-child{
+	margin-bottom: 2rem;
+}
+
+.menu ul li{
+	margin-bottom: 1.5rem;
+}
