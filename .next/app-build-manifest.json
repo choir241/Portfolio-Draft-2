@@ -1,0 +1,59 @@
+{
+  "pages": {
+    "/_not-found": [
+      "static/chunks/webpack-afc8605a34229070.js",
+      "static/chunks/fd9d1056-f9e0d63efa439987.js",
+      "static/chunks/472-e0d4e32aa5e7adbb.js",
+      "static/chunks/main-app-147c2c21c0b5d4a8.js",
+      "static/chunks/app/_not-found-bf64131684c16c62.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-afc8605a34229070.js",
+      "static/chunks/fd9d1056-f9e0d63efa439987.js",
+      "static/chunks/472-e0d4e32aa5e7adbb.js",
+      "static/chunks/main-app-147c2c21c0b5d4a8.js",
+      "static/chunks/994-88fee5a0e3ccf675.js",
+      "static/chunks/app/layout-06963e2fc768a8b4.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-afc8605a34229070.js",
+      "static/chunks/fd9d1056-f9e0d63efa439987.js",
+      "static/chunks/472-e0d4e32aa5e7adbb.js",
+      "static/chunks/main-app-147c2c21c0b5d4a8.js",
+      "static/css/6a18fc1313d7c5af.css",
+      "static/chunks/app/page-67e9f41cc8fa25c6.js"
+    ],
+    "/allProjects/page": [
+      "static/chunks/webpack-afc8605a34229070.js",
+      "static/chunks/fd9d1056-f9e0d63efa439987.js",
+      "static/chunks/472-e0d4e32aa5e7adbb.js",
+      "static/chunks/main-app-147c2c21c0b5d4a8.js",
+      "static/css/edcbc35fa64478aa.css",
+      "static/chunks/app/allProjects/page-660a5e08fe15e7d0.js"
+    ],
+    "/allProjects/layout": [
+      "static/chunks/webpack-afc8605a34229070.js",
+      "static/chunks/fd9d1056-f9e0d63efa439987.js",
+      "static/chunks/472-e0d4e32aa5e7adbb.js",
+      "static/chunks/main-app-147c2c21c0b5d4a8.js",
+      "static/chunks/994-88fee5a0e3ccf675.js",
+      "static/chunks/app/allProjects/layout-a07556710dab238b.js"
+    ],
+    "/aboutMe/page": [
+      "static/chunks/webpack-afc8605a34229070.js",
+      "static/chunks/fd9d1056-f9e0d63efa439987.js",
+      "static/chunks/472-e0d4e32aa5e7adbb.js",
+      "static/chunks/main-app-147c2c21c0b5d4a8.js",
+      "static/css/edcbc35fa64478aa.css",
+      "static/chunks/app/aboutMe/page-bcc88fe53205df6b.js"
+    ],
+    "/aboutMe/layout": [
+      "static/chunks/webpack-afc8605a34229070.js",
+      "static/chunks/fd9d1056-f9e0d63efa439987.js",
+      "static/chunks/472-e0d4e32aa5e7adbb.js",
+      "static/chunks/main-app-147c2c21c0b5d4a8.js",
+      "static/chunks/994-88fee5a0e3ccf675.js",
+      "static/chunks/app/aboutMe/layout-8a33e787d5128f74.js"
+    ]
+  }
+}
