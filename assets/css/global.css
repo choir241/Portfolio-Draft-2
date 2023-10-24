@@ -75,6 +75,10 @@ h3{
 	font-size: 3rem;
 }
 
+h4{
+	font-size: 2rem;
+}
+
 a{
 	text-decoration: none;
 }
@@ -230,4 +234,65 @@ section article{
 
 .menu ul li{
 	margin-bottom: 1.5rem;
+}
+
+
+/******************************************
+/* About
+/*******************************************/
+
+#about{
+	padding: 2rem;
+}
+
+#about .imageContainer{
+	width: 30%;
+	margin-top: 2rem;
+}
+
+#about .imageContainer img{
+	width: 100%;
+}
+
+#about .images{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#volunteer h3, #documentation h3, #meetup h3{
+	margin: 4rem 0rem 1rem 0rem;
+}
+
+#volunteer p, #documentation p, #meetup p{
+	line-height: 3rem;
+	margin-bottom: 2rem;
+	width: 80%;
+	text-align: center;
+}
+
+#volunteer i{
+	margin-left: 1rem;
+}
+
+#volunteer .social{
+	width: 60%;
+}
+
+#documentation{
+	margin-top: 6rem;
+}
+
+#documentation .imageContainer{
+	width: 30%;
+	margin-bottom: 4rem;
+}
+
+#meetup .buttons{
+	width: 60%;	
+}
+
+#meetup h4{
+	font-weight: bold;
+	margin: 2rem 0rem;
 }
