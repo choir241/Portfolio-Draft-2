@@ -17,7 +17,7 @@ export default function Project(props: Content){
     const technologyList:React.JSX.Element[] = props.projectTech.map((techLanguage)=><li className = "flex alignItems" key = {techLanguage}>{techLanguage}</li>) 
 
     return(
-        <article className = {`${styles["align-center"]} ${styles["flex-col"]} ${styles.flex} ${props.classNames}`}>
+        <article className = {`${styles["align-center"]} ${styles["flex-col"]} ${styles.flex} ${props.classNames}`} id = "article">
             <section className = {`${props.classNames ? "fullWidth" : ""} ${styles.flex} ${styles["justify-between"]} ${styles["align-center"]}`}>
                 <h2>{props.projectName}</h2>
 				    <div className = {`${props.classNames ? "fullWidthProject" : "buttons"} ${styles.flex} ${styles["justify-between"]} ${styles["align-center"]}`}>

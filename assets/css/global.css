@@ -90,7 +90,6 @@ a{
 
 header{
 	padding: 2rem;
-	height: auto;
 	margin-bottom: 4rem;
 	background: url("./images/background.png") no-repeat center/cover;
 }
@@ -116,7 +115,6 @@ main section a{
 	padding: 1rem;
 	border-radius: 5px;
 	font-size: 4rem;
-	align-self: flex-start;
 	position: fixed;
 }
 

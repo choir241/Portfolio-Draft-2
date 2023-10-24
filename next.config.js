@@ -1,3 +1,6 @@
+// relevant part of 'next.config.js'
+const path = require('path');
+
 module.export = {
     experimental: {
         async headers(){

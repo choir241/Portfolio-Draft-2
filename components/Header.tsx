@@ -2,25 +2,13 @@
 import React from "react"
 import profileImg from "../images/profile.jpg"
 import styles from "../assets/css/main.module.css"
-import {useStore} from "../middleware/State"
-import Nav from "./Nav"
 
 export default function Header(){
  
-    const menu = useStore((state)=>state.menu);
-    const setMenu = useStore((state)=>state.setMenu);
-
-	function toggleMenu(check: boolean){
-		check ? setMenu(false) : setMenu(true);
-	}
-
 	const date = new Date();
 
     return(
-        <header id = "header" className = {`${styles.flex} ${styles["justify-between"]} ${styles["align-center"]}`}>	
-				<i id = "menu" className = {`${menu? "fa-solid fa-xmark" : "fa-solid fa-bars"}`} onClick = {(e)=>toggleMenu(menu)}></i>
-
-				<Nav/>
+        <header id = "header" className = {`${styles.flex} ${styles["justify-between"]} ${styles["align-center"]}`}>			
 
 				<ul className={styles.icons}>
 					<li><h1>Richard Choi</h1></li>

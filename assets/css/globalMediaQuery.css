@@ -1,0 +1,21 @@
+@media(max-width:1200px){
+    #project .projects{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    #project .projects article, #project .projects p{
+        width: 100%;
+    }
+
+    #project .projects section{
+        width: 80%;
+    }
+
+    #project .projects #article .fullWidthProject,  #project .projects #article .buttons{
+        width: 40%;
+    }
+
+}
+
+

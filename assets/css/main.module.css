@@ -65,7 +65,7 @@ header .imageContainer{
 }
 
 .social{
-	width: 40%;
+	width: 80%;
 	margin-top: 4rem;
 }
 
@@ -136,6 +136,32 @@ header .imageContainer{
 
 
 /******************************************
-/* PROJECTS
+/* Media Query
 /*******************************************/
+
+/* @media(max-width:1200px){
+	.social{
+        width: 100%;
+    }
+} */
+
+/******************************************
+/* Nav
+/*******************************************/
+
+.link{
+	font-size: 3rem;
+}
+
+.bars, .link{
+	color: white;
+}
+
+.bars{
+	margin-top: 2rem;
+}
+
+.nav{
+	margin-left: 2rem;
+}
 
