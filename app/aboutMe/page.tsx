@@ -1,7 +1,9 @@
 import "../../assets/css/global.css"
 import styles from "../../assets/css/main.module.css"
+import "../../assets/css/globalMediaQuery.css"
 import Header from "../../components/Header"
 import Image from "../../components/Image"
+import Nav from "../../components/Nav"
 import dashboard from "../../images/linguisticsJusticeLeague2.png"
 import assignment from "../../images/linguisticsJusticeLegue3.png"
 import translated from "../../images/linguisticsJusticeLeague4.png"
@@ -15,6 +17,8 @@ import documentation1 from "../../images/documentation1.png"
 export default function AboutMe(){
     return(
         <main>
+            <Nav/>
+
             <Header/>
 
             <section id = "about">

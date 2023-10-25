@@ -18,7 +18,7 @@ export default function Project(props: Content){
 
     return(
         <article className = {`${styles["align-center"]} ${styles["flex-col"]} ${styles.flex} ${props.classNames}`} id = "article">
-            <section className = {`${props.classNames ? "fullWidth" : ""} ${styles.flex} ${styles["justify-between"]} ${styles["align-center"]}`}>
+            <section className = {`${props.classNames ? "fullWidth" : ""} ${styles.flex} ${styles["justify-between"]} ${styles["align-center"]} title`}>
                 <h2>{props.projectName}</h2>
 				    <div className = {`${props.classNames ? "fullWidthProject" : "buttons"} ${styles.flex} ${styles["justify-between"]} ${styles["align-center"]}`}>
 				    	<a target = "_blank" href = {props.codeURL} className = {styles.button}>Code<small className = "fa-solid fa-computer"></small></a>

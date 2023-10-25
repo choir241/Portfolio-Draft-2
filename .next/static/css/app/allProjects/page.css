@@ -1,0 +1,534 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./assets/css/main.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************/
+/******************************************
+/* LAYOUT STYLES
+/*******************************************/
+
+.main_flex__DzVMV{
+	display: flex;
+}
+
+.main_flex-wrap__SvCEg{
+	flex-wrap: wrap;
+}
+
+.main_flex-col__Ozvnm{
+	flex-direction: column;
+}
+
+.main_justify-center__kb7Jf{
+	justify-content: center;
+}
+
+.main_justify-between__boI9I{
+	justify-content: space-between;
+}
+
+.main_justify-evenly__gWLR0{
+	justify-content: space-evenly;
+}
+
+.main_align-center__VeK_1{
+	align-items: center;
+}
+
+/******************************************
+/* HEADER STYLES
+/*******************************************/
+
+header .main_imageContainer__CPWcp{
+	width: 20%;
+}
+
+
+.main_callToAction__Rhs0N{
+	height: 30vh;
+}
+
+.main_imageContainer__CPWcp img{
+	border-radius: 5px;
+	width: 100%;
+}
+
+.main_icons__Ybb3Y a{
+	font-size: 3rem;
+}
+
+.main_icons__Ybb3Y small{
+	margin-left: 1rem;
+}
+
+.main_icons__Ybb3Y a:hover, .main_icons__Ybb3Y small:hover{
+	color: #49bf9d;
+}
+
+.main_icons__Ybb3Y li{
+	margin-top: 1rem;
+}
+
+.main_social__VEj3Y{
+	width: 80%;
+	margin-top: 4rem;
+}
+
+/******************************************
+/* BUTTONS
+/*******************************************/
+
+.main_button__4zvZW small{
+	margin-left: 1rem;
+	font-size: 2.5rem;
+}
+
+.main_button__4zvZW{
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	background-color: transparent;
+	border-radius: 0.35em;
+	border: solid 3px #efefef;
+	color: black;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	line-height: 2.75em;
+	font-size: 2rem;
+	padding: 0 1.5em;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+.main_button__4zvZW:hover {
+	border-color: #49bf9d;
+	color: #49bf9d;
+}
+
+.main_button__4zvZW:active {
+	background-color: rgba(73, 191, 157, 0.1);
+	border-color: #49bf9d;
+	color: #49bf9d;
+}
+
+.main_button__4zvZW.main_icon__6imUc {
+	padding-left: 1.35em;
+}
+
+.main_button__4zvZW.main_icon__6imUc:before {
+	margin-right: 0.5em;
+}
+
+.main_button__4zvZW.main_fit__7fS4U {
+	min-width: 0;
+	width: 100%;
+}
+
+.main_button__4zvZW.main_small__DLtyZ {
+	font-size: 0.8em;
+}
+
+.main_button__4zvZW.main_large__5sAjY {
+	font-size: 1.35em;
+}
+
+
+/******************************************
+/* Media Query
+/*******************************************/
+
+/* @media(max-width:1200px){
+	.social{
+        width: 100%;
+    }
+} */
+
+/******************************************
+/* Nav
+/*******************************************/
+
+.main_link__XN810{
+	font-size: 3rem;
+}
+
+.main_bars__fW7_o, .main_link__XN810{
+	color: white;
+}
+
+.main_bars__fW7_o{
+	margin-top: 2rem;
+}
+
+.main_nav__NZyIU{
+	margin-left: 2rem;
+}
+
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./assets/css/global.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******************************************
+/* FONT STYLES
+/*******************************************/
+
+a{
+    text-decoration: none;
+}
+
+
+html{
+	font-size: 62.5%;
+}
+
+p{
+	font-size: 2rem;
+}
+
+h1{
+	font-size: 5rem;
+}
+
+h2{
+	font-size: 4rem;
+}
+
+h3{
+	font-size: 3rem;
+}
+
+h4{
+	font-size: 2rem;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/******************************************
+/* HEADER STYLES
+/*******************************************/
+
+header{
+	padding: 2rem;
+	margin-bottom: 4rem;
+	background: url(/_next/static/media/background.52620106.png) no-repeat center/cover;
+}
+
+#header a, header small, header h1, header p, header i{
+	color: white;
+}
+
+main section a{
+	color: black;
+}
+
+#copyright small{
+	font-size: 1.5rem;
+}
+
+#copyright{
+	margin-top: 4rem;
+}
+
+#menu{
+	background: rgb(27, 25, 25);
+	padding: 1rem;
+	border-radius: 5px;
+	font-size: 4rem;
+	position: fixed;
+}
+
+#menu:hover{
+	color: #49bf9d;
+	cursor: pointer;
+}
+
+/******************************************
+/* PROJECT
+/*******************************************/
+
+.projectImgContainer{
+	padding: 1rem;
+}
+
+.projectImgContainer:hover{
+	opacity: 80%;
+}
+
+.projectImgContainer{
+	width: 80%;
+}
+
+#project article{
+	margin-bottom: 4rem;
+}
+
+section article{
+	width: 45%;
+	min-width: 45%;
+}
+
+#project section{
+	padding: 2rem;
+}
+
+#project h3{
+	margin-bottom: 2rem;
+}
+
+#project .width-100{
+	width: 100%;
+	margin: 0rem;
+}
+
+#project{
+	padding: 1rem;
+}
+
+#project .fullWidthProject{
+	width: 25%;
+}
+
+#project .fullWidthParagraph{
+	width: 60%;
+}
+
+#project p{
+	padding: 2rem;
+	line-height: 2.5rem;
+}
+
+#project .buttons{
+	width: 55%;
+}
+
+.projectImgContainer img{
+	width: 100%;
+}
+
+.languages li{
+	margin-right: 2rem;
+	font-size: 2rem;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	padding: 1rem 2rem;
+}
+
+.languages{
+	padding: 1.5rem 0rem;
+}
+
+
+/******************************************
+/* MENU
+/*******************************************/
+
+.hidden{
+	display: none;
+}
+
+.menu{
+	position: fixed;
+	background: black;
+	padding: 2rem;
+	width: 30%;
+	height: 40%;
+	margin-top: 12rem;
+	border-radius: 10px;
+	z-index: 1;
+}
+
+.menu a{
+	font-size: 3rem;
+}
+
+.menu h2{
+	font-size: 4rem;
+	color: white;
+}
+
+.menu ul li:first-child{
+	margin-bottom: 2rem;
+}
+
+.menu ul li{
+	margin-bottom: 1.5rem;
+}
+
+
+/******************************************
+/* About
+/*******************************************/
+
+#about{
+	padding: 2rem;
+}
+
+#about .imageContainer{
+	width: 30%;
+	margin-top: 2rem;
+}
+
+#about .imageContainer img{
+	width: 100%;
+}
+
+#about .images{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+#volunteer h3, #documentation h3, #meetup h3{
+	margin: 4rem 0rem 1rem 0rem;
+}
+
+#volunteer p, #documentation p, #meetup p{
+	line-height: 3rem;
+	margin-bottom: 2rem;
+	width: 80%;
+	text-align: center;
+}
+
+#volunteer i{
+	margin-left: 1rem;
+}
+
+#volunteer .social{
+	width: 60%;
+}
+
+#documentation{
+	margin-top: 6rem;
+}
+
+#documentation .imageContainer{
+	width: 30%;
+	margin-bottom: 4rem;
+}
+
+#meetup .buttons{
+	width: 60%;	
+}
+
+#meetup h4{
+	font-weight: bold;
+	margin: 2rem 0rem;
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./assets/css/globalMediaQuery.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+@media(max-width: 1300px){
+    #about #volunteer .social, #about #meetup .buttons{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:1200px){
+    #project .projects{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    #project .projects article, #project .projects p{
+        width: 100%;
+    }
+
+    #project .projects section{
+        width: 80%;
+    }
+
+    #project .projects #article .fullWidthProject,  #project .projects #article .buttons{
+        width: 40%;
+    }
+
+}
+
+
+@media (max-width:1100px){
+    #header{
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 90vh;
+    }
+}
+
+@media (max-width: 800px){
+    #article .fullWidthProject, #article .buttons, #article .languages{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px){
+    #nav .icons{
+        width: 100%;
+    }
+
+    #article .title{
+        flex-direction: column;
+    }
+
+    #article .title h2{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 1600px){
+    #header section .button{
+        font-size: 8rem;
+    }
+
+    #header ul li h1{
+        font-size: 8rem;
+    }
+}

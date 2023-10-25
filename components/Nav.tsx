@@ -23,7 +23,7 @@ export default function Nav(){
                 <li><a className = {styles.link} href = "/allProjects">All Projects</a></li>
             </ul>
 
-            <ul className = {`${styles.flex} ${styles["justify-between"]} ${styles.social}`}>
+            <ul className = {`${styles.flex} ${styles["justify-between"]} ${styles.social} icons`}>
                 <li><a className = {styles.link} target = "_blank" href="https://github.com/choir27"><small className = "fa-brands fa-github"><span className = "hidden">My Github</span></small></a></li>
                 <li><a className = {styles.link} target = "_blank" href="https://www.linkedin.com/in/richard-choir/"><small className = "fa-brands fa-linkedin"><span className = "hidden">My LinkedIn</span></small></a></li>
                 <li><a className = {styles.link} target = "_blank" href = "https://docs.google.com/document/d/1Gw7hqvLquVzKwg7fD3sfF1NGvoG0dFRzTI5rR-yEPkw/edit?usp=sharing"><small className = "fa-solid fa-file-lines"><span className = "hidden">My Resume</span></small></a></li>

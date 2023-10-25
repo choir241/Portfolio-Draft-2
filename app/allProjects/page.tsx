@@ -1,7 +1,9 @@
 import Header from "../../components/Header"
 import Project from "../../components/Project"
+import Nav from "../../components/Nav"
 import "../../assets/css/global.css"
 import styles from "../../assets/css/main.module.css"
+import "../../assets/css/globalMediaQuery.css"
 import priconne from "../../images/priconne.png"
 import kPop from "../../images/kpopwired.png"
 import theRealEstate from "../../images/therealestatebeast.png"
@@ -10,12 +12,14 @@ import autoAligners from "../../images/autoaligners.png"
 export default function AllProjects(){
     return(
         <main>
+            <Nav/>
+
             <Header/>
 
             <section id = "project">
                 <h3>All My Projects</h3>
 
-                <section className ={`${styles.flex} ${styles["justify-between"]} ${styles["flex-wrap"]} ${styles["align-center"]} `}>
+                <section className ={`${styles.flex} ${styles["justify-between"]} ${styles["flex-wrap"]} ${styles["align-center"]} projects`}>
 
                 <Project projectName = "AutoAligners" codeURL = "https://github.com/choir27/autoAligners" demoURL = "" projectIMG = {autoAligners.src} projectALT = "website landing page preview of AutoAligners" projectTech = {["TypeScript", "AppWrite", "Vite"]} projectDescription="AutoAligners allows the client to reserve various car services and submit an estimate for a car service.  Employees are able to manage aspects of the client, ranging from the purchases they made, to the reservations they made."/>
 
