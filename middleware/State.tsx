@@ -1,17 +1,14 @@
-import {create} from "zustand"
+import { create } from "zustand";
 
 export type State = {
-    menu: boolean,
-}
+  menu: boolean;
+};
 
 export type Action = {
-    setMenu: (e:boolean) => void,
-}
+  setMenu: (e: boolean) => void;
+};
 
-        
-export const useStore = create<State & Action>(
-    (set)=>({
-        menu: false,
-        setMenu: (menu: boolean)=>set(()=> ({menu: menu}))
-    })
-);
+export const useStore = create<State & Action>((set) => ({
+  menu: false,
+  setMenu: (menu: boolean) => set(() => ({ menu: menu })),
+}));

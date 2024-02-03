@@ -13,5 +13,6 @@ This project showcases the various websites that I have created and allows clien
 ## How It's Made: Tech used: HTML, CSS and JavaScript
 </div>
 
-## Examples: 
+## Examples:
+
 Take a look at these couple examples that I have in my own portfolio: The Real Estate Beast: https://therealestatebeast.netlify.app/ K-pop Wired: https://kpopwired.netlify.app/ EchoStream: https://echostream.netlify.app/
