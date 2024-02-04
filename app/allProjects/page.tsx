@@ -4,7 +4,7 @@ import Nav from "../../components/Nav";
 import "../../assets/css/global.css";
 import styles from "../../assets/css/main.module.css";
 import "../../assets/css/globalMediaQuery.css";
-import priconnect from "../images/priconnect.png";
+import priconnect from "../../images/priconnect.png";
 import echoStream from "../../images/echostream.png";
 import theRealEstate from "../../images/therealestatebeast.png";
 import autoAligners from "../../images/autoaligners.png";
