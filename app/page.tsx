@@ -7,7 +7,6 @@ import styles from "../assets/css/main.module.css";
 import "../assets/css/globalMediaQuery.css";
 import echoStream from "../images/echostream.png";
 import autoAligners from "../images/autoaligners.png";
-import theRealEstate from "../images/therealestatebeast.png";
 import priconnect from "../images/priconnect.png";
 
 export default function Home() {
