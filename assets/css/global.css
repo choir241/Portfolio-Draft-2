@@ -173,6 +173,12 @@ header {
   background: url("./images/background.png") no-repeat center/cover;
 }
 
+#copyright small {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
 #header a,
 header small,
 header h1,
@@ -292,7 +298,7 @@ section article {
   position: fixed;
   background: black;
   padding: 2rem;
-  width: 30%;
+  min-width: 30%;
   height: 40%;
   margin-top: 12rem;
   border-radius: 10px;

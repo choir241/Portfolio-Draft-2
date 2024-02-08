@@ -1,4 +1,8 @@
 @media (max-width: 1300px) {
+  .menu {
+    min-width: 50%;
+  }
+
   #about #volunteer .social,
   #about #meetup .buttons {
     flex-direction: column;

@@ -35,7 +35,7 @@ export default function Home() {
           <Project
             projectName="Priconnect"
             codeURL="https://github.com/choir27/priconnect"
-            demoURL="https://pri-connect.netlify.app/"
+            demoURL="https://priconnect.netlify.app/"
             projectIMG={priconnect.src}
             projectALT="website landing page preview of Priconnect"
             projectTech={["TypeScript", "AppWrite", "Vite"]}

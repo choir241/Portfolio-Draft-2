@@ -25,7 +25,7 @@ export default function AllProjects() {
           <Project
             projectName="AutoAligners"
             codeURL="https://github.com/choir27/autoAligners"
-            demoURL=""
+            demoURL="https://autoaligners.netlify.app/"
             projectIMG={autoAligners.src}
             projectALT="website landing page preview of AutoAligners"
             projectTech={["TypeScript", "AppWrite", "Vite"]}
@@ -45,7 +45,7 @@ export default function AllProjects() {
           <Project
             projectName="Priconnect"
             codeURL="https://github.com/choir27/priconnect"
-            demoURL="https://pri-connect.netlify.app/"
+            demoURL="https://priconnect.netlify.app/"
             projectIMG={priconnect.src}
             projectALT="website landing page preview of Priconnect"
             projectTech={["TypeScript", "AppWrite", "Vite"]}

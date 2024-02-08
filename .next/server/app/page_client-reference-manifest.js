@@ -64,25 +64,9 @@ globalThis.__RSC_MANIFEST["/page"] = {
         async: false,
       },
     },
-    "(app-pages-browser)/./images/autoaligners.png": {
+    "(app-pages-browser)/./assets/css/main.module.css": {
       "*": {
-        id: "(ssr)/./images/autoaligners.png",
-        name: "*",
-        chunks: [],
-        async: false,
-      },
-    },
-    "(app-pages-browser)/./images/echostream.png": {
-      "*": {
-        id: "(ssr)/./images/echostream.png",
-        name: "*",
-        chunks: [],
-        async: false,
-      },
-    },
-    "(app-pages-browser)/./images/priconnect.png": {
-      "*": {
-        id: "(ssr)/./images/priconnect.png",
+        id: "(ssr)/./assets/css/main.module.css",
         name: "*",
         chunks: [],
         async: false,
@@ -104,9 +88,25 @@ globalThis.__RSC_MANIFEST["/page"] = {
         async: false,
       },
     },
-    "(app-pages-browser)/./assets/css/main.module.css": {
+    "(app-pages-browser)/./images/autoaligners.png": {
       "*": {
-        id: "(ssr)/./assets/css/main.module.css",
+        id: "(ssr)/./images/autoaligners.png",
+        name: "*",
+        chunks: [],
+        async: false,
+      },
+    },
+    "(app-pages-browser)/./images/echostream.png": {
+      "*": {
+        id: "(ssr)/./images/echostream.png",
+        name: "*",
+        chunks: [],
+        async: false,
+      },
+    },
+    "(app-pages-browser)/./images/priconnect.png": {
+      "*": {
+        id: "(ssr)/./images/priconnect.png",
         name: "*",
         chunks: [],
         async: false,
@@ -213,23 +213,23 @@ globalThis.__RSC_MANIFEST["/page"] = {
         chunks: ["app/layout", "static/chunks/app/layout.js"],
         async: false,
       },
-    "C:\\Users\\richa\\OneDrive\\Documents\\Portfolio\\images\\autoaligners.png":
+    "C:\\Users\\richa\\OneDrive\\Documents\\Portfolio\\assets\\css\\main.module.css":
       {
-        id: "(app-pages-browser)/./images/autoaligners.png",
+        id: "(app-pages-browser)/./assets/css/main.module.css",
         name: "*",
         chunks: ["app/page", "static/chunks/app/page.js"],
         async: false,
       },
-    "C:\\Users\\richa\\OneDrive\\Documents\\Portfolio\\images\\echostream.png":
+    "C:\\Users\\richa\\OneDrive\\Documents\\Portfolio\\assets\\css\\global.css":
       {
-        id: "(app-pages-browser)/./images/echostream.png",
+        id: "(app-pages-browser)/./assets/css/global.css",
         name: "*",
         chunks: ["app/page", "static/chunks/app/page.js"],
         async: false,
       },
-    "C:\\Users\\richa\\OneDrive\\Documents\\Portfolio\\images\\priconnect.png":
+    "C:\\Users\\richa\\OneDrive\\Documents\\Portfolio\\assets\\css\\globalMediaQuery.css":
       {
-        id: "(app-pages-browser)/./images/priconnect.png",
+        id: "(app-pages-browser)/./assets/css/globalMediaQuery.css",
         name: "*",
         chunks: ["app/page", "static/chunks/app/page.js"],
         async: false,
@@ -247,23 +247,23 @@ globalThis.__RSC_MANIFEST["/page"] = {
       chunks: ["app/page", "static/chunks/app/page.js"],
       async: false,
     },
-    "C:\\Users\\richa\\OneDrive\\Documents\\Portfolio\\assets\\css\\global.css":
+    "C:\\Users\\richa\\OneDrive\\Documents\\Portfolio\\images\\autoaligners.png":
       {
-        id: "(app-pages-browser)/./assets/css/global.css",
+        id: "(app-pages-browser)/./images/autoaligners.png",
         name: "*",
         chunks: ["app/page", "static/chunks/app/page.js"],
         async: false,
       },
-    "C:\\Users\\richa\\OneDrive\\Documents\\Portfolio\\assets\\css\\globalMediaQuery.css":
+    "C:\\Users\\richa\\OneDrive\\Documents\\Portfolio\\images\\echostream.png":
       {
-        id: "(app-pages-browser)/./assets/css/globalMediaQuery.css",
+        id: "(app-pages-browser)/./images/echostream.png",
         name: "*",
         chunks: ["app/page", "static/chunks/app/page.js"],
         async: false,
       },
-    "C:\\Users\\richa\\OneDrive\\Documents\\Portfolio\\assets\\css\\main.module.css":
+    "C:\\Users\\richa\\OneDrive\\Documents\\Portfolio\\images\\priconnect.png":
       {
-        id: "(app-pages-browser)/./assets/css/main.module.css",
+        id: "(app-pages-browser)/./images/priconnect.png",
         name: "*",
         chunks: ["app/page", "static/chunks/app/page.js"],
         async: false,

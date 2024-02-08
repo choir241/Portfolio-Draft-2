@@ -18,7 +18,9 @@ export default function Nav() {
         onClick={(e) => toggleMenu(menu)}
       ></i>
 
-      <nav className={menu ? "menu" : "hidden"}>
+      <nav
+        className={`${menu ? "menu" : "hidden"}  ${styles["flex-col"]} ${styles["align-start"]}`}
+      >
         <ul>
           <li>
             <h2>Menu</h2>
