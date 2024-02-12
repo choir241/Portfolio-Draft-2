@@ -1,12 +1,12 @@
 import React from "react";
-import Projects from "../sections/Projects"
-import AboutMe from "../sections/About-Me"
+import Projects from "../sections/Projects";
+import AboutMe from "../sections/About-Me";
 
-export default function Home(){
+export default function Home() {
   return (
     <main>
-        <Projects/>
-        <AboutMe/>
+      <Projects />
+      <AboutMe />
     </main>
   );
 }

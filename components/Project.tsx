@@ -23,7 +23,7 @@ export default function Project(props: Content, key: string) {
 
   return (
     <article
-      key = {key}
+      key={key}
       className={`${styles["align-center"]} ${styles["flex-col"]} ${styles.flex} ${props.classNames}`}
       id="article"
     >

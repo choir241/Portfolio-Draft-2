@@ -20,9 +20,10 @@ export default function RootLayout({
         crossOrigin="anonymous"
       />
       <body>
-        <Header/>
-        <Nav/>
-        {children}</body>
+        <Nav />
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
