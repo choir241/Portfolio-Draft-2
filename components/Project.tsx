@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../assets/css/main.module.css";
+import styles from "../css/main.module.css";
 
 interface Content {
   projectName: string;
@@ -12,7 +12,7 @@ interface Content {
   classNames?: string;
 }
 
-export default function Project(props: Content) {
+export default function Project(props: Content, key: string) {
   const technologyList: React.JSX.Element[] = props.projectTech.map(
     (techLanguage) => (
       <li className="flex alignItems" key={techLanguage}>
@@ -23,13 +23,14 @@ export default function Project(props: Content) {
 
   return (
     <article
+      key = {key}
       className={`${styles["align-center"]} ${styles["flex-col"]} ${styles.flex} ${props.classNames}`}
       id="article"
     >
       <section
         className={`${props.classNames ? "fullWidth" : ""} ${styles.flex} ${styles["justify-between"]} ${styles["align-center"]} title`}
       >
-        <h2>{props.projectName}</h2>
+        <h3>{props.projectName}</h3>
         <div
           className={`${props.classNames ? "fullWidthProject" : "buttons"} ${styles.flex} ${styles["justify-between"]} ${styles["align-center"]}`}
         >

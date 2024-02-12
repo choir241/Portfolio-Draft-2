@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import profileImg from "../images/profile.jpg";
-import styles from "../assets/css/main.module.css";
+import profileImg from "../public/images/profile.jpg";
+import styles from "../css/main.module.css";
 
 export default function Header() {
   const date = new Date();

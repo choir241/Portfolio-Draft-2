@@ -1,10 +1,9 @@
 "use client";
-import { useStore } from "../middleware/State";
-import styles from "../assets/css/main.module.css";
+import { useState } from "react";
+import styles from "../css/main.module.css";
 
 export default function Nav() {
-  const menu = useStore((state) => state.menu);
-  const setMenu = useStore((state) => state.setMenu);
+  const [menu, setMenu] = useState<boolean>(false);
 
   function toggleMenu(check: boolean) {
     check ? setMenu(false) : setMenu(true);
@@ -12,11 +11,12 @@ export default function Nav() {
 
   return (
     <div id="nav" className={styles.nav}>
-      <i
+      <button
         id="menu"
+        role="navigation menu button"
         className={`${menu ? `fa-solid fa-xmark ${styles.bars}` : `fa-solid fa-bars ${styles.bars}`}`}
         onClick={(e) => toggleMenu(menu)}
-      ></i>
+      ></button>
 
       <nav
         className={`${menu ? "menu" : "hidden"}  ${styles["flex-col"]} ${styles["align-start"]}`}
@@ -26,17 +26,17 @@ export default function Nav() {
             <h2>Menu</h2>
           </li>
           <li>
-            <a className={styles.link} href="/">
+            <a className={styles.link} href="#header">
               Home
             </a>
           </li>
           <li>
-            <a className={styles.link} href="/aboutMe">
+            <a className={styles.link} href="#about">
               About Me
             </a>
           </li>
           <li>
-            <a className={styles.link} href="/allProjects">
+            <a className={styles.link} href="#project">
               All Projects
             </a>
           </li>
