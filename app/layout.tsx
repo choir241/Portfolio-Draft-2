@@ -1,6 +1,8 @@
 import React from "react";
 import Script from "next/script";
 import { Metadata } from "next";
+import Header from "../components/Header";
+import Nav from "../components/Nav";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -17,7 +19,10 @@ export default function RootLayout({
         src="https://kit.fontawesome.com/d0e0071c1c.js"
         crossOrigin="anonymous"
       />
-      <body>{children}</body>
+      <body>
+        <Header/>
+        <Nav/>
+        {children}</body>
     </html>
   );
 }
