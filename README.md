@@ -9,7 +9,6 @@ This project showcases the various websites that I have created and allows clien
 
 </a>
 
-
 ## How It's Made: Tech used: TypeScript, Next, JavaScript, HTML, CSS
 
 ## Examples:

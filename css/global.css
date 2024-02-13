@@ -127,12 +127,9 @@ table {
   border-spacing: 0;
 }
 
-main {
+html {
   max-width: 100%;
   margin: 0 auto;
-}
-
-body {
   font-family: "Poppins", sans-serif;
 }
 
@@ -153,6 +150,7 @@ p {
 }
 
 h1 {
+  text-align: center;
   font-size: 5rem;
 }
 
@@ -177,8 +175,8 @@ a {
 /*******************************************/
 
 header {
+  width: 100%;
   padding: 2rem;
-  margin-bottom: 4rem;
   background: url("../public/images/background.png") no-repeat center/cover;
 }
 
@@ -194,6 +192,14 @@ header h1,
 header p,
 header i {
   color: white;
+}
+
+header nav ul {
+  height: auto;
+}
+
+header nav ul li {
+  margin-bottom: 2rem;
 }
 
 main section a {
@@ -307,8 +313,8 @@ section article {
   position: fixed;
   background: black;
   padding: 2rem;
+  height: auto;
   min-width: 30%;
-  height: 40%;
   margin-top: 12rem;
   border-radius: 10px;
   z-index: 1;

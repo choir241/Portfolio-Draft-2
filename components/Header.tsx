@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import profileImg from "../public/images/profile.jpg";
+import profileImg from "../public/images/profile.png";
 import styles from "../css/main.module.css";
 
 export default function Header() {
@@ -33,7 +33,8 @@ export default function Header() {
           href="https://github.com/choir27"
           className={styles.button}
         >
-          View My GitHub<small className="fa-brands fa-github"></small>
+          View My GitHub
+          <small className="fa-brands fa-github"></small>
         </a>
         <a
           target="_blank"

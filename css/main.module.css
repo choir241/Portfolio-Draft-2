@@ -40,6 +40,7 @@
 
 header .imageContainer {
   width: 20%;
+  margin: 0rem 4rem;
 }
 
 .callToAction {
@@ -149,16 +150,6 @@ header .imageContainer {
 .button.large {
   font-size: 1.35em;
 }
-
-/******************************************
-/* Media Query
-/*******************************************/
-
-/* @media(max-width:1200px){
-	.social{
-        width: 100%;
-    }
-} */
 
 /******************************************
 /* Nav

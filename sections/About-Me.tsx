@@ -1,6 +1,4 @@
-import "../css/global.css";
 import styles from "../css/main.module.css";
-import "../css/globalMediaQuery.css";
 import Image from "../components/Image";
 import dashboard from "../public/images/linguisticsJusticeLeague2.png";
 import assignment from "../public/images/linguisticsJusticeLegue3.png";
@@ -13,6 +11,7 @@ import documentation1 from "../public/images/documentation1.png";
 
 export default function AboutMe() {
   return (
+
     <section id="about">
       <h2>About Me</h2>
 

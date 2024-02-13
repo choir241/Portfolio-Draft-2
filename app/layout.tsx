@@ -1,4 +1,6 @@
 import React from "react";
+import "../css/global.css";
+import "../css/globalMediaQuery.css";
 import Script from "next/script";
 import { Metadata } from "next";
 import Header from "../components/Header";

@@ -47,6 +47,10 @@
 }
 
 @media (max-width: 600px) {
+  #nav {
+    display: flex;
+  }
+
   #nav .icons {
     width: 100%;
   }

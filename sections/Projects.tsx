@@ -1,7 +1,5 @@
 import Project from "../components/Project";
-import "../css/global.css";
 import styles from "../css/main.module.css";
-import "../css/globalMediaQuery.css";
 import priconnect from "../public/images/priconnect.png";
 import echoStream from "../public/images/echostream.png";
 import theRealEstate from "../public/images/therealestatebeast.png";
