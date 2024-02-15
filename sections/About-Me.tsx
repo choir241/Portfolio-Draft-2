@@ -11,9 +11,17 @@ import documentation1 from "../public/images/documentation1.png";
 
 export default function AboutMe() {
   return (
-
     <section id="about">
       <h2>About Me</h2>
+
+      <p className="bio">
+        I love meeting new people, learning new concepts, and building new
+        projects.
+      </p>
+      <p className="bio">
+        Learning from my mistakes, my coding skills as an engineer are able to
+        improve.
+      </p>
 
       <section
         id="volunteer"

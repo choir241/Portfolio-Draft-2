@@ -6,6 +6,30 @@ import styles from "../css/main.module.css";
 export default function Header() {
   const date = new Date();
 
+  interface Link {
+    href: string;
+    text: string;
+    classNames: string;
+  }
+
+  const links = [
+    {
+      href: "https://github.com/choir27",
+      text: "View My Github",
+      classNames: "fa-brands fa-github",
+    },
+    {
+      href: "https://www.linkedin.com/in/richard-choir/",
+      text: "View My LinkedIn",
+      classNames: "fa-brands fa-linkedin",
+    },
+    {
+      href: "https://docs.google.com/document/d/1Gw7hqvLquVzKwg7fD3sfF1NGvoG0dFRzTI5rR-yEPkw/edit?usp=sharing",
+      text: "View My Resume",
+      classNames: "fa-solid fa-file-lines",
+    },
+  ];
+
   return (
     <header
       id="header"
@@ -16,7 +40,13 @@ export default function Header() {
           <h1>Richard Choi</h1>
         </li>
         <li>
-          <p>NJ Frontend Software Engineer</p>
+          <p>React Developer</p>
+        </li>
+        <li>
+          <p>Located in NJ</p>
+        </li>
+        <li>
+          <p>richardchoi54@gmail.com</p>
         </li>
         <li id="copyright">
           <small>
@@ -28,28 +58,19 @@ export default function Header() {
       <section
         className={`${styles.callToAction} ${styles.flex} ${styles["flex-col"]} ${styles["justify-between"]}`}
       >
-        <a
-          target="_blank"
-          href="https://github.com/choir27"
-          className={styles.button}
-        >
-          View My GitHub
-          <small className="fa-brands fa-github"></small>
-        </a>
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/richard-choir/"
-          className={styles.button}
-        >
-          View My LinkedIn<small className="fa-brands fa-linkedin"></small>
-        </a>
-        <a
-          target="_blank"
-          href="https://docs.google.com/document/d/1Gw7hqvLquVzKwg7fD3sfF1NGvoG0dFRzTI5rR-yEPkw/edit?usp=sharing"
-          className={styles.button}
-        >
-          View My Resume<small className="fa-solid fa-file-lines"></small>
-        </a>
+        {links.map((link: Link) => {
+          return (
+            <a
+              target="_blank"
+              key={link.href}
+              href={link.href}
+              className={styles.button}
+            >
+              {link.text}
+              <small className={link.classNames}></small>
+            </a>
+          );
+        })}
       </section>
 
       <div className={styles.imageContainer}>

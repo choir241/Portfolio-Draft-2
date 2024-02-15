@@ -47,6 +47,19 @@
 }
 
 @media (max-width: 600px) {
+  header {
+    margin: 0rem;
+  }
+
+  header,
+  main {
+    width: fit-content;
+  }
+
+  h1 {
+    margin-top: 10rem;
+  }
+
   #nav {
     display: flex;
   }

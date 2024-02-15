@@ -175,3 +175,15 @@ header .imageContainer {
 .icons p {
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  header .imageContainer {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  header .imageContainer {
+    width: 50%;
+  }
+}
