@@ -37,16 +37,16 @@ export default function AllProjects() {
       projectDescription:
         "EchoStream is an audio service web application where users are able to add their own music tracks. Users can also create playlists where they add music tracks from various users, includings their own songs.",
     },
-    {
-      projectName: "AutoAligners",
-      codeURL: "https://github.com/choir27/autoAligners",
-      demoURL: "https://autoaligners.netlify.app/",
-      projectIMG: autoAligners.src,
-      projectALT: "website landing page preview of AutoAligners",
-      projectTech: ["TypeScript", "AppWrite", "Vite"],
-      projectDescription:
-        "AutoAligners allows the client to reserve various car services and submit an estimate for a car service.  Employees are able to manage aspects of the client, ranging from the purchases they made, to the reservations they made.",
-    },
+    // {
+    //   projectName: "AutoAligners",
+    //   codeURL: "https://github.com/choir27/autoAligners",
+    //   demoURL: "https://autoaligners.netlify.app/",
+    //   projectIMG: autoAligners.src,
+    //   projectALT: "website landing page preview of AutoAligners",
+    //   projectTech: ["TypeScript", "AppWrite", "Vite"],
+    //   projectDescription:
+    //     "AutoAligners allows the client to reserve various car services and submit an estimate for a car service.  Employees are able to manage aspects of the client, ranging from the purchases they made, to the reservations they made.",
+    // },
     {
       projectName: "The Real Estate Beast",
       codeURL: "https://github.com/choir27/The-Real-Estate-Beast",
