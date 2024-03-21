@@ -1,0 +1,67 @@
+@media (max-width: 1300px) {
+  #about #volunteer .social,
+  #about #meetup .buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1200px) {
+  #project .projects {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  #project .projects article,
+  #project .projects p {
+    width: 100%;
+  }
+
+  #project .projects section {
+    width: 80%;
+  }
+
+  #project .projects #article .fullWidthProject,
+  #project .projects #article .buttons {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1100px) {
+  #header {
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 90vh;
+  }
+}
+
+@media (max-width: 800px) {
+  #article .fullWidthProject,
+  #article .buttons,
+  #article .languages {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  #nav .icons {
+    width: 100%;
+  }
+
+  #article .title {
+    flex-direction: column;
+  }
+
+  #article .title h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  #header section .button {
+    font-size: 8rem;
+  }
+
+  #header ul li h1 {
+    font-size: 8rem;
+  }
+}

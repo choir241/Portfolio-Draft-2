@@ -31,14 +31,29 @@ export default function Nav() {
             </a>
           </li>
           <li>
-            <a className={styles.link} href="#about">
-              About Me
-            </a>
-          </li>
-          <li>
             <a className={styles.link} href="#project">
               All Projects
             </a>
+            <li>
+              <a className={styles.link} href="#about">
+                About Me
+              </a>
+            </li>
+            <li>
+              <a className={styles.link} href="#documentation">
+                Volunteer
+              </a>
+            </li>
+            <li>
+              <a className={styles.link} href="#documentation">
+                Documentation
+              </a>
+            </li>
+            <li>
+              <a className={styles.link} href="#documentation">
+                Meetup
+              </a>
+            </li>
           </li>
         </ul>
       </nav>

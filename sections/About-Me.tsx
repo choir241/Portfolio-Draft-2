@@ -8,19 +8,29 @@ import translatedClassroom from "../public/images/linguisticsJusticeLeague6.png"
 import assignmentList from "../public/images/linguisticsJusticeLeague7.png";
 import documentation from "../public/images/documentation.png";
 import documentation1 from "../public/images/documentation1.png";
+import profileImg from "../public/images/profile.png";
+import codeAndCoffee from "../public/images/CodeAndCoffee.png";
 
 export default function AboutMe() {
   return (
     <section id="about">
       <h2>About Me</h2>
 
+      <div className={`${styles.flex} ${styles["justify-center"]}`}>
+        <img
+          src={profileImg.src}
+          className="profileImg"
+          alt="professional profile picture of myself"
+        />
+      </div>
+
       <p className="bio">
         I love meeting new people, learning new concepts, and building new
         projects.
       </p>
       <p className="bio">
-        Learning from my mistakes, my coding skills as an engineer are able to
-        improve.
+        Learning from my mistakes, I'm able to improve my coding and problem
+        solving skills.
       </p>
 
       <section
@@ -151,6 +161,25 @@ export default function AboutMe() {
           been founded by Steve Chen, I have made many new friends and
           acquaintances from having attended multiple times.
         </p>
+
+        <a href="https://www.linkedin.com/posts/richard-choir_2weekproject-100daysofcode-coding-activity-7172752562926923776-VL0e?utm_source=share&utm_medium=member_desktop">
+          <iframe
+            src="https://www.linkedin.com/embed/feed/update/urn:li:share:7172752562146762752"
+            height="427"
+            width="504"
+            frameBorder="0"
+            allowFullScreen={false}
+            title="Embedded post"
+          ></iframe>
+          <iframe
+            src="https://www.linkedin.com/embed/feed/update/urn:li:share:7167695581723758593"
+            height="343"
+            width="504"
+            frameBorder="0"
+            allowFullScreen={false}
+            title="Embedded post"
+          ></iframe>
+        </a>
 
         <section
           className={`buttons ${styles["justify-between"]} ${styles.flex}`}

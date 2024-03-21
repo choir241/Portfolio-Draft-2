@@ -86,7 +86,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 1rem;
+  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -127,13 +127,6 @@ table {
   border-spacing: 0;
 }
 
-html {
-  max-width: 100%;
-  margin: 0 auto;
-  font-family: "Poppins", sans-serif;
-  font-size: 0.625rem;
-}
-
 /******************************************
 /* FONT STYLES
 /*******************************************/
@@ -142,17 +135,19 @@ a {
   text-decoration: none;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 p {
   font-size: 2rem;
 }
 
 h1 {
-  text-align: center;
   font-size: 5rem;
 }
 
 h2 {
-  text-align: center;
   font-size: 4rem;
 }
 
@@ -164,20 +159,18 @@ h4 {
   font-size: 2rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 /******************************************
 /* HEADER STYLES
 /*******************************************/
 
 header {
-  padding: 2rem 2rem 4rem 2rem;
-  margin-bottom: 2rem;
-  background: url("../public/images/background.png") no-repeat center/cover;
-}
-
-#copyright small {
-  text-align: center;
-  display: flex;
-  justify-content: center;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  background: url("./images/background.png") no-repeat center/cover;
 }
 
 #header a,
@@ -186,14 +179,6 @@ header h1,
 header p,
 header i {
   color: white;
-}
-
-header nav ul {
-  height: auto;
-}
-
-header nav ul li {
-  margin-bottom: 2rem;
 }
 
 main section a {
@@ -307,8 +292,8 @@ section article {
   position: fixed;
   background: black;
   padding: 2rem;
-  height: auto;
-  min-width: 30%;
+  width: 30%;
+  height: 40%;
   margin-top: 12rem;
   border-radius: 10px;
   z-index: 1;
@@ -339,38 +324,19 @@ section article {
   padding: 2rem;
 }
 
-#about .profileImg {
-  margin: 4rem 0rem;
-}
-
 #about .imageContainer {
   width: 30%;
-  margin: 2rem 0rem;
+  margin-top: 2rem;
 }
 
 #about .imageContainer img {
   width: 100%;
 }
 
-.bio {
-  font-size: 2.5rem;
-  margin-top: 1.5rem;
-  text-align: center;
-}
-
 #about .images {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-#volunteer {
-  margin-top: 4rem;
-}
-
-#volunteer p {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
 }
 
 #volunteer h3,

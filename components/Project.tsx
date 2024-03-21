@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../css/main.module.css";
 
-interface Content {
+export interface Content {
   projectName: string;
   codeURL: string;
   demoURL: string;

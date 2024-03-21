@@ -1,19 +1,11 @@
-import Project from "../components/Project";
+import Project, { Content } from "../components/Project";
 import styles from "../css/main.module.css";
 import priconnect from "../public/images/priconnect.png";
 import echoStream from "../public/images/echostream.png";
 import theRealEstate from "../public/images/therealestatebeast.png";
 import autoAligners from "../public/images/autoaligners.png";
-
-interface Project {
-  projectName: string;
-  codeURL: string;
-  demoURL: string;
-  projectIMG: string;
-  projectALT: string;
-  projectTech: string[];
-  projectDescription: string;
-}
+import gridIron from "../public/images/gridIron.jpg";
+import GridIron, { GridIronVods } from "../components/GridIron";
 
 export default function AllProjects() {
   const projects = [
@@ -59,6 +51,50 @@ export default function AllProjects() {
     },
   ];
 
+  const gridIronVods = [
+    {
+      h3: "Development Technical Presentations: Gridiron Survivor Project Linting and Accessibility Pt 1",
+      videoLink:
+        "https://www.youtube.com/watch?v=JfLfIKMgnDQ&t=693s&ab_channel=CodingwithShashi",
+      projectIMG: gridIron.src,
+      projectALT: "",
+      videoDescription: "",
+    },
+    {
+      h3: "Development Technical Presentations: Gridiron Survivor Project Prettier and Accessibility Pt 2",
+      videoLink:
+        "https://www.youtube.com/watch?v=O6rnTPob7VY&ab_channel=CodingwithShashi",
+      projectIMG: gridIron.src,
+      projectALT: "",
+      videoDescription: "",
+    },
+    {
+      h3: "Design Kickoff: Gridiron Survivor",
+      videoLink:
+        "https://www.youtube.com/watch?v=O6rnTPob7VY&ab_channel=CodingwithShashi",
+      projectIMG: gridIron.src,
+      projectALT: "",
+      videoDescription: "",
+    },
+    {
+      h3: "",
+      videoLink: "",
+      projectIMG: "",
+      linkedIn: (
+        <iframe
+          src="https://www.linkedin.com/embed/feed/update/urn:li:share:7169105672544903168"
+          height="679"
+          width="504"
+          frameBorder="0"
+          allowFullScreen={false}
+          title="Embedded post"
+        ></iframe>
+      ),
+      projectALT: "",
+      videoDescription: "",
+    },
+  ];
+
   return (
     <section id="project">
       <h2>My Projects</h2>
@@ -66,7 +102,7 @@ export default function AllProjects() {
       <section
         className={`${styles.flex} ${styles["justify-between"]} ${styles["flex-wrap"]} ${styles["align-center"]} projects`}
       >
-        {projects.map((project: Project) => {
+        {projects.map((project: Content) => {
           return (
             <Project
               key={project.projectName}
@@ -77,6 +113,25 @@ export default function AllProjects() {
               projectALT={project.projectALT}
               projectTech={project.projectTech}
               projectDescription={project.projectDescription}
+            />
+          );
+        })}
+      </section>
+      <h2>GridIron</h2>
+
+      <section
+        className={`${styles.flex} ${styles["justify-between"]} ${styles["flex-wrap"]} ${styles["align-center"]} projects`}
+      >
+        {gridIronVods.map((vods: GridIronVods) => {
+          return (
+            <GridIron
+              key={vods.videoLink}
+              h3={vods.h3}
+              linkedIn={vods.linkedIn}
+              videoLink={vods.videoLink}
+              projectIMG={vods.projectIMG}
+              projectALT={vods.projectALT}
+              videoDescription={vods.videoDescription}
             />
           );
         })}
