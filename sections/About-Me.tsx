@@ -162,7 +162,7 @@ export default function AboutMe() {
           acquaintances from having attended multiple times.
         </p>
 
-        <a href="https://www.linkedin.com/posts/richard-choir_2weekproject-100daysofcode-coding-activity-7172752562926923776-VL0e?utm_source=share&utm_medium=member_desktop">
+        <div className={`${styles.flex} coffeeLinkedIn`}>
           <iframe
             src="https://www.linkedin.com/embed/feed/update/urn:li:share:7172752562146762752"
             height="427"
@@ -179,7 +179,7 @@ export default function AboutMe() {
             allowFullScreen={false}
             title="Embedded post"
           ></iframe>
-        </a>
+        </div>
 
         <section
           className={`buttons ${styles["justify-between"]} ${styles.flex}`}

@@ -413,3 +413,11 @@ section article {
   font-weight: bold;
   margin: 2rem 0rem;
 }
+
+#meetup .coffeeLinkedIn {
+  margin: 2rem 0rem;
+}
+
+#meetup .coffeeLinkedIn iframe {
+  margin: 0rem 2rem;
+}

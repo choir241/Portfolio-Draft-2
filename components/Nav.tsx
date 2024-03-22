@@ -34,26 +34,26 @@ export default function Nav() {
             <a className={styles.link} href="#project">
               All Projects
             </a>
-            <li>
-              <a className={styles.link} href="#about">
-                About Me
-              </a>
-            </li>
-            <li>
-              <a className={styles.link} href="#documentation">
-                Volunteer
-              </a>
-            </li>
-            <li>
-              <a className={styles.link} href="#documentation">
-                Documentation
-              </a>
-            </li>
-            <li>
-              <a className={styles.link} href="#documentation">
-                Meetup
-              </a>
-            </li>
+          </li>
+          <li>
+            <a className={styles.link} href="#about">
+              About Me
+            </a>
+          </li>
+          <li>
+            <a className={styles.link} href="#documentation">
+              Volunteer
+            </a>
+          </li>
+          <li>
+            <a className={styles.link} href="#documentation">
+              Documentation
+            </a>
+          </li>
+          <li>
+            <a className={styles.link} href="#meetup">
+              Meetup
+            </a>
           </li>
         </ul>
       </nav>
