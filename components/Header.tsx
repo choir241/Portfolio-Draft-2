@@ -1,84 +1,57 @@
-"use client";
-import React from "react";
-import profileImg from "../public/images/profile.png";
-import styles from "../css/main.module.css";
+import Link from "next/link";
+import { IoLogoLinkedin } from "react-icons/io5";
+import { IoLogoGithub } from "react-icons/io";
+import Image from "next/image";
+import profile from "../assets/profile.png";
 
 export default function Header() {
-  const date = new Date();
-
-  interface Link {
-    href: string;
-    text: string;
-    classNames: string;
-  }
-
-  const links = [
-    {
-      href: "https://github.com/choir27",
-      text: "View My Github",
-      classNames: "fa-brands fa-github",
-    },
-    {
-      href: "https://www.linkedin.com/in/richard-choir/",
-      text: "View My LinkedIn",
-      classNames: "fa-brands fa-linkedin",
-    },
-    {
-      href: "https://docs.google.com/document/d/1Gw7hqvLquVzKwg7fD3sfF1NGvoG0dFRzTI5rR-yEPkw/edit?usp=sharing",
-      text: "View My Resume",
-      classNames: "fa-solid fa-file-lines",
-    },
-  ];
-
   return (
-    <header
-      id="header"
-      className={`${styles.flex} ${styles["justify-between"]} ${styles["align-center"]}`}
-    >
-      <ul className={styles.icons}>
-        <li>
-          <h1>Richard Choi</h1>
-        </li>
-        <li>
-          <p>React Developer</p>
-        </li>
-        <li>
-          <p>Located in NJ</p>
-        </li>
-        <li>
-          <p>richardchoi54@gmail.com</p>
-        </li>
-        <li id="copyright">
-          <small>
-            Copyright &copy; {date.getFullYear()}. All rights are reserved
-          </small>
-        </li>
-      </ul>
+    <header className="p-2 pt-16 min-[2400px]:pt-40">
+      <section className="flex justify-center max-[1000px]:flex-col items-center ">
+        <div className="flex flex-col justify-center w-4/6 mr-2">
+          <h1 className="text-8xl mb-8 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+            Richard Choi
+          </h1>
 
-      <section
-        className={`${styles.callToAction} ${styles.flex} ${styles["flex-col"]} ${styles["justify-between"]}`}
-      >
-        {links.map((link: Link) => {
-          return (
-            <a
-              target="_blank"
-              key={link.href}
-              href={link.href}
-              className={styles.button}
+          <h2 className="mt-4 text-4xl px-1 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+            Greetings Steve, Adam, and the 3rd person whom is still a mystery to
+            the community!
+          </h2>
+
+          <p className="text-4xl px-1 mt-6 mb-10 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
+            Located in NJ, I am a developer that loves meeting new people,
+            learning new concepts, and building new projects.
+          </p>
+
+          <div className="flex max-[1000px]:items-center max-[1000px]:justify-center">
+            <Link
+              href="https://github.com/choir27"
+              className="text-white px-1 flex items-center text-2xl hover:opacity-70 hover:ease-in hover:duration-300 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]"
+              aria-label="Read more about Seminole tax hike"
             >
-              {link.text}
-              <small className={link.classNames}></small>
-            </a>
-          );
-        })}
-      </section>
+              <span className="hidden">Github Logo</span>
+              My Github
+              <IoLogoGithub className="text-5xl ml-4 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]" />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/richard-choir/"
+              className="text-white px-3 flex items-center text-2xl hover:opacity-70 hover:ease-in hover:duration-300 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]"
+              aria-label="Read more about Seminole tax hike"
+            >
+              <span className="hidden">LinkedIn Logo</span>
+              My LinkedIn
+              <IoLogoLinkedin className="text-5xl ml-4 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]" />
+            </Link>
+          </div>
+        </div>
 
-      <div className={styles.imageContainer}>
-        <img
-          src={profileImg.src}
-          alt="professional profile picture of myself"
+        <Image
+          className="max-[800px]:px-10 pt-10"
+          priority={true}
+          src={profile}
+          alt="professional profile snapshot of Richard Choi"
         />
-      </div>
+      </section>
     </header>
   );
 }

@@ -1,16 +1,19 @@
-# Portfolio-Draft-2
+## Richard Choi Tailwind Application
 
-This project showcases the various websites that I have created and allows clients to view those live websites through my Portfolio.
 
-<div align = "center"><a href = 'https://choir.netlify.app/'>View the website here!</a></div>
-<br>
-<a href = 'https://choir.netlify.app/'>
-<img width="949" alt="Screenshot 2023-05-11 170544" src="https://github.com/choir27/Portfolio-Draft-2/assets/66279068/d355b420-427e-46f3-88a7-3f9886530f34">
+My Personal Experience with Tailwind:
+https://choir.hashnode.dev/my-personal-intro-to-tailwindcss
+
+Video Demo of Site (no sound):
+https://www.youtube.com/watch?v=ig9spfkTH0I&ab_channel=Rick
+
+Website URL:
+https://richardchoi.netlify.app/
+
+<a href = "https://richardchoi.netlify.app/">
+
+![Screenshot 2024-04-03 164628](https://github.com/choir27/Richard-Choi-Tailwind-Application/assets/66279068/0df60a61-e2cc-4518-87d4-b59b66e04ac0)
 
 </a>
 
-## How It's Made: Tech used: TypeScript, Next, JavaScript, HTML, CSS
-
-## Examples:
-
-Take a look at these couple examples that I have in my own portfolio: The Real Estate Beast: https://therealestatebeast.netlify.app/ Priconnect: https://priconnect.netlify.app/ EchoStream: https://echostream.netlify.app/
+Examples: Take a look at these couple examples that I have in my own portfolio: EchoStream https://echostream.netlify.app/ Priconnect: https://priconnect.netlify.app/

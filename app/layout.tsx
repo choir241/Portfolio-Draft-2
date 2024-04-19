@@ -1,27 +1,26 @@
-import React from "react";
-import "../css/global.css";
-import "../css/globalMediaQuery.css";
-import Script from "next/script";
-import { Metadata } from "next";
+import "../public/styles.css";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 
-export const metadata: Metadata = {
-  title: "Portfolio",
-};
-
 export default function RootLayout({
-  children,
+  children, // will be a page or nested layout
 }: {
   children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <Script
-        src="https://kit.fontawesome.com/d0e0071c1c.js"
-        crossOrigin="anonymous"
-      />
-      <body>
+      <head>
+        <meta charSet="UTF-8" />
+        <meta
+          name="description"
+          content="Personalized Website for Tailwind Job Application"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://rsms.me/" />
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+        <title>Richard Choi</title>
+      </head>
+      <body className="bg-black flex flex-col items-center">
         <Nav />
         <Header />
         {children}
