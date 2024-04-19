@@ -1,6 +1,5 @@
 ## Richard Choi Tailwind Application
 
-
 My Personal Experience with Tailwind:
 https://choir.hashnode.dev/my-personal-intro-to-tailwindcss
 
