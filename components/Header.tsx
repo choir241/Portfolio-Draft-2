@@ -13,11 +13,6 @@ export default function Header() {
             Richard Choi
           </h1>
 
-          <h2 className="mt-4 text-4xl px-1 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
-            Greetings Steve, Adam, and the 3rd person whom is still a mystery to
-            the community!
-          </h2>
-
           <p className="text-4xl px-1 mt-6 mb-10 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
             Located in NJ, I am a developer that loves meeting new people,
             learning new concepts, and building new projects.
