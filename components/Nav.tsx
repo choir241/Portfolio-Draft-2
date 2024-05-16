@@ -40,11 +40,6 @@ export default function Nav() {
           </a>
         </li>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <a className="text-4xl" href="#forward">
-            Looking Forward
-          </a>
-        </li>
-        <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
           <a className="text-4xl" href="#aboutMe">
             About Me
           </a>
