@@ -10,8 +10,7 @@ const config: Config = {
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  purge:
-    ["./src/pages/**/*.tsx", "./src/components/**/*.tsx"],
+  purge: ["./src/pages/**/*.tsx", "./src/components/**/*.tsx"],
   theme: {
     extend: {
       backgroundImage: {

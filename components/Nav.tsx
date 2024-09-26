@@ -7,7 +7,7 @@ export default function Nav() {
 
   return (
     <nav
-      className="fixed hidden flex-col self-end bg-black w-full max-[1200px]:flex min-[2400px]:flex"
+      className="fixed flex flex-col self-end bg-black w-full"
       id="lookingForward"
     >
       <IoIosMenu
@@ -20,23 +20,18 @@ export default function Nav() {
       />
       <ul className={`${toggleMenu} items-center flex-col pb-4 px-4`}>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <a className="text-4xl" href="#myProject">
-            My Project
+          <a className="text-4xl" href="#experience">
+            Experience
+          </a>
+        </li>
+        <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
+          <a className="text-4xl" href="#blog">
+            Blogs
           </a>
         </li>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
           <a className="text-4xl" href="#documentation">
             Documentation
-          </a>
-        </li>
-        <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <a className="text-4xl" href="#openSource">
-            Open Source
-          </a>
-        </li>
-        <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <a className="text-4xl" href="#experience">
-            Experience
           </a>
         </li>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">

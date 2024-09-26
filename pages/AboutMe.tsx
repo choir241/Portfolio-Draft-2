@@ -2,13 +2,17 @@ import drawing1 from "../assets/drawing1.jpg";
 import drawing2 from "../assets/drawing2.jpg";
 import codeAndCoffee from "../assets/CodeAndCoffee.png";
 import storybook from "../assets/storybook.png";
+import chat1 from "../assets/chat1.png";
+import chat2 from "../assets/chat2.png";
+import conference1 from "../assets/conference1.png";
+import conference2 from "../assets/conference2.png";
 import Image from "next/image";
 
 export default function AboutMe() {
   return (
     <section id="aboutMe" className="mb-4">
       <h2 className="text-6xl my-12 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
-        After Hours
+        About Me
       </h2>
 
       <ul className="max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:px-10">
@@ -27,7 +31,7 @@ export default function AboutMe() {
 
         <li className="list-disc ml-10 text-2xl leading-10 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
           By getting to meet new people in tech and catching up with friends at
-          meetups, I cannot only have fun by being with amazing people, but I
+          meetups, not only do I have fun by being with amazing people, but I
           get to talk about the tech world and coding.
         </li>
         <li></li>
@@ -57,6 +61,35 @@ export default function AboutMe() {
           />
           <Image
             src={storybook}
+            alt="linkedIn post of storybook meetup"
+            width={800}
+            className="mt-8 max-[1000px]:w-4/5"
+          />
+        </div>
+        <div className="min-[2400px]:flex min-[2400px]:justify-evenly min-[2400px]:w-full min-[2400px]:mb-6">
+          <Image
+            src={chat1}
+            alt="linkedIn post of storybook meetup"
+            width={800}
+            className="mt-8 max-[1000px]:w-4/5"
+          />{" "}
+          <Image
+            src={chat2}
+            alt="linkedIn post of storybook meetup"
+            width={800}
+            className="mt-8 max-[1000px]:w-4/5"
+          />
+        </div>
+
+        <div className="min-[2400px]:flex min-[2400px]:justify-evenly min-[2400px]:w-full min-[2400px]:mb-6">
+          <Image
+            src={conference1}
+            alt="linkedIn post of storybook meetup"
+            width={800}
+            className="mt-8 max-[1000px]:w-4/5"
+          />{" "}
+          <Image
+            src={conference2}
             alt="linkedIn post of storybook meetup"
             width={800}
             className="mt-8 max-[1000px]:w-4/5"

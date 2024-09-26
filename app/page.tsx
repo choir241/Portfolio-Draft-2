@@ -1,19 +1,16 @@
-import Project from "../pages/Project";
+import Blog from "../pages/Blogs";
 import Documentation from "../pages/Documentation";
-import OpenSource from "../pages/OpenSource";
 import AboutMe from "../pages/AboutMe";
 import Experience from "../pages/Experience";
 
 export default function Home() {
   return (
     <main>
-      <Project />
+      <Experience />
+
+      <Blog />
 
       <Documentation />
-
-      <OpenSource />
-
-      <Experience />
 
       <AboutMe />
     </main>
