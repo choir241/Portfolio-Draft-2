@@ -8,11 +8,11 @@ export default function Home() {
     <main>
       <Experience />
 
-      <Blog />
+      <Blog/>
 
       <Documentation />
 
-      <AboutMe />
+      <AboutMe/>
     </main>
   );
 }

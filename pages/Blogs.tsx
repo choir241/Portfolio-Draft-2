@@ -15,7 +15,7 @@ export default function Blog() {
     {
     src: blog3,
     link: "https://dev.to/choir/conquering-fears-a-guide-to-an-empowered-developer-journey-20ib",
-    title: "Empowerment",
+    title: "Empowerment"
     },
     {
       src: blog2,
@@ -47,7 +47,7 @@ export default function Blog() {
                 <Image
                   src={blogObj.src}
                   alt=""
-                  className="w-3/4 max-[800px]:w-full max-[800px]:px-8"
+                  className="w-4/5"
                 />
               </Link>
               <Link
