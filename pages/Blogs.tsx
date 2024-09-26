@@ -13,9 +13,9 @@ export default function Blog() {
       title: "Journey",
     },
     {
-        src: blog3,
-        link: "https://dev.to/choir/conquering-fears-a-guide-to-an-empowered-developer-journey-20ib",
-        title: "Empowerment",
+    src: blog3,
+    link: "https://dev.to/choir/conquering-fears-a-guide-to-an-empowered-developer-journey-20ib",
+    title: "Empowerment",
     },
     {
       src: blog2,
@@ -38,7 +38,7 @@ export default function Blog() {
       <div className="flex justify-evenly items-center max-[800px]:flex-col">
         {blogs.map((blogObj: IBlog) => {
           return (
-            <section key={blogObj.link} className="flex flex-col items-center">
+            <section key={blogObj.title} className="flex flex-col items-center">
               <Link
                 target="_blank"
                 className="flex justify-center"
