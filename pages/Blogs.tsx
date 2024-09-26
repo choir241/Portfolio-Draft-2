@@ -13,14 +13,14 @@ export default function Blog() {
       title: "Journey",
     },
     {
+        src: blog3,
+        link: "https://dev.to/choir/conquering-fears-a-guide-to-an-empowered-developer-journey-20ib",
+        title: "Empowerment",
+    },
+    {
       src: blog2,
       link: "https://dev.to/choir/my-personal-intro-to-tailwindcss-3il0",
       title: "TailwindCSS",
-    },
-    {
-      src: blog3,
-      link: "https://dev.to/choir/conquering-fears-a-guide-to-an-empowered-developer-journey-20ib",
-      title: "Empowerment",
     },
   ];
 
@@ -51,8 +51,8 @@ export default function Blog() {
                 />
               </Link>
               <Link
-                href="https://github.com/appwrite/website/pull/1079"
-                className="border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+                  href={blogObj.link}
+                  className="border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
               >
                 {blogObj.title} Blog
               </Link>
