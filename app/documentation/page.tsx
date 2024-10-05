@@ -118,6 +118,7 @@ export default function Documentation() {
         {links.map((ele) => {
           return (
             <Link
+              key={ele.link}
               href={ele.link}
               className="border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
             >
