@@ -20,22 +20,17 @@ export default function Nav() {
       />
       <ul className={`${toggleMenu} items-center flex-col pb-4 px-4`}>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <a className="text-4xl" href="#experience">
-            Experience
+          <a className="text-4xl" href="/blogs-and-streams">
+            Blogs and Streams
           </a>
         </li>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <a className="text-4xl" href="#blog">
-            Blogs
-          </a>
-        </li>
-        <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <a className="text-4xl" href="#documentation">
+          <a className="text-4xl" href="/documentation">
             Documentation
           </a>
         </li>
         <li className="mb-2 hover:translate-x-5 hover:ease-in hover:duration-300">
-          <a className="text-4xl" href="#aboutMe">
+          <a className="text-4xl" href="/about-me">
             About Me
           </a>
         </li>

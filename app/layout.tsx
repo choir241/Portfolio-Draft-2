@@ -20,7 +20,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         <title>Richard Choi</title>
       </head>
-      <body className="bg-black flex flex-col items-center">
+      <body className="bg-[#171717] flex flex-col items-center">
         <Nav />
         <Header />
         {children}

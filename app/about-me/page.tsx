@@ -1,11 +1,11 @@
-import drawing1 from "../assets/drawing1.jpg";
-import drawing2 from "../assets/drawing2.jpg";
-import codeAndCoffee from "../assets/CodeAndCoffee.png";
-import storybook from "../assets/storybook.png";
-import chat1 from "../assets/chat1.png";
-import chat2 from "../assets/chat2.png";
-import conference1 from "../assets/conference1.png";
-import conference2 from "../assets/conference2.png";
+import drawing1 from "../../assets/drawing1.jpg";
+import drawing2 from "../../assets/drawing2.jpg";
+import codeAndCoffee from "../../assets/CodeAndCoffee.png";
+import storybook from "../../assets/storybook.png";
+import chat1 from "../../assets/chat1.png";
+import chat2 from "../../assets/chat2.png";
+import conference1 from "../../assets/conference1.png";
+import conference2 from "../../assets/conference2.png";
 import Image from "next/image";
 
 export default function AboutMe() {
@@ -38,61 +38,62 @@ export default function AboutMe() {
       </ul>
 
       <div className="flex flex-wrap justify-evenly items-center flex-col">
-        <div className="min-[2400px]:flex min-[2400px]:justify-evenly min-[2400px]:w-full min-[2400px]:mb-6">
+        <div className="w-full flex justify-evenly min-[2400px]:w-full min-[2400px]:mb-6">
           <Image
             src={drawing1}
             alt="my drawing of Miko Ino from the anime Kaguya-sama: Love is War"
             width={800}
-            className="mt-8 max-[1000px]:w-4/5"
+            className="mt-8 w-2/5"
           />
           <Image
             src={drawing2}
             alt="my drawing of Megumin from the anime Konosuba"
             width={800}
-            className="mt-8 max-[1000px]:w-4/5"
+            className="mt-8 w-2/5"
           />
         </div>
-        <div className="min-[2400px]:flex min-[2400px]:justify-evenly min-[2400px]:w-full min-[2400px]:mb-6">
+
+        <div className="w-full flex justify-evenly min-[2400px]:w-full min-[2400px]:mb-6">
           <Image
             src={codeAndCoffee}
             alt="linknedIn post of code and coffee meetup"
-            width={800}
-            className="mt-8 max-[1000px]:w-4/5"
+            width={600}
+            className="mt-8 w-2/5"
           />
           <Image
             src={storybook}
             alt="linkedIn post of storybook meetup"
-            width={800}
-            className="mt-8 max-[1000px]:w-4/5"
+            width={600}
+            className="mt-8 w-2/5"
           />
         </div>
-        <div className="min-[2400px]:flex min-[2400px]:justify-evenly min-[2400px]:w-full min-[2400px]:mb-6">
+        <div className="flex justify-evenly w-full min-[2400px]:w-full min-[2400px]:mb-6">
           <Image
             src={chat1}
             alt="linkedIn post of storybook meetup"
-            width={800}
-            className="mt-8 max-[1000px]:w-4/5"
+            width={600}
+            className="mt-8 w-2/5"
           />{" "}
           <Image
             src={chat2}
             alt="linkedIn post of storybook meetup"
-            width={800}
-            className="mt-8 max-[1000px]:w-4/5"
+            width={600}
+            className="mt-8 w-2/5"
           />
         </div>
 
-        <div className="min-[2400px]:flex min-[2400px]:justify-evenly min-[2400px]:w-full min-[2400px]:mb-6">
+        <div className="flex justify-evenly w-full min-[2400px]:w-full min-[2400px]:mb-6">
           <Image
             src={conference1}
             alt="linkedIn post of storybook meetup"
-            width={800}
-            className="mt-8 max-[1000px]:w-4/5"
+            width={600}
+            className="mt-8 w-2/5"
           />{" "}
           <Image
             src={conference2}
             alt="linkedIn post of storybook meetup"
-            width={800}
-            className="mt-8 max-[1000px]:w-4/5"
+            width={600}
+            className="mt-8 w-2/5"
           />
         </div>
       </div>
