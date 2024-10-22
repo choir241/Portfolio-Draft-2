@@ -1,3 +1,5 @@
-export default function Home() {
-  return <main></main>;
+export default function App(){
+    return(
+        <main></main>
+    )
 }

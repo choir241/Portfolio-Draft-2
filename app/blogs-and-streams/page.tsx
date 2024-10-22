@@ -36,13 +36,16 @@ export default function Blog() {
   return (
     <section id="blog" className="flex flex-col items-start pb-8">
       <h2 className="text-6xl my-12 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
-        Blogs
+        My Blogs
       </h2>
 
       <div className="flex justify-evenly items-center max-[800px]:flex-col">
         {blogs.map((blogObj: IBlog) => {
           return (
-            <section key={blogObj.title} className="mt-10 flex flex-col items-center">
+            <section
+              key={blogObj.title}
+              className="mt-10 flex flex-col items-center"
+            >
               <Link
                 target="_blank"
                 className="flex justify-center"
@@ -52,7 +55,7 @@ export default function Blog() {
               </Link>
               <Link
                 href={blogObj.link}
-                className="mt-2 border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+                className="border-[#86cecb] mt-2 border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
               >
                 {blogObj.title} Blog
               </Link>
@@ -62,20 +65,20 @@ export default function Blog() {
       </div>
 
       <h2 className="text-6xl my-12 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
-        Streams
+        Streams I have been on
       </h2>
 
       <div className="flex items-center max-[800px]:flex-col">
         <section className="mt-10 flex flex-col justify-center items-center">
           <Link
-            className="flex justify-center items-center"
+            className="border-[#86cecb] flex justify-center items-center"
             href="https://www.youtube.com/watch?v=KiWx5bwNEyE&t=2569s&ab_channel=RyanFurrer"
           >
             <Image src={stream1} alt="" className="w-4/5" />
           </Link>
 
           <Link
-            className="mt-2 border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+            className="border-[#86cecb] mt-2 border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
             href="https://www.youtube.com/watch?v=KiWx5bwNEyE&t=2569s&ab_channel=RyanFurrer"
           >
             Ryan Furrer
@@ -84,14 +87,14 @@ export default function Blog() {
 
         <section className="mt-10 flex flex-col justify-center items-center">
           <Link
-            className="flex justify-center items-center"
+            className="border-[#86cecb] flex justify-center items-center"
             href="https://www.youtube.com/watch?v=4CEynrl8xaw&ab_channel=PiecesforDevelopers"
           >
             <Image src={stream2} alt="" width={400} className="w-3/5" />
           </Link>
 
           <Link
-            className="mt-2 border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+            className="border-[#86cecb] mt-2 border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
             href="https://www.youtube.com/watch?v=KiWx5bwNEyE&t=2569s&ab_channel=RyanFurrer"
           >
             Pieces
@@ -100,14 +103,14 @@ export default function Blog() {
 
         <section className="mt-10 pr-20 flex flex-col justify-center items-center max-[800px]:pr-0">
           <Link
-            className="flex justify-center items-center"
+            className="border-[#86cecb] flex justify-center items-center"
             href="https://www.youtube.com/watch?v=OX_ZFspRX6w&ab_channel=CodingwithShashi"
           >
             <Image src={stream3} alt="" width={400} />
           </Link>
 
           <Link
-            className="mt-2 border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+            className="border-[#86cecb] mt-2 border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
             href="https://www.youtube.com/watch?v=OX_ZFspRX6w&ab_channel=CodingwithShashi"
           >
             Gridiron Survivor

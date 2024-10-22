@@ -49,7 +49,7 @@ export default function Documentation() {
       <div className="flex justify-evenly items-center max-[800px]:flex-col">
         <Link
           href="https://choir.hashnode.dev/low-level-documentation"
-          className="border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+          className="text-4xl pb-1 pt-8 mx-6 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
         >
           <Image
             src={documentation}
@@ -60,7 +60,7 @@ export default function Documentation() {
 
         <Link
           href="https://choir.hashnode.dev/low-level-documentation"
-          className="border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+          className="text-4xl pb-1 pt-8 mx-6 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
         >
           <Image
             src={documentation1}
@@ -71,7 +71,7 @@ export default function Documentation() {
 
         <Link
           href="https://choir.hashnode.dev/low-level-documentation"
-          className="border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+          className="text-4xl pb-1 pt-8 mx-6 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
         >
           <Image
             src={documentation2}
@@ -83,44 +83,45 @@ export default function Documentation() {
 
       <Link
         href="https://choir.hashnode.dev/low-level-documentation"
-        className="border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+        className="flex hover:pb-3 hover:ease-in hover:duration-300 border-[#86cecb] border-b-2 text-4xl pb-1 pt-8 mx-6 min-[2400px]:justify-center min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
       >
         Documentation Link
       </Link>
 
-      <div className="mt-20 w-full flex justify-evenly items-center max-[800px]:flex-col">
+      <h2 className=" mt-20 text-6xl px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+        Appwrite Documentation I worked on:
+      </h2>
+
+      <div className="my-10 w-full flex justify-evenly items-center max-[800px]:flex-col">
         <Link
-          className="border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+          className="text-4xl pb-1 pt-8 mx-6 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
           href="https://appwrite.io/docs/tooling/command-line/buckets"
         >
           <Image src={appwrite1} alt="" className="w-4/5" />
         </Link>
 
         <Link
-          className="border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+          className="text-4xl pb-1 pt-8 mx-6 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
           href="https://appwrite.io/docs/tooling/appwriter"
         >
           <Image src={appwrite2} alt="" className="w-4/5" />
         </Link>
 
         <Link
-          className="border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+          className="text-4xl pb-1 pt-8 mx-6 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
           href="https://appwrite.io/docs/products/functions/develop-locally"
         >
           <Image src={appwrite3} alt="" className="w-4/5" />
         </Link>
       </div>
 
-      <h2 className=" mt-20 text-6xl px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
-        Appwrite Documentation I worked on:
-      </h2>
       <div className=" w-full flex flex-wrap justify-evenly items-center max-[800px]:flex-col">
         {links.map((ele) => {
           return (
             <Link
               key={ele.link}
               href={ele.link}
-              className="border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+              className="border-[#86cecb] border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
             >
               {ele.title}
             </Link>

@@ -7,7 +7,7 @@
   font-feature-settings:
     "liga" 1,
     "calt" 1; /* fix for Chrome */
-  color: white;
+  color: #86cecb;
 }
 @supports (font-variation-settings: normal) {
   :root {
