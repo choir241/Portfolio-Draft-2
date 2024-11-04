@@ -6,6 +6,7 @@ import Link from "next/link";
 import stream1 from "../../assets/stream.png";
 import stream2 from "../../assets/stream1.png";
 import stream3 from "../../assets/stream3.jpg";
+import stream4 from "../../assets/that_stream.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export default function Blog() {
@@ -114,6 +115,23 @@ export default function Blog() {
             href="https://www.youtube.com/watch?v=OX_ZFspRX6w&ab_channel=CodingwithShashi"
           >
             Gridiron Survivor
+          </Link>
+        </section>
+      </div>
+
+      <div className="flex items-center max-[800px]:flex-col">
+        <section className="mt-10 flex flex-col justify-center items-center">
+          <Link
+            className="border-[#86cecb] flex justify-center items-center"
+            href="https://www.youtube.com/watch?v=wf56WT_rO_A&t=16717s&ab_channel=ThatConference">
+            <Image src={stream4} alt="" className="w-4/5" />
+          </Link>
+
+          <Link
+            className="border-[#86cecb] mt-2 border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+            href="https://www.youtube.com/watch?v=wf56WT_rO_A&t=16717s&ab_channel=ThatConference"
+          >
+            THAT Stream
           </Link>
         </section>
       </div>
