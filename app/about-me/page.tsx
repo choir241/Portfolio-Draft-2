@@ -10,7 +10,7 @@ import Image from "next/image";
 
 export default function AboutMe() {
   return (
-    <section id="aboutMe" className="mb-4">
+    <section id="aboutMe" className="my-4">
       <h2 className="text-6xl my-12 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
         About Me
       </h2>

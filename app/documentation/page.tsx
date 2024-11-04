@@ -41,7 +41,7 @@ export default function Documentation() {
   ];
 
   return (
-    <section id="documentation" className="flex flex-col items-start pb-8">
+    <section id="documentation" className="flex flex-col items-start py-8">
       <h2 className="text-6xl my-12 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
         Documentation I have worked on:
       </h2>
