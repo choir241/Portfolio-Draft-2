@@ -48,7 +48,7 @@ export default function Documentation() {
 
       <div className="flex justify-evenly items-center max-[800px]:flex-col">
         <Link
-          href="https://choir.hashnode.dev/low-level-documentation"
+          href="https://dev.to/choir241/low-level-documentation-41k9"
           className="text-4xl pb-1 pt-8 mx-6 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
         >
           <Image
@@ -59,7 +59,7 @@ export default function Documentation() {
         </Link>
 
         <Link
-          href="https://choir.hashnode.dev/low-level-documentation"
+          href="https://dev.to/choir241/low-level-documentation-41k9"
           className="text-4xl pb-1 pt-8 mx-6 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
         >
           <Image
@@ -70,7 +70,7 @@ export default function Documentation() {
         </Link>
 
         <Link
-          href="https://choir.hashnode.dev/low-level-documentation"
+          href="https://dev.to/choir241/low-level-documentation-41k9"
           className="text-4xl pb-1 pt-8 mx-6 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
         >
           <Image
@@ -82,7 +82,7 @@ export default function Documentation() {
       </div>
 
       <Link
-        href="https://choir.hashnode.dev/low-level-documentation"
+        href="https://dev.to/choir241/low-level-documentation-41k9"
         className="flex hover:pb-3 hover:ease-in hover:duration-300 border-[#86cecb] border-b-2 text-4xl pb-1 pt-8 mx-6 min-[2400px]:justify-center min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
       >
         Documentation Link
