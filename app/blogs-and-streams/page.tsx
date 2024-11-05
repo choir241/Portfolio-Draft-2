@@ -72,7 +72,7 @@ export default function Blog() {
   ];
 
   return (
-    <section id="blog" className="flex flex-col items-start py-8">
+    <section id="blog" className="flex flex-col items-start py-8 w-full">
       <h2 className="text-6xl my-12 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
         My Blogs
       </h2>
@@ -89,7 +89,7 @@ export default function Blog() {
                 className="flex justify-center"
                 href={blogObj.link}
               >
-                <Image src={blogObj.src} alt="" className="w-4/5" />
+                <Image src={blogObj.src} alt="" width={400} />
               </Link>
               <Link
                 href={blogObj.link}
@@ -115,7 +115,7 @@ export default function Blog() {
                 className="flex justify-center"
                 href={blogObj.link}
               >
-                <Image src={blogObj.src} alt="" className="w-4/5" />
+                <Image src={blogObj.src} alt="" width={400} />
               </Link>
               <Link
                 target="_blank"
