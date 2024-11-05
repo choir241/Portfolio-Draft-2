@@ -1,7 +1,5 @@
-import AboutMe from "./about-me/page"
+import AboutMe from "./about-me/page";
 
-export default function App(){
-    return(
-        <AboutMe/>
-    )
+export default function App() {
+  return <AboutMe />;
 }

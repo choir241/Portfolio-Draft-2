@@ -73,7 +73,7 @@ export default function AboutMe() {
             alt="linkedIn post of storybook meetup"
             width={600}
             className="mt-8 w-2/5"
-          />{" "}
+          />
           <Image
             src={chat2}
             alt="linkedIn post of storybook meetup"
@@ -88,7 +88,7 @@ export default function AboutMe() {
             alt="linkedIn post of storybook meetup"
             width={600}
             className="mt-8 w-2/5"
-          />{" "}
+          />
           <Image
             src={conference2}
             alt="linkedIn post of storybook meetup"
