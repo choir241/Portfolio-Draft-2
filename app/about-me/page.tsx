@@ -15,7 +15,7 @@ export default function AboutMe() {
         About Me
       </h2>
 
-      <ul className="max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:px-10">
+      <ul className="pb-10 px-6 max-[1000px]:flex max-[1000px]:flex-col max-[1000px]:items-center max-[1000px]:px-10">
         <li className="list-disc ml-10 text-2xl leading-10 min-[2400px]:text-6xl min-[2400px]:leading-[6rem]">
           I love to take walks outside, it is a great way to clear my head and
           it's a great break from the screen.
@@ -38,7 +38,10 @@ export default function AboutMe() {
       </ul>
 
       <div className="flex flex-wrap justify-evenly items-center flex-col">
-        <div className="w-full flex justify-evenly min-[2400px]:w-full min-[2400px]:mb-6">
+        <h3 className="text-6xl my-6 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+          My drawings
+        </h3>
+        <div className="w-full flex justify-evenly min-[2400px]:w-full mb-16">
           <Image
             src={drawing1}
             alt="my drawing of Miko Ino from the anime Kaguya-sama: Love is War"
@@ -53,7 +56,10 @@ export default function AboutMe() {
           />
         </div>
 
-        <div className="w-full flex justify-evenly min-[2400px]:w-full min-[2400px]:mb-6">
+        <h3 className="text-6xl my-6 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+          Going to Meetups
+        </h3>
+        <div className="w-full flex justify-evenly min-[2400px]:w-full mb-16">
           <Image
             src={codeAndCoffee}
             alt="linknedIn post of code and coffee meetup"
@@ -67,7 +73,11 @@ export default function AboutMe() {
             className="mt-8 w-2/5"
           />
         </div>
-        <div className="flex justify-evenly w-full min-[2400px]:w-full min-[2400px]:mb-6">
+
+        <h3 className="text-6xl my-6 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+          My Coffee Chats
+        </h3>
+        <div className="flex justify-evenly w-full min-[2400px]:w-full mb-16">
           <Image
             src={chat1}
             alt="linkedIn post of storybook meetup"
@@ -82,6 +92,9 @@ export default function AboutMe() {
           />
         </div>
 
+        <h3 className="text-6xl my-6 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+          Going to Conferences
+        </h3>
         <div className="flex justify-evenly w-full min-[2400px]:w-full min-[2400px]:mb-6">
           <Image
             src={conference1}

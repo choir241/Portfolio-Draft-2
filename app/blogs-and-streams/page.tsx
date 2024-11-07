@@ -43,16 +43,40 @@ export default function Blog() {
     title: string;
   }
 
-  interface IStream extends IBlog {}
+  interface IStream extends IBlog {
+    altlink: React.JSX.Element;
+  }
 
   const streams: IStream[] = [
     {
       src: stream1,
+      altlink: (
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/KiWx5bwNEyE?si=vk13WJnLd39ZEVmk"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      ),
       link: "https://www.youtube.com/watch?v=KiWx5bwNEyE&t=2569s&ab_channel=RyanFurrer",
       title: "Ryan Furrer",
     },
     {
       src: stream3,
+      altlink: (
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/OX_ZFspRX6w?si=VBDyWlinwXp9Mle1"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      ),
       link: "https://www.youtube.com/watch?v=OX_ZFspRX6w&ab_channel=CodingwithShashi",
       title: "Gridiron Survivor",
     },
@@ -61,11 +85,33 @@ export default function Blog() {
   const streams1: IStream[] = [
     {
       src: stream2,
+      altlink: (
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/4CEynrl8xaw?si=fqT_Ucc5qEcBJP9H"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      ),
       link: "https://www.youtube.com/watch?v=4CEynrl8xaw&ab_channel=PiecesforDevelopers",
       title: "Pieces",
     },
     {
       src: stream4,
+      altlink: (
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/wf56WT_rO_A?si=OyN2L9G7G1mnSKuD&amp;start=16717"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
+      ),
       link: "https://www.youtube.com/watch?v=wf56WT_rO_A&t=16717s&ab_channel=ThatConference",
       title: "THAT Conference",
     },
@@ -133,28 +179,14 @@ export default function Blog() {
         Streams I have been on
       </h2>
 
-      <div className="flex items-center max-[800px]:flex-col w-full justify-evenly">
+      <div className="flex items-center max-[800px]:flex-col w-full justify-evenly mb-16">
         {streams.map((streamObj: IStream) => {
           return (
             <section
               className="mt-10 flex flex-col justify-center items-center"
               key={streamObj.title}
             >
-              <Link
-                className="border-[#86cecb] flex justify-center items-center"
-                href={streamObj.link}
-                target="_blank"
-              >
-                <Image src={streamObj.src} alt="" width={400} />
-              </Link>
-
-              <Link
-                className="border-[#86cecb] mt-2 border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
-                href="https://www.youtube.com/watch?v=KiWx5bwNEyE&t=2569s&ab_channel=RyanFurrer"
-                target="_blank"
-              >
-                {streamObj.title}
-              </Link>
+              {streamObj.altlink}
             </section>
           );
         })}
@@ -167,21 +199,7 @@ export default function Blog() {
               className="mt-10 flex flex-col justify-center items-center"
               key={streamObj.title}
             >
-              <Link
-                className="border-[#86cecb] flex justify-center items-center"
-                href={streamObj.link}
-                target="_blank"
-              >
-                <Image src={streamObj.src} alt="" width={400} />
-              </Link>
-
-              <Link
-                className="border-[#86cecb] mt-2 border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
-                href="https://www.youtube.com/watch?v=KiWx5bwNEyE&t=2569s&ab_channel=RyanFurrer"
-                target="_blank"
-              >
-                {streamObj.title}
-              </Link>
+              {streamObj.altlink}
             </section>
           );
         })}

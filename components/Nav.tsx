@@ -17,13 +17,13 @@ export default function Nav() {
           </a>
         </li>
         <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-          <a className="text-4xl" href="/blogs-and-streams">
-            Blogs and Streams
+          <a className="text-4xl" href="/documentation">
+            Documentation
           </a>
         </li>
         <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-          <a className="text-4xl" href="/documentation">
-            Documentation
+          <a className="text-4xl" href="/blogs-and-streams">
+            Blogs and Streams
           </a>
         </li>
       </ul>
@@ -45,13 +45,13 @@ export default function Nav() {
           className={`${toggleMenu} items-center flex-col justify-center flex pb-4 px-4`}
         >
           <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-            <a className="text-4xl" href="/blogs-and-streams">
-              Blogs and Streams
+            <a className="text-4xl" href="/documentation">
+              Documentation
             </a>
           </li>
           <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-            <a className="text-4xl" href="/documentation">
-              Documentation
+            <a className="text-4xl" href="/blogs-and-streams">
+              Blogs and Streams
             </a>
           </li>
           <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">

@@ -46,42 +46,23 @@ export default function Documentation() {
         Documentation I have worked on:
       </h2>
 
-      <div className="flex justify-evenly items-center max-[800px]:flex-col">
+      <div className="flex items-center max-[800px]:flex-col">
         <Link
+          target="_blank"
           href="https://dev.to/choir241/low-level-documentation-41k9"
           className="text-4xl pb-1 pt-8 mx-6 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
         >
           <Image
             src={documentation}
             alt=""
-            className="max-[800px]:w-full max-[800px]:px-8"
-          />
-        </Link>
-
-        <Link
-          href="https://dev.to/choir241/low-level-documentation-41k9"
-          className="text-4xl pb-1 pt-8 mx-6 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
-        >
-          <Image
-            src={documentation1}
-            alt=""
-            className="max-[800px]:w-full max-[800px]:px-8"
-          />
-        </Link>
-
-        <Link
-          href="https://dev.to/choir241/low-level-documentation-41k9"
-          className="text-4xl pb-1 pt-8 mx-6 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
-        >
-          <Image
-            src={documentation2}
-            alt=""
+            width={400}
             className="max-[800px]:w-full max-[800px]:px-8"
           />
         </Link>
       </div>
 
       <Link
+        target="_blank"
         href="https://dev.to/choir241/low-level-documentation-41k9"
         className="flex hover:pb-3 hover:ease-in hover:duration-300 border-[#86cecb] border-b-2 text-4xl pb-1 pt-8 mx-6 min-[2400px]:justify-center min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
       >
@@ -119,6 +100,7 @@ export default function Documentation() {
         {links.map((ele) => {
           return (
             <Link
+              target="_blank"
               key={ele.link}
               href={ele.link}
               className="border-[#86cecb] border-b-2 text-4xl pb-1 pt-8 mx-6 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
