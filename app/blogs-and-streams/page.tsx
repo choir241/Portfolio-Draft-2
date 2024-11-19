@@ -2,6 +2,7 @@ import blog1 from "../../assets/blog1.png";
 import blog2 from "../../assets/blog2.png";
 import blog3 from "../../assets/blog3.png";
 import blog4 from "../../assets/blog4.png";
+import blog5 from "../../assets/blog5.png";
 import Image from "next/image";
 import Link from "next/link";
 import stream1 from "../../assets/stream.png";
@@ -11,6 +12,7 @@ import stream4 from "../../assets/that_stream.png";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 export default function Blog() {
+
   const blogs: IBlog[] = [
     {
       src: blog4,
@@ -35,6 +37,14 @@ export default function Blog() {
       link: "https://dev.to/choir/my-journey-5eb3",
       title: "Journey",
     },
+  ];
+
+  const blogs2: IBlog[] = [
+    {
+    src: blog5,
+    link: "https://dev.to/choir241/zero-to-hero-building-a-full-stack-app-with-propelauth-vite-typescript-express-and-mongodb-234d",
+    title: "Propel Auth"
+    }
   ];
 
   interface IBlog {
@@ -117,6 +127,17 @@ export default function Blog() {
     },
   ];
 
+  const streams2: IStream[] = [
+    {
+    src: stream4,
+    altlink: (
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/wcJVHQJQXzg?si=uLdErYuc3rYe1gGF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    ),
+    link: "https://www.youtube.com/watch?v=wcJVHQJQXzg&ab_channel=KrishCodes",
+    title: "Podcast 404"
+  }
+  ];
+
   return (
     <section id="blog" className="flex flex-col items-start py-8 w-full">
       <h2 className="text-6xl my-12 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
@@ -175,11 +196,37 @@ export default function Blog() {
         })}
       </div>
 
+      <div className="flex justify-evenly items-center max-[800px]:flex-col w-full mb-8">
+        {blogs2.map((blogObj: IBlog) => {
+          return (
+            <section
+              key={blogObj.title}
+              className="mt-10 flex flex-col items-center"
+            >
+              <Link
+                target="_blank"
+                className="flex justify-center"
+                href={blogObj.link}
+              >
+                <Image src={blogObj.src} alt="" width={400} />
+              </Link>
+              <Link
+                target="_blank"
+                href={blogObj.link}
+                className="border-[#86cecb] mt-2 border-b-2 border-b-black-700 text-2xl max-[1000px]:mb-2 pb-1 pt-2 mr-10 hover:pb-3 hover:ease-in hover:duration-300 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]"
+              >
+                {blogObj.title} Blog
+              </Link>
+            </section>
+          );
+        })}
+      </div>
+
       <h2 className="text-6xl my-12 px-5 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
         Streams I have been on
       </h2>
 
-      <div className="flex items-center max-[800px]:flex-col w-full justify-evenly mb-16">
+      <div className="flex items-center max-[1200px]:flex-col w-full justify-evenly mb-16">
         {streams.map((streamObj: IStream) => {
           return (
             <section
@@ -192,8 +239,21 @@ export default function Blog() {
         })}
       </div>
 
-      <div className="flex items-center max-[800px]:flex-col w-full justify-evenly">
+      <div className="flex items-center max-[1200px]:flex-col w-full justify-evenly">
         {streams1.map((streamObj: IStream) => {
+          return (
+            <section
+              className="mt-10 flex flex-col justify-center items-center"
+              key={streamObj.title}
+            >
+              {streamObj.altlink}
+            </section>
+          );
+        })}
+      </div>
+
+      <div className="flex items-center max-[1200px]:flex-col w-full justify-evenly">
+        {streams2.map((streamObj: IStream) => {
           return (
             <section
               className="mt-10 flex flex-col justify-center items-center"
