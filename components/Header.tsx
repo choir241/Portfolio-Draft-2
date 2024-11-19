@@ -10,8 +10,8 @@ export default function Header() {
   return (
     <header className="pt-24 min-[2400px]:pt-40">
       <section className="flex justify-center max-[1000px]:flex-col items-center max-[1000px]:pt-10">
-        <div className="flex flex-col justify-center w-4/6 mr-2 p-2 pl-8">
-          <h1 className="text-8xl mb-8 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
+        <div className="flex flex-col justify-center w-3/6 max-[1000px]:w-full max-[1000px]:text-center mr-2 p-2 pl-8">
+          <h1 className="flex items-center max-[1000px]:justify-center text-8xl mb-8 min-[2400px]:text-8xl min-[2400px]:leading-[6rem]">
             Richard Choi
           </h1>
 
