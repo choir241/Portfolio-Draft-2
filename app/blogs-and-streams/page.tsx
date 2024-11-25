@@ -3,6 +3,7 @@ import blog2 from "../../assets/blog2.png";
 import blog3 from "../../assets/blog3.png";
 import blog4 from "../../assets/blog4.png";
 import blog5 from "../../assets/blog5.png";
+import blog6 from "../../assets/blog6.png";
 import Image from "next/image";
 import Link from "next/link";
 import stream1 from "../../assets/stream.png";
@@ -44,6 +45,11 @@ export default function Blog() {
     src: blog5,
     link: "https://dev.to/choir241/zero-to-hero-building-a-full-stack-app-with-propelauth-vite-typescript-express-and-mongodb-234d",
     title: "Propel Auth"
+    },
+    {
+    src: blog6,
+    link: "https://dev.to/choir241/my-thoughts-on-pieces-3cmc",
+    title: "Pieces"
     }
   ];
 
@@ -133,7 +139,7 @@ export default function Blog() {
     altlink: (
       <iframe width="560" height="315" src="https://www.youtube.com/embed/wcJVHQJQXzg?si=uLdErYuc3rYe1gGF" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
     ),
-    link: "https://www.youtube.com/watch?v=wcJVHQJQXzg&ab_channel=KrishCodes",
+    link: "https://www.youtube.com/watch?v=wcJVHQJQXzg&ab_channel=KrishCodes",  
     title: "Podcast 404"
   }
   ];
@@ -239,7 +245,7 @@ export default function Blog() {
         })}
       </div>
 
-      <div className="flex items-center max-[600px]:flex-col w-full justify-evenly">
+      <div className="flex items-center max-[600px]:flex-col w-full justify-evenly mb-16">
         {streams1.map((streamObj: IStream) => {
           return (
             <section

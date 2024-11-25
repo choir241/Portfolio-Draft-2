@@ -1,5 +1,5 @@
-import AboutMe from "./about-me/page";
+import Projects from "./projects/page";
 
 export default function App() {
-  return <AboutMe />;
+  return <Projects />;
 }
