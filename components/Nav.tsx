@@ -1,6 +1,7 @@
 "use client";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Nav() {
   const [toggleMenu, setToggleMenu] = useState("hidden");
@@ -12,19 +13,19 @@ export default function Nav() {
     >
       <ul className="flex max-[1000px]:hidden items-center justify-around py-4 px-4">
         <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-          <a className="text-4xl" href="/">
+          <Link className="text-4xl" href="/">
             Home
-          </a>
+          </Link>
         </li>
         <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-          <a className="text-4xl" href="/documentation">
+          <Link className="text-4xl" href="/documentation">
             Documentation
-          </a>
+          </Link>
         </li>
         <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-          <a className="text-4xl" href="/blogs-and-streams">
+          <Link className="text-4xl" href="/blogs-and-streams">
             Blogs and Streams
-          </a>
+          </Link>
         </li>
       </ul>
 
@@ -45,24 +46,24 @@ export default function Nav() {
           className={`${toggleMenu} items-center flex-col justify-center flex pb-4 px-4`}
         >
           <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-            <a className="text-4xl" href="/projects">
+            <Link className="text-4xl" href="/projects">
               Projects
-            </a>
+            </Link>
           </li>
           <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-            <a className="text-4xl" href="/documentation">
+            <Link className="text-4xl" href="/documentation">
               Documentation
-            </a>
+            </Link>
           </li>
           <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-            <a className="text-4xl" href="/blogs-and-streams">
+            <Link className="text-4xl" href="/blogs-and-streams">
               Blogs and Streams
-            </a>
+            </Link>
           </li>
           <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-            <a className="text-4xl" href="/about-me">
+            <Link className="text-4xl" href="/Link>bout-me">
               About Me
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

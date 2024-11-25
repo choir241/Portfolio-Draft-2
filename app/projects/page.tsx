@@ -33,7 +33,7 @@ export default function Projects() {
       <div className="flex justify-center items-center flex-col w-full mb-8">
         {projects.map((project: IProject)=>{
           return(
-             <section className="mt-10   flex flex-col items-center justify-center">
+             <section key={project.title} className="mt-10 flex flex-col items-center justify-center">
              <Link
                target="_blank"
                className="flex justify-center"
