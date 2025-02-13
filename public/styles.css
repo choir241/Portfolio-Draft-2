@@ -14,3 +14,11 @@
     font-family: InterVariable, sans-serif;
   }
 }
+
+.currPage{
+  background: #1A3E40;
+  width: auto;
+  text-align: center;
+  padding: 2rem;
+  color: #A6FBFF;
+}

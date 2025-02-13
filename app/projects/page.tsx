@@ -17,7 +17,7 @@ export default function Projects() {
     {
       title: "Gridiron Survivor",
       description:
-        "A NFL football survivor pool application. Users pick a team each week before the set deadline within each created entry. The admin is able to send email notifications to the users within league to remind them to make a pick. The goal is to be the last player standing in your respective league.",
+        "A NFL football survivor pool application. Users pick a team each week before the set deadline within each created entry. The admin is able to send email notifications to the users within the league to remind them to make a pick. The goal is to be the last player standing in your respective league. Using Agile methodologies, I worked as the frontend and backend developer, and the technical writer on Gridiron Survivor with a team of developers to build a full-stack application. From a remote-only setting, I collaborated and communicated with the frontend and backend teams to debug problems of varying priority levels.",
       github: "https://github.com/LetsGetTechnical/gridiron-survivor",
       link: "https://www.gridironsurvivor.com/",
       src: project1,

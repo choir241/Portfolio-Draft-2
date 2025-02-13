@@ -1,31 +1,39 @@
 "use client";
 import { IoIosMenu, IoIosClose } from "react-icons/io";
 import { useState } from "react";
-import Link from "next/link";
 
 export default function Nav() {
   const [toggleMenu, setToggleMenu] = useState("hidden");
 
+    const url = window.location.href;
+    const splitUrl = url.split("/");
+    const toggleNav = splitUrl[splitUrl.length-1];
+
   return (
     <nav
-      className="fixed flex flex-col self-end bg-[#137a7f] w-full"
+      className="fixed flex flex-col self-end bg-[#137a7f] w-full p-0"
       id="lookingForward"
     >
-      <ul className="flex max-[1000px]:hidden items-center justify-around py-4 px-4">
-        <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-          <Link className="text-4xl" href="/">
+      <ul className="flex max-[1000px]:hidden items-center justify-around px-4">
+        <li className={`py-4 text-[#bec8d1] hover:opacity-70 hover:ease-in hover:duration-300 ${toggleNav === "" ? "currPage" : ""}`}>
+          <a className="text-4xl h-full" href="/">
             Home
-          </Link>
+          </a>
         </li>
-        <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-          <Link className="text-4xl" href="/documentation">
+        <li className={`text-[#bec8d1] hover:opacity-70 hover:ease-in hover:duration-300 ${toggleNav === "documentation" ? "currPage" : ""}`}>
+          <a className="text-4xl" href="/documentation">
             Documentation
-          </Link>
+          </a>
         </li>
-        <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-          <Link className="text-4xl" href="/blogs-and-streams">
+        <li className={`text-[#bec8d1] hover:opacity-70 hover:ease-in hover:duration-300 ${toggleNav === "blogs-and-streams" ? "currPage" : ""}`}>
+          <a className="text-4xl" href="/blogs-and-streams">
             Blogs and Streams
-          </Link>
+          </a>
+        </li>
+        <li className={`text-[#bec8d1] hover:opacity-70 hover:ease-in hover:duration-300 ${toggleNav === "about-me" ? "currPage" : ""}`}>
+          <a className="text-4xl" href="/about-me">
+            About Me
+          </a>
         </li>
       </ul>
 
@@ -46,24 +54,24 @@ export default function Nav() {
           className={`${toggleMenu} items-center flex-col justify-center flex pb-4 px-4`}
         >
           <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-            <Link className="text-4xl" href="/projects">
+            <a className="text-4xl" href="/projects">
               Projects
-            </Link>
+            </a>
           </li>
           <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-            <Link className="text-4xl" href="/documentation">
+            <a className="text-4xl" href="/documentation">
               Documentation
-            </Link>
+            </a>
           </li>
           <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-            <Link className="text-4xl" href="/blogs-and-streams">
+            <a className="text-4xl" href="/blogs-and-streams">
               Blogs and Streams
-            </Link>
+            </a>
           </li>
           <li className="text-[#bec8d1] mb-2 hover:opacity-70 hover:ease-in hover:duration-300">
-            <Link className="text-4xl" href="/Link>bout-me">
+            <a className="text-4xl" href="/a>bout-me">
               About Me
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
