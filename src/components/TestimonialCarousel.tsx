@@ -58,14 +58,14 @@ const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
         )}
       >
         <CardContent className="text-center">
-          <p className="text-lg md:text-xl text-portfolio-light mb-6">
+          <p className="text-lg md:text-xl text-portfolio-lightest mb-6">
             {testimonial.text}
           </p>
           <div>
-            <div className="font-bold text-portfolio-secondary">
+            <div className="font-bold text-portfolio-lightest">
               {testimonial.author}
             </div>
-            <div className="text-sm text-portfolio-light">
+            <div className="text-sm text-portfolio-lightest">
               {testimonial.role}
             </div>
           </div>

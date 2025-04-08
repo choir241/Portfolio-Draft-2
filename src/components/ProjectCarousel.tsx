@@ -39,18 +39,24 @@ const ProjectCarousel = ({ className }: ProjectCarouselProps) => {
 
   function projectCarouselCard({ project }: { project: IProject }) {
     return (
-      <section key={project.name} className="card flex flex-col items-center">
-          <a href = {project.link} className="hover:opacity-70 w-16 h-16 md:w-20 md:h-20 bg-white rounded-lg p-2 flex items-center justify-center">
-            <img
-              src={project.logo}
-              alt={project.name + " logo"}
-              className="w-full h-full object-contain"
-            />
-          </a>
-          <span className="mt-2 text-sm text-portfolio-light">
-            {project.name}
-          </span>
-      </section>
+      <a
+        href={project.link}
+        className="project border border-[#86cecb] drop-shadow-md drop-shadow-[#86cecb] hover:bg-[#bec8d1] card flex flex-col items-center"
+      >
+        <section
+          key={project.name}
+          className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-lg p-2 flex items-center justify-center"
+        >
+          <img
+            src={project.logo}
+            alt={project.name + " logo"}
+            className="w-full h-full object-contain"
+          />
+        </section>
+        <span className="projectName mt-2 text-sm text-portfolio-light">
+          {project.name}
+        </span>
+      </a>
     );
   }
 
@@ -59,9 +65,9 @@ const ProjectCarousel = ({ className }: ProjectCarouselProps) => {
       className={cn("py-10 bg-portfolio-primary", className)}
       aria-label="Project Technologies"
     >
-        <h2 className="text-2xl md:text-3xl font-bold text-portfolio-lightest text-center">
-          {Labels.projectCarousel.heading2}
-        </h2>
+      <h2 className="text-2xl md:text-3xl font-bold text-portfolio-lightest text-center">
+        {Labels.projectCarousel.heading2}
+      </h2>
 
       <section ref={carouselRef} className="carousel" aria-hidden="true">
         <div className="group">

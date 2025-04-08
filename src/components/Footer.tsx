@@ -11,7 +11,7 @@ const Footer = ({ className }: FooterProps) => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className={cn("py-12 bg-portfolio-primary text-portfolio-light", className)}>
+    <footer className={cn("py-12 bg-portfolio-primary text-portfolio-lightest", className)}>
       <section className="mx-auto px-4">
         <section className="flex flex-col md:flex-row items-center justify-between">
           <div className="mb-6 md:mb-0">
