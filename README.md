@@ -1,4 +1,4 @@
-## Richard Choi Tailwind Application
+## Richard Choi Portfolio
 
 Website URL:
 https://choir.netlify.app/
