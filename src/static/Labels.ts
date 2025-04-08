@@ -82,7 +82,7 @@ export const Labels = {
         },
         project4: {
             name: "Yes Chef",
-            link: "",
+            link: "https://yes-chef-app.vercel.app/",
             github: "https://github.com/team-elder-and-nikki/yes-chef-app",
             logo: yesChef
         }
