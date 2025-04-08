@@ -26,7 +26,7 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				portfolio: {
-					primary: '#22475e',     // Deep teal-blue (replacing dark blue)
+					primary: '#163B46',     // Deep teal-blue (replacing dark blue)
 					secondary: '#39C5BB',   // Bright teal/turquoise (Miku's signature color)
 					neutral: '#6f8c9f',     // Muted teal
 					light: '#a9e7e2',       // Light teal

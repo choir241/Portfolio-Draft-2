@@ -63,7 +63,7 @@ const ProjectCarousel = ({ className }: ProjectCarouselProps) => {
           {Labels.projectCarousel.heading2}
         </h2>
 
-      <div ref={carouselRef} className="carousel" aria-hidden="true">
+      <section ref={carouselRef} className="carousel" aria-hidden="true">
         <div className="group">
           {projects.map((project) => projectCarouselCard({ project }))}
         </div>
@@ -71,7 +71,7 @@ const ProjectCarousel = ({ className }: ProjectCarouselProps) => {
         <div className="group">
           {projects.map((project) => projectCarouselCard({ project }))}
         </div>
-      </div>
+      </section>
     </section>
   );
 };

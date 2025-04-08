@@ -5,6 +5,7 @@
 
 @layer base {
   :root {
+    color: #137a7f;
     --background: 210 40% 98%;
     --foreground: 222.2 84% 4.9%;
 
@@ -148,8 +149,9 @@ a:focus, button:focus {
   background-position: center;
 }
 
-&::before {  
-  background-image: url("../assets/collage.png");
+&::before {
+  /* background-image: url("../assets/collage.png"); */
+  background-image: url("../assets/download.png");
   content: "";
   background-position: center;
   background-repeat: no-repeat;
@@ -160,4 +162,30 @@ a:focus, button:focus {
   bottom: 0px;
   left: 0px;
   opacity: 0.75;
+}
+
+@media screen and (min-width: 150px) and (max-width: 1469px){
+  .bg-header {
+    background-position: center;
+  }
+
+  &::before{
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 150px) and (max-width: 1025px){
+  header article section h1, header article section h2{
+    text-align: center;
+  }
+
+  header article section div{
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1900px){
+   .stream{
+    width: 100%;
+   }
 }

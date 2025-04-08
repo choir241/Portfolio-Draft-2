@@ -13,37 +13,41 @@ export const Labels = {
     contact:{
         heading2: "Let's Connect",
         contactCardChat: {
-            title: "Schedule a Chat",
-            description: "Book a time to discuss your project or just chat about tech.",
-            content: "I'm always open to discussing new projects, ideas, or opportunities to be part of your visions.",
-            button: "Schedule a Call"
+            title: "Schedule a 1 on 1",
+            content: "A chance for us to get to know each other better through an online 1 on 1 call!",
+            button: "Schedule a Call",
+            link: "https://www.linkedin.com/in/richard-choir/"
         },
         contactCardProject: {
             title: "Contact for a Project",
-            description: "Have a project in mind? Let's discuss how I can help.",
-            content: " Whether you need a web application, consultation, or technical, advice, I'm here to help.",
-            button: "Start a Project"
+            content: "Need a project to be built? Reach out so we can figure out all the details together!",
+            button: "Start a Project",
+            link: "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=richardchoi54@gmail.com"
         },
         contactForStream: {
             title: "Contact for a Stream",
-            description: "Interested in having me on your live stream or podcast?",
-            content: "I enjoy sharing knowledge about React, accessibility, and modern web development practices.",
-            button: "Contact for a Stream" 
+            content: "Want me to join your stream? Let's figure out a time and day to go live together!",
+            button: "Contact for a Stream",
+            link: "https://x.com/choir241"
         }
     },
     features:{
         heading2: "Community Engagement",
         bubbleChat:{
-            title: "Chats",
+            title: "1 on 1 Calls",
+            number: "62+"
         },
         bubbleConference:{
-            title: "Conferences"
+            title: "Conferences Attended",
+            number: "5+"
         },
         bubbleMeetup:{
-            title: "Meetups"
+            title: "Meetups Attended",
+            number: "24+"
         },
         bubbleCommit:{
-            title: "Commits"
+            title: "Contributions Made",
+            number: "3,778+"
         }
     },
     footer: {
@@ -54,7 +58,6 @@ export const Labels = {
     header: {
         heading1: "Hi, I'm Richard",
         heading2: "React Developer & Technical Writer",
-        description: "I build accessible, inclusive products and digital experiences for the web.",
         button: "Services I Provide"
     },
     projectCarousel: {
@@ -86,24 +89,20 @@ export const Labels = {
     },
     socialLinks: {
         github: {
-            link: "https://github.com/richard",
+            link: "https://github.com/choir241",
             label: "GitHub Profile"
                 },
         twitter: {
-            link: "https://twitter.com/richard",
+            link: "https://x.com/choir241",
             label: "Twitter Profile"
         },
         linkedin: {
-            link: "https://www.linkedin.com/in/richard",
+            link: "https://www.linkedin.com/in/richard-choir/",
             label: "LinkedIn Profile"
         },
         bluesky: {
-            link: "https://www.bluesky.com/richard",
+            link: "https://bsky.app/profile/choir241.bsky.social",
             label: "Bluesky Profile"
-        },
-        facebook: {
-            link: "https://www.facebook.com/richard",
-            label: "Facebook Profile"
         }
     },
     streamCarousel: {

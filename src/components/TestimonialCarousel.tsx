@@ -53,7 +53,7 @@ const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
     return (
       <Card
         className={cn(
-          "absolute top-0 left-0 right-0 w-full bg-transparent border-none shadow-none transition-opacity duration-500",
+          "bg-transparent border-none transition-opacity duration-500",
           index === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0"
         )}
       >
@@ -75,13 +75,13 @@ const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
   }
 
   return (
-    <section className={cn("py-16 bg-portfolio-primary text-white", className)}>
-      <div className="container mx-auto px-4">
+    <section className={cn("py-16 bg-portfolio-primary text-white h-full", className)}>
+      <div className="mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-portfolio-lightest text-center mb-12">
           {Labels.testimonialCarousel.heading2}
         </h2>
 
-        <div className="relative min-h-[250px]">
+        <div>
           {testimonials.map((testimonial, index) =>
             testimonialCarouselCard({ testimonial, index })
           )}

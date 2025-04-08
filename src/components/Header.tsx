@@ -16,15 +16,12 @@ const Header = ({ className }: HeaderProps) => {
 
       <article className="mx-auto px-4 z-10 flex flex-col lg:flex-row items-center">
         <section className="w-full lg:w-1/2 text-left mb-8 lg:mb-0">
-          <h1 className="text-4xl md:text-6xl font-bold text-portfolio-lightest mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-portfolio-light mb-4">
             {Labels.header.heading1}
           </h1>
           <h2 className="text-xl md:text-2xl text-portfolio-light mb-6">{Labels.header.heading2}</h2>
-          <p className="text-portfolio-light max-w-lg mb-8">
-            {Labels.header.description}
-          </p>
           
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col items-center sm:flex-row gap-4">
             <a 
               href="#contact" 
               className="bg-transparent hover:bg-portfolio-secondary/10 text-portfolio-light border border-portfolio-secondary px-6 py-3 rounded focus:outline-none focus:ring-2 focus:ring-portfolio-secondary transition-colors"

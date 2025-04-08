@@ -16,16 +16,16 @@ interface ContactCardsProps {
 
 function CardComponent({
   title,
-  description,
   content,
   button,
   calSize,
+  link
 }: {
   title: string;
-  description: string;
   content: string;
   button: string;
   calSize: number;
+  link: string;
 }) {
   return (
     <Card className="bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
@@ -34,15 +34,16 @@ function CardComponent({
           <Calendar size={calSize} />
         </div>
         <CardTitle>{title}</CardTitle>
-        <CardDescription>{description}</CardDescription>
       </CardHeader>
       <CardContent>
         <p className="text-gray-600">{content}</p>
       </CardContent>
       <CardFooter>
+        <a href = {link}>
         <Button className="w-full bg-portfolio-primary hover:bg-portfolio-primary/90">
           {button}
         </Button>
+        </a>
       </CardFooter>
     </Card>
   );
@@ -66,9 +67,9 @@ const ContactCards = ({ className }: ContactCardsProps) => {
           {contactCards.map((card) => {
             return (
               <CardComponent
+                link={card.link}
                 calSize={28}
                 title={card.title}
-                description={card.description}
                 content={card.content}
                 button={card.button}
               />

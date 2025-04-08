@@ -31,7 +31,7 @@ const StreamCarousel = ({ className }: StreamCarouselProps) => {
 
   function streamCarouselCard({ stream }: { stream: IStream }) {
     return (
-      <Card className="w-72 md:w-80 bg-white shadow-md overflow-hidden">
+      <Card className="w-72 stream bg-white shadow-md overflow-hidden card">
         <div className="relative h-40 w-full">
           <img
             src={stream.image}
