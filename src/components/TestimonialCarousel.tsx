@@ -4,12 +4,14 @@ import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Labels } from "@/static/Labels";
+
 interface TestimonialCarouselProps {
   className?: string;
 }
 
 const testimonials = [
   Labels.testimonialCarousel.testimonial1,
+  Labels.testimonialCarousel.testimonial2,
 ];
 
 const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
@@ -53,7 +55,9 @@ const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
     return (
       <Card
         className={cn(
-          "bg-transparent border-none transition-opacity duration-500",
+          `${
+            testimonial.text.length > 1000 ? "h-[120vh] overflow-y-auto " : ""
+          } absolute top-0 left-0 right-0 w-full bg-transparent border-none transition-opacity duration-500`,
           index === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0"
         )}
       >
@@ -75,58 +79,60 @@ const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
   }
 
   return (
-    <section className={cn("py-16 bg-portfolio-primary text-white h-full", className)}>
+    <section className={cn("py-16 bg-portfolio-primary text-white", className)}>
       <div className="mx-auto px-4">
         <h2 className="text-2xl md:text-3xl font-bold text-portfolio-lightest text-center mb-12">
           {Labels.testimonialCarousel.heading2}
         </h2>
 
-        <div>
-          {testimonials.map((testimonial, index) =>
-            testimonialCarouselCard({ testimonial, index })
-          )}
-        </div>
-
-        <section className="max-w-3xl mx-auto pt-8">
-          <div className="flex justify-center gap-2 mt-8">
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={goToPrevious}
-              className="rounded-full border-portfolio-secondary text-portfolio-secondary hover:bg-portfolio-secondary/20"
-              aria-label="Previous testimonial"
-            >
-              <ArrowLeft size={18} />
-            </Button>
-
-            {testimonials.map((_, index) => (
+        <div className="max-w-5xl mx-auto">
+          <section className="max-w-3xl mx-auto pb-16">
+            <div className="flex justify-center gap-2 mt-8">
               <Button
-                key={index}
-                variant="ghost"
-                size="sm"
-                onClick={() => setActiveIndex(index)}
-                className={cn(
-                  "w-2 h-2 rounded-full p-0 min-w-0",
-                  index === activeIndex
-                    ? "bg-portfolio-secondary"
-                    : "bg-portfolio-light/30 hover:bg-portfolio-light/50"
-                )}
-                aria-label={`Go to testimonial ${index + 1}`}
-                aria-current={index === activeIndex ? "true" : "false"}
-              />
-            ))}
+                variant="outline"
+                size="icon"
+                onClick={goToPrevious}
+                className="rounded-full border-portfolio-secondary text-portfolio-secondary hover:bg-portfolio-secondary/20"
+                aria-label="Previous testimonial"
+              >
+                <ArrowLeft size={18} />
+              </Button>
 
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={goToNext}
-              className="rounded-full border-portfolio-secondary text-portfolio-secondary hover:bg-portfolio-secondary/20"
-              aria-label="Next testimonial"
-            >
-              <ArrowRight size={18} />
-            </Button>
+              {testimonials.map((_, index) => (
+                <Button
+                  key={index}
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => setActiveIndex(index)}
+                  className={cn(
+                    "w-2 h-2 rounded-full p-0 min-w-0",
+                    index === activeIndex
+                      ? "bg-portfolio-secondary"
+                      : "bg-portfolio-light/30 hover:bg-portfolio-light/50"
+                  )}
+                  aria-label={`Go to testimonial ${index + 1}`}
+                  aria-current={index === activeIndex ? "true" : "false"}
+                />
+              ))}
+
+              <Button
+                variant="outline"
+                size="icon"
+                onClick={goToNext}
+                className="rounded-full border-portfolio-secondary text-portfolio-secondary hover:bg-portfolio-secondary/20"
+                aria-label="Next testimonial"
+              >
+                <ArrowRight size={18} />
+              </Button>
+            </div>
+          </section>
+
+          <div className="min-h-[120vh] relative">
+            {testimonials.map((testimonial, index) =>
+              testimonialCarouselCard({ testimonial, index })
+            )}
           </div>
-        </section>
+        </div>
       </div>
     </section>
   );
