@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { ArrowLeft, ArrowRight, Quote } from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Labels } from "@/static/Labels";
-
+import { useIsMobile } from "@/hooks/use-mobile";
 interface TestimonialCarouselProps {
   className?: string;
 }
@@ -15,29 +15,33 @@ const testimonials = [
 ];
 
 const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const isMobile = useIsMobile();
+  const [currentPage, setCurrentPage] = useState(0);
+  const itemsPerPage = 3;
+  const [expanded, setExpanded] = useState(false);
 
-  const goToNext = () => {
-    setActiveIndex((current) =>
-      current === testimonials.length - 1 ? 0 : current + 1
-    );
+  const effectiveItemsPerPage = isMobile ? 1 : itemsPerPage;
+
+  // Calculate total pages
+  const totalPages = Math.ceil(testimonials.length / effectiveItemsPerPage);
+
+  // Get current page items
+  const currentTestimonials = testimonials.slice(
+    currentPage * effectiveItemsPerPage,
+    (currentPage + 1) * effectiveItemsPerPage
+  );
+
+  // Navigation handlers
+  const goToNextPage = () => {
+    setCurrentPage((prev) => (prev + 1) % totalPages);
   };
 
-  const goToPrevious = () => {
-    setActiveIndex((current) =>
-      current === 0 ? testimonials.length - 1 : current - 1
-    );
+  const goToPrevPage = () => {
+    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
   };
 
-  // Auto advance the carousel (with respect to reduced motion preferences)
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-
-    if (!mediaQuery.matches) {
-      const intervalId = setInterval(goToNext, 8000);
-      return () => clearInterval(intervalId);
-    }
-  }, []);
+  // Calculate pagination indicators
+  const pageIndicators = Array.from({ length: totalPages }, (_, i) => i);
 
   interface ITestimonial {
     text: string;
@@ -47,24 +51,31 @@ const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
 
   function testimonialCarouselCard({
     testimonial,
-    index,
   }: {
     testimonial: ITestimonial;
-    index: number;
   }) {
+    const displayContent = expanded
+      ? testimonial.text
+      : testimonial.text.length > 150
+      ? `${testimonial.text.substring(0, 150)}...`
+      : testimonial.text;
+
     return (
       <Card
         className={cn(
-          `${
-            testimonial.text.length > 1000 ? "h-[120vh] overflow-y-auto " : ""
-          } absolute top-0 left-0 right-0 w-full bg-transparent border-none transition-opacity duration-500`,
-          index === activeIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+          `h-full bg-transparent border-none transition-opacity duration-500`
         )}
       >
         <CardContent className="text-center">
-          <p className="text-lg md:text-xl text-portfolio-lightest mb-6">
-            {testimonial.text}
+          <p
+            className={cn(
+              "text-lg md:text-xl text-portfolio-lightest mb-6",
+              !expanded && "line-clamp-4"
+            )}
+          >
+            {displayContent}
           </p>
+
           <div>
             <div className="font-bold text-portfolio-lightest">
               {testimonial.author}
@@ -74,6 +85,18 @@ const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
             </div>
           </div>
         </CardContent>
+
+        {testimonial.text.length > 250 && (
+          <CardFooter className="pt-0">
+            <Button
+              size="sm"
+              onClick={() => setExpanded(!expanded)}
+              className="bg-transparent hover:bg-portfolio-secondary/10 text-portfolio-lightest border border-portfolio-secondary px-6 py-3 rounded focus:outline-none focus:ring-2 focus:ring-portfolio-secondary transition-colors"
+            >
+              {expanded ? "Show less" : "Read more"}
+            </Button>
+          </CardFooter>
+        )}
       </Card>
     );
   }
@@ -85,54 +108,54 @@ const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
           {Labels.testimonialCarousel.heading2}
         </h2>
 
-        <div className="max-w-5xl mx-auto">
-          <section className="max-w-3xl mx-auto pb-16">
-            <div className="flex justify-center gap-2 mt-8">
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={goToPrevious}
-                className="rounded-full border-portfolio-secondary text-portfolio-secondary hover:bg-portfolio-secondary/20"
-                aria-label="Previous testimonial"
-              >
-                <ArrowLeft size={18} />
-              </Button>
-
-              {testimonials.map((_, index) => (
-                <Button
-                  key={index}
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => setActiveIndex(index)}
-                  className={cn(
-                    "w-2 h-2 rounded-full p-0 min-w-0",
-                    index === activeIndex
-                      ? "bg-portfolio-secondary"
-                      : "bg-portfolio-light/30 hover:bg-portfolio-light/50"
-                  )}
-                  aria-label={`Go to testimonial ${index + 1}`}
-                  aria-current={index === activeIndex ? "true" : "false"}
-                />
-              ))}
-
-              <Button
-                variant="outline"
-                size="icon"
-                onClick={goToNext}
-                className="rounded-full border-portfolio-secondary text-portfolio-secondary hover:bg-portfolio-secondary/20"
-                aria-label="Next testimonial"
-              >
-                <ArrowRight size={18} />
-              </Button>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {currentTestimonials.map((testimonial) => (
+            <div className="animate-fade-in">
+              {testimonialCarouselCard({ testimonial })}
             </div>
-          </section>
-
-          <div className="min-h-[120vh] relative">
-            {testimonials.map((testimonial, index) =>
-              testimonialCarouselCard({ testimonial, index })
-            )}
-          </div>
+          ))}
         </div>
+
+        <section className="max-w-3xl mx-auto pb-16">
+          <div className="flex justify-center gap-2 mt-8">
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={goToPrevPage}
+              className="rounded-full border-portfolio-secondary text-portfolio-secondary hover:bg-portfolio-secondary/20"
+              aria-label="Previous testimonial"
+            >
+              <ArrowLeft size={18} />
+            </Button>
+
+            {pageIndicators.map((_, index) => (
+              <Button
+                key={index}
+                variant="ghost"
+                size="sm"
+                onClick={() => setCurrentPage(index)}
+                className={cn(
+                  "w-2 h-2 rounded-full p-0 min-w-0",
+                  index === currentPage
+                    ? "bg-portfolio-secondary"
+                    : "bg-portfolio-light/30 hover:bg-portfolio-light/50"
+                )}
+                aria-label={`Go to testimonial ${index + 1}`}
+                aria-current={index === currentPage ? "true" : "false"}
+              />
+            ))}
+
+            <Button
+              variant="outline"
+              size="icon"
+              onClick={goToNextPage}
+              className="rounded-full border-portfolio-secondary text-portfolio-secondary hover:bg-portfolio-secondary/20"
+              aria-label="Next testimonial"
+            >
+              <ArrowRight size={18} />
+            </Button>
+          </div>
+        </section>
       </div>
     </section>
   );
