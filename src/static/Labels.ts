@@ -35,7 +35,7 @@ export const Labels = {
         heading2: "Community Engagement",
         bubbleChat:{
             title: "1 on 1 Calls",
-            number: "62+"
+            number: "73+"
         },
         bubbleConference:{
             title: "Conferences Attended",
@@ -43,7 +43,7 @@ export const Labels = {
         },
         bubbleMeetup:{
             title: "Meetups Attended",
-            number: "24+"
+            number: "44+"
         },
         bubbleCommit:{
             title: "Contributions Made",
@@ -82,7 +82,7 @@ export const Labels = {
         },
         project4: {
             name: "Yes Chef",
-            link: "https://yes-chef-app.vercel.app/",
+            link: "https://yescheff.netlify.app/",
             github: "https://github.com/team-elder-and-nikki/yes-chef-app",
             logo: yesChef
         }

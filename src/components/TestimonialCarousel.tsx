@@ -17,7 +17,7 @@ const testimonials = [
 const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
   const isMobile = useIsMobile();
   const [currentPage, setCurrentPage] = useState(0);
-  const itemsPerPage = 3;
+  const itemsPerPage = 1;
   const [expanded, setExpanded] = useState(false);
 
   const effectiveItemsPerPage = isMobile ? 1 : itemsPerPage;
@@ -56,14 +56,14 @@ const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
   }) {
     const displayContent = expanded
       ? testimonial.text
-      : testimonial.text.length > 150
-      ? `${testimonial.text.substring(0, 150)}...`
+      : testimonial.text.length > 450
+      ? `${testimonial.text.substring(0, 450)}...`
       : testimonial.text;
 
     return (
       <Card
         className={cn(
-          `h-full bg-transparent border-none transition-opacity duration-500`
+          `flex flex-col items-center h-full bg-transparent border-none transition-opacity duration-500`
         )}
       >
         <CardContent className="text-center">
@@ -86,7 +86,7 @@ const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
           </div>
         </CardContent>
 
-        {testimonial.text.length > 250 && (
+        {testimonial.text.length > 450 && (
           <CardFooter className="pt-0">
             <Button
               size="sm"
@@ -108,7 +108,7 @@ const TestimonialCarousel = ({ className }: TestimonialCarouselProps) => {
           {Labels.testimonialCarousel.heading2}
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="gap-6">
           {currentTestimonials.map((testimonial) => (
             <div className="animate-fade-in">
               {testimonialCarouselCard({ testimonial })}
