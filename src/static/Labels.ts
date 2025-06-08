@@ -11,15 +11,15 @@ import DSD from "../../assets/dsd.jpg";
 
 export const Labels = {
     contact:{
-        heading2: "Let's Connect",
+        heading2: "My Services",
         contactCardChat: {
             title: "Schedule a 1 on 1",
             content: "A chance for us to get to know each other better through an online 1 on 1 call!",
             button: "Schedule a Call",
-            link: "https://www.linkedin.com/in/richard-choir/"
+            link: "https://cal.com/choir241"
         },
         contactCardProject: {
-            title: "Contact for a Project",
+            title: "Build a Project",
             content: "Need a project to be built? Reach out so we can figure out all the details together!",
             button: "Start a Project",
             link: "https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=richardchoi54@gmail.com"
@@ -35,15 +35,15 @@ export const Labels = {
         heading2: "Community Engagement",
         bubbleChat:{
             title: "1 on 1 Calls",
-            number: "73+"
+            number: "80+"
         },
         bubbleConference:{
             title: "Conferences Attended",
-            number: "5+"
+            number: "7+"
         },
         bubbleMeetup:{
             title: "Meetups Attended",
-            number: "44+"
+            number: "50+"
         },
         bubbleCommit:{
             title: "Contributions Made",
@@ -133,7 +133,7 @@ export const Labels = {
         },
         stream5: {
             title: "404 Podcast - Episode 3 - Trials and Triumphs - Richard's Journey in Tech!",
-            host: "BitHatch",
+            host: "404 Podcast",
             link: "https://www.youtube.com/watch?v=wcJVHQJQXzg&t=1s&ab_channel=BitHatch",
             image: fourPodcast
         },
